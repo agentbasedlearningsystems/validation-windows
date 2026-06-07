@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+oral_cancer_yes,smokeless_tobacco_use,smokeless_tobacco_use_yes,relative_risk,0.0009765625,5.542105509964831,0.49850041342766094,0.0019565838265631946,"[0.0, np.float64(0.0035734686644215735)]",0.0015271719220205627,6.706472688720787

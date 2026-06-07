@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+total_cholesterol_mg_dL_high_240_and_above,total_cholesterol_mg_dL_naive,total_cholesterol_mg_dL_high_240_and_above,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+total_cholesterol_mg_dL_high_240_and_above,low_calorie_diet,low_calorie_diet_yes,relative_risk,0.5,0.5185034199036113,0.28242626320353315,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,10.327979008854374

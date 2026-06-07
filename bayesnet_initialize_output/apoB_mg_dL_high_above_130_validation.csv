@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+apoB_mg_dL_high_above_130,low_calorie_diet,low_calorie_diet_yes,relative_risk,0.0009765625,0.20694580957671502,0.16440610913008485,0.0019565838265631946,"[np.float64(0.012071136490681336), np.float64(0.015984304143807724)]",0.0015271719220205627,0.028864763114436198

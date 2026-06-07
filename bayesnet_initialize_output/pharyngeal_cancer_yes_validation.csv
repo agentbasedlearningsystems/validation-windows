@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+pharyngeal_cancer_yes,smokeless_tobacco_use,smokeless_tobacco_use_yes,relative_risk,0.0009765625,2.687061885922076,0.44386881159134584,0.0019565838265631946,"[0.0, np.float64(0.003649167028947607)]",0.0015271719220205627,3.1061762987858588

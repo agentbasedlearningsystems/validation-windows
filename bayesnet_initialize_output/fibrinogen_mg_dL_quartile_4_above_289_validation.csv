@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+fibrinogen_mg_dL_quartile_4_above_289,copd,copd_yes,relative_risk,0.0009765625,2.4672944807177664,0.5883585786331416,0.001956583826563194,"[np.float64(0.5806403142523553), np.float64(0.5845534819054816)]",0.0015271719220205627,0.00828612114527072

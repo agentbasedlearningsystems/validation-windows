@@ -1,0 +1,4 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+ci_movement_yes,original_ci_movement,ci_movement_yes,specificity,0.25,1.0,0.05,0.5008854596001778,"[np.float64(0.49911454039982217), 1.0]",0.37585972979353505,0.5008854596001777
+ci_movement_yes,IGF1_ng_ml,IGF1_ng_ml_quartile_4_above_210,relative_risk,0.25,0.84,0.09999999999999998,0.5008854596001778,"[np.float64(0.2768016643341277), 1.0]",0.37585972979353505,0.541019354847505
+ci_movement_yes,vitamin_d_nmol_per_liter_naive,vitamin_d_nmol_per_liter_deficiency_under_30,relative_risk,0.25,1.6,0.19999999999999996,0.5008854596001778,"[np.float64(0.8634774609599173), 1.0]",0.37585972979353505,0.5873926381928412

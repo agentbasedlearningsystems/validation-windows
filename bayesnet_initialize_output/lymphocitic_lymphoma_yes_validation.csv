@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+lymphocitic_lymphoma_yes,non_hodgkin_lymphoma,non_hodgkin_lymphoma_yes,specificity,0.0009765625,0.9949761009661653,0.05,0.0019565838265631946,"[np.float64(0.06804341617343719), np.float64(0.07195658382656357)]",0.0015271719220205627,0.02781077352810435
+lymphocitic_lymphoma_yes,phenoxy_herbicide,phenoxy_herbicide_yes,relative_risk,0.0009765625,1.8,0.9,0.0019565838265631946,"[0.0, np.float64(0.0025975242133651527)]",0.0015271719220205627,5.494818177063875

@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+resting_heart_rate_bpm_very_high_91_and_above,resting_heart_rate_bpm,resting_heart_rate_bpm_very_high_91_and_above,specificity,0.0009765625,1.0,0.05,0.0019565838265631946,"[np.float64(0.9980434161734368), 1.0]",0.0015271719220205627,0.001956583826563163

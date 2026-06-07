@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+eosinophils_percent_high_above_4,low_calorie_diet,low_calorie_diet_yes,relative_risk,0.5,0.7265962622976868,0.37759882626635255,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,4.571860757269068
+eosinophils_percent_high_above_4,eosinophils_percent_naive,eosinophils_percent_high_above_4,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554

@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+dietary_energy_kcal_3000_and_over_high,inadequate_sleep,inadequate_sleep_almost_always,relative_risk,0.25,4.237541834853949,0.22365096678087504,0.5008854596001778,"[0.0, np.float64(0.9167743055207406)]",0.37585972979353505,5.103582628737333
+dietary_energy_kcal_3000_and_over_high,dietary_energy_kcal_naive,dietary_energy_kcal_3000_and_over_high,specificity,0.25,1.0,0.05,0.5008854596001778,"[np.float64(0.49911454039982217), 1.0]",0.37585972979353505,0.5008854596001777

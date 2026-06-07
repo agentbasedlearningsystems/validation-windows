@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+cancer_mortality_yes,prevent_cancer_mortality,prevent_cancer_mortality_no,relative_risk,0.0009765625,1.201638882326561,0.09737068150281303,0.0019565838265631946,"[np.float64(0.1508711441622475), np.float64(0.1547843118153739)]",0.0015271719220205627,0.015384035563898113
+cancer_mortality_yes,cause_cancer_mortality,cause_cancer_mortality_yes,relative_risk,0.0009765625,2.378057743612227,1.1674427827123326,0.0019565838265631946,"[np.float64(0.15797573464887843), np.float64(0.1618889023020048)]",0.0015271719220205627,0.02909273975478266

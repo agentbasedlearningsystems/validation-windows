@@ -1,0 +1,8 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+heart_attack_yes,mediterranean_diet,mediterranean_diet_yes,relative_risk,0.5,0.6305426735009357,0.25505144867942264,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,21.787962941443638
+heart_attack_yes,metabolic_syndrome,metabolic_syndrome_yes,relative_risk,0.5,1.78,0.19999999999999996,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,29.400843402293265
+heart_attack_yes,heart_attack_naive,heart_attack_yes,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+heart_attack_yes,five_days_smoke_cigarettes,five_days_smoke_cigarettes_yes,relative_risk,0.5,2.5,0.2999999999999998,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,28.73121664236987
+heart_attack_yes,diabetes,diabetes_yes,relative_risk,0.5,2.5,0.2999999999999998,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,24.333538867872253
+heart_attack_yes,hypertension,hypertension_yes,relative_risk,0.5,1.91,0.40000000000000013,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,28.541458045326024
+heart_attack_yes,age,elderly,relative_risk,0.5,2.5,0.5,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,25.583401106137043

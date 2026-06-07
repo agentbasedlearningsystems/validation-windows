@@ -1,0 +1,7043 @@
+{
+  "label": "cycle12_no_df",
+  "total_study_pairs": 374,
+  "skipped_no_parent": 1,
+  "skipped_no_target": 0,
+  "target_was_type_distal": 189,
+  "target_was_output_direct": 184,
+  "summary": {
+    "n": 369,
+    "dir_correct": 360,
+    "dir_wrong": 9,
+    "direction_accuracy_pct": 97.6,
+    "median_pct_error": 19.4,
+    "mean_pct_error": 30.8,
+    "within_25pct": 212,
+    "within_25pct_rate": 57.5,
+    "within_50pct": 328,
+    "within_50pct_rate": 88.9
+  },
+  "results": [
+    {
+      "target": "endothelial_progenitor_cell",
+      "parent": "cardiovascular_minutes",
+      "values": [
+        "cardiovascular_minutes_quartile_4_above_65.00"
+      ],
+      "n_values": 1,
+      "study_rr": 1.7599,
+      "query_rr": 1.4791,
+      "pct_error": 16.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 130,
+      "row_output": "endothelial_progenitor_cell",
+      "row_input": "cardiovascular_minutes",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "sarcopenia",
+      "parent": "inadequate_sleep",
+      "values": [
+        "inadequate_sleep_rarely_or_never"
+      ],
+      "n_values": 1,
+      "study_rr": 0.7903,
+      "query_rr": 0.8826,
+      "pct_error": 11.7,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 176,
+      "row_output": "sarcopenia",
+      "row_input": "inadequate_sleep",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "walking_speed",
+      "parent": "vitamin_d_nmol_per_liter",
+      "values": [
+        "vitamin_d_nmol_per_liter_deficiency_under_30"
+      ],
+      "n_values": 1,
+      "study_rr": 1.846,
+      "query_rr": 1.3147,
+      "pct_error": 28.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 190,
+      "row_output": "walking_speed",
+      "row_input": "vitamin_d_nmol_per_liter",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "walking_speed",
+      "parent": "vitamin_d_nmol_per_liter_naive",
+      "values": [
+        "vitamin_d_nmol_per_liter_insufficiency_30_to_49"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3056,
+      "query_rr": 1.1852,
+      "pct_error": 9.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 191,
+      "row_output": "walking_speed",
+      "row_input": "vitamin_d_nmol_per_liter_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hemoglobin_g_dL",
+      "parent": "frailty",
+      "values": [
+        "frailty_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.7118,
+      "query_rr": 3.2905,
+      "pct_error": 92.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 222,
+      "row_output": "hemoglobin_g_dL",
+      "row_input": "frailty",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "insomnia",
+      "parent": "anemia",
+      "values": [
+        "anemia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3066,
+      "query_rr": 1.2836,
+      "pct_error": 1.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 227,
+      "row_output": "insomnia",
+      "row_input": "anemia",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "dietary_energy_kcal",
+      "parent": "inadequate_sleep",
+      "values": [
+        "inadequate_sleep_almost_always"
+      ],
+      "n_values": 1,
+      "study_rr": 5.3672,
+      "query_rr": 2.785,
+      "pct_error": 48.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 364,
+      "row_output": "dietary_energy_kcal",
+      "row_input": "inadequate_sleep",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "adiponectin_ug_ml",
+      "parent": "dietary_restriction",
+      "values": [
+        "dietary_restriction_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 3.3372,
+      "query_rr": 2.0959,
+      "pct_error": 37.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 376,
+      "row_output": "adiponectin_ug_ml",
+      "row_input": "dietary_restriction",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "adiponectin_ug_ml",
+      "parent": "mediterranean_diet",
+      "values": [
+        "mediterranean_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0675,
+      "query_rr": 1.0638,
+      "pct_error": 0.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 377,
+      "row_output": "adiponectin_ug_ml",
+      "row_input": "mediterranean_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "weight_kg",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.4316,
+      "query_rr": 0.4353,
+      "pct_error": 0.9,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 387,
+      "row_output": "weight_kg",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "bmi",
+      "parent": "dietary_energy_kcal",
+      "values": [
+        "dietary_energy_kcal_3000_and_over_high"
+      ],
+      "n_values": 1,
+      "study_rr": 3.3107,
+      "query_rr": 2.0863,
+      "pct_error": 37.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 390,
+      "row_output": "bmi",
+      "row_input": "dietary_energy_kcal",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "bmi",
+      "parent": "dietary_restriction",
+      "values": [
+        "dietary_restriction_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2804,
+      "query_rr": 1.0587,
+      "pct_error": 17.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 392,
+      "row_output": "bmi",
+      "row_input": "dietary_restriction",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "unhealthy_waist",
+      "parent": "intermittent_fasting",
+      "values": [
+        "intermittent_fasting_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0561,
+      "query_rr": 1.0125,
+      "pct_error": 4.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 407,
+      "row_output": "unhealthy_waist",
+      "row_input": "intermittent_fasting",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "unhealthy_waist",
+      "parent": "dietary_restriction",
+      "values": [
+        "dietary_restriction_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0986,
+      "query_rr": 1.0259,
+      "pct_error": 6.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 408,
+      "row_output": "unhealthy_waist",
+      "row_input": "dietary_restriction",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "insulin_uU_mL",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3404,
+      "query_rr": 1.0042,
+      "pct_error": 25.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 427,
+      "row_output": "insulin_uU_mL",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "insulin_uU_mL",
+      "parent": "age_at_menarche",
+      "values": [
+        "age_at_menarche_younger_than_10"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2302,
+      "query_rr": 1.2162,
+      "pct_error": 1.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 429,
+      "row_output": "insulin_uU_mL",
+      "row_input": "age_at_menarche",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "insulin_uU_mL",
+      "parent": "dietary_restriction",
+      "values": [
+        "dietary_restriction_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2855,
+      "query_rr": 1.0132,
+      "pct_error": 21.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 430,
+      "row_output": "insulin_uU_mL",
+      "row_input": "dietary_restriction",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hypertension",
+      "parent": "age_at_menarche",
+      "values": [
+        "age_at_menarche_younger_than_10"
+      ],
+      "n_values": 1,
+      "study_rr": 1.171,
+      "query_rr": 1.1675,
+      "pct_error": 0.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 452,
+      "row_output": "hypertension",
+      "row_input": "age_at_menarche",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hypertension",
+      "parent": "wake_too_early",
+      "values": [
+        "wake_too_early_almost_always"
+      ],
+      "n_values": 1,
+      "study_rr": 1.14,
+      "query_rr": 1.1294,
+      "pct_error": 0.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 453,
+      "row_output": "hypertension",
+      "row_input": "wake_too_early",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hypertension",
+      "parent": "insomnia",
+      "values": [
+        "insomnia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.21,
+      "query_rr": 1.1702,
+      "pct_error": 3.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 454,
+      "row_output": "hypertension",
+      "row_input": "insomnia",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hypertension",
+      "parent": "wake_up_cant_sleep",
+      "values": [
+        "wake_up_cant_sleep_almost_always"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2,
+      "query_rr": 1.1825,
+      "pct_error": 1.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 455,
+      "row_output": "hypertension",
+      "row_input": "wake_up_cant_sleep",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "metabolic_syndrome",
+      "parent": "age_at_menarche",
+      "values": [
+        "age_at_menarche_younger_than_10"
+      ],
+      "n_values": 1,
+      "study_rr": 1.62,
+      "query_rr": 1.6039,
+      "pct_error": 1.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 460,
+      "row_output": "metabolic_syndrome",
+      "row_input": "age_at_menarche",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "metabolic_syndrome",
+      "parent": "five_days_smoke_cigarettes",
+      "values": [
+        "five_days_smoke_cigarettes_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.26,
+      "query_rr": 1.1989,
+      "pct_error": 4.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 461,
+      "row_output": "metabolic_syndrome",
+      "row_input": "five_days_smoke_cigarettes",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "diabetes",
+      "parent": "insomnia",
+      "values": [
+        "insomnia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0893,
+      "query_rr": 1.0,
+      "pct_error": 8.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 465,
+      "row_output": "original_diabetes_poor_sleep",
+      "row_input": "insomnia",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "long_sleep",
+      "values": [
+        "long_sleep_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0314,
+      "query_rr": 1.0,
+      "pct_error": 3.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 466,
+      "row_output": "original_diabetes_poor_sleep",
+      "row_input": "long_sleep",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "inadequate_sleep",
+      "values": [
+        "inadequate_sleep_almost_always"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1347,
+      "query_rr": 1.1586,
+      "pct_error": 2.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 467,
+      "row_output": "original_diabetes_poor_sleep",
+      "row_input": "inadequate_sleep",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "diabetes_physical_activity",
+      "values": [
+        "physical_activity_low"
+      ],
+      "n_values": 1,
+      "study_rr": 1.65,
+      "query_rr": 1.2924,
+      "pct_error": 21.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 468,
+      "row_output": "original_diabetes_poor_sleep",
+      "row_input": "diabetes_physical_activity",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "moderate_recreational_activities",
+      "values": [
+        "moderate_recreational_activities_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.74,
+      "query_rr": 0.8361,
+      "pct_error": 13.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 472,
+      "row_output": "diabetes_physical_intensity",
+      "row_input": "moderate_recreational_activities",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "vigorous_work_activity",
+      "values": [
+        "vigorous_work_activity_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.61,
+      "query_rr": 0.8361,
+      "pct_error": 37.1,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 473,
+      "row_output": "diabetes_physical_intensity",
+      "row_input": "vigorous_work_activity",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "moderate_intensity_sports_minutes",
+      "values": [
+        "moderate_intensity_sports_minutes_quartile_4_above_65.00"
+      ],
+      "n_values": 1,
+      "study_rr": 0.68,
+      "query_rr": 0.8361,
+      "pct_error": 23.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 474,
+      "row_output": "diabetes_physical_intensity",
+      "row_input": "moderate_intensity_sports_minutes",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "workout_anomaly",
+      "values": [
+        "ten_minutes_daily_workout_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.66,
+      "query_rr": 0.9687,
+      "pct_error": 46.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 478,
+      "row_output": "diabetes_physical_regularity",
+      "row_input": "workout_anomaly",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "daily_walk_or_bicycle_travel",
+      "values": [
+        "daily_walk_or_bicycle_travel_60_minutes_or_more",
+        "daily_walk_or_bicycle_travel_30_to_59_minutes"
+      ],
+      "n_values": 2,
+      "study_rr": 0.85,
+      "query_rr": 0.9687,
+      "pct_error": 14.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 479,
+      "row_output": "diabetes_physical_regularity",
+      "row_input": "daily_walk_or_bicycle_travel",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "daily_time_sitting",
+      "values": [
+        "daily_time_sitting_less_than_2_hours",
+        "daily_time_sitting_over_2_but_less_than_6_hours"
+      ],
+      "n_values": 2,
+      "study_rr": 0.5696,
+      "query_rr": 0.9687,
+      "pct_error": 70.1,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 480,
+      "row_output": "diabetes_physical_regularity",
+      "row_input": "daily_time_sitting",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "cardiovascular_minutes",
+      "values": [
+        "cardiovascular_minutes_quartile_4_above_65.00"
+      ],
+      "n_values": 1,
+      "study_rr": 0.65,
+      "query_rr": 0.9687,
+      "pct_error": 49.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 481,
+      "row_output": "diabetes_physical_regularity",
+      "row_input": "cardiovascular_minutes",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "blueberries",
+      "values": [
+        "blueberries_above_1_oz_per_week"
+      ],
+      "n_values": 1,
+      "study_rr": 0.75,
+      "query_rr": 1.0,
+      "pct_error": 33.3,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "NONE",
+      "row_index": 488,
+      "row_output": "diabetes_diet_fruits_and_vegetables",
+      "row_input": "blueberries",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "cruciferous_vegetables",
+      "values": [
+        "cruciferous_vegetables_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.82,
+      "query_rr": 1.0,
+      "pct_error": 22.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "NONE",
+      "row_index": 489,
+      "row_output": "diabetes_diet_fruits_and_vegetables",
+      "row_input": "cruciferous_vegetables",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "yellow_vegetables",
+      "values": [
+        "yellow_vegetables_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.72,
+      "query_rr": 1.0,
+      "pct_error": 38.9,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "NONE",
+      "row_index": 490,
+      "row_output": "diabetes_diet_fruits_and_vegetables",
+      "row_input": "yellow_vegetables",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "daily_servings_fruit",
+      "values": [
+        "daily_servings_fruit_3_or_more"
+      ],
+      "n_values": 1,
+      "study_rr": 0.91,
+      "query_rr": 1.0,
+      "pct_error": 9.9,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "NONE",
+      "row_index": 493,
+      "row_output": "diabetes_dietary_fiber_gm",
+      "row_input": "daily_servings_fruit",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "vegetable_intake",
+      "values": [
+        "vegetable_intake_high"
+      ],
+      "n_values": 1,
+      "study_rr": 0.87,
+      "query_rr": 1.0,
+      "pct_error": 14.9,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "NONE",
+      "row_index": 494,
+      "row_output": "diabetes_dietary_fiber_gm",
+      "row_input": "vegetable_intake",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "dietary_fiber_gm",
+      "values": [
+        "dietary_fiber_gm_quartile_4_above_18.90"
+      ],
+      "n_values": 1,
+      "study_rr": 0.89,
+      "query_rr": 1.0,
+      "pct_error": 12.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "NONE",
+      "row_index": 495,
+      "row_output": "diabetes_dietary_fiber_gm",
+      "row_input": "dietary_fiber_gm",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "adiponectin_ug_ml",
+      "values": [
+        "adiponectin_ug_ml_quartile_4_over_11.70"
+      ],
+      "n_values": 1,
+      "study_rr": 0.72,
+      "query_rr": 0.9611,
+      "pct_error": 33.5,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 499,
+      "row_output": "diabetes_sirt1_activity",
+      "row_input": "adiponectin_ug_ml",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "intermittent_fasting",
+      "values": [
+        "intermittent_fasting_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.4039,
+      "query_rr": 0.8971,
+      "pct_error": 122.1,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 500,
+      "row_output": "diabetes_sirt1_activity",
+      "row_input": "intermittent_fasting",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "sirt1_ng_uL",
+      "parent": "IGF1_ng_ml",
+      "values": [
+        "IGF1_ng_ml_quartile_4_above_210"
+      ],
+      "n_values": 1,
+      "study_rr": 1.27,
+      "query_rr": 1.1897,
+      "pct_error": 6.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 505,
+      "row_output": "sirt1_ng_uL",
+      "row_input": "IGF1_ng_ml",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "parent": "folate_nmol_L",
+      "values": [
+        "folate_nmol_L_quartile_1_0.14_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 3.9816,
+      "query_rr": 1.5638,
+      "pct_error": 60.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 520,
+      "row_output": "telomere_vitamins",
+      "row_input": "folate_nmol_L",
+      "row_type": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "target_source": "Type"
+    },
+    {
+      "target": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "parent": "dietary_folate_mcg",
+      "values": [
+        "dietary_folate_mcg_quartile_1_264.00_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 2.4724,
+      "query_rr": 1.5638,
+      "pct_error": 36.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 521,
+      "row_output": "telomere_vitamins",
+      "row_input": "dietary_folate_mcg",
+      "row_type": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "target_source": "Type"
+    },
+    {
+      "target": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "parent": "dietary_b12_mcg",
+      "values": [
+        "dietary_b12_mcg_quartile_1_2.08_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 2.3479,
+      "query_rr": 1.5638,
+      "pct_error": 33.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 522,
+      "row_output": "telomere_vitamins",
+      "row_input": "dietary_b12_mcg",
+      "row_type": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "target_source": "Type"
+    },
+    {
+      "target": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "parent": "gender",
+      "values": [
+        "male"
+      ],
+      "n_values": 1,
+      "study_rr": 1.9874,
+      "query_rr": 1.3367,
+      "pct_error": 32.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 525,
+      "row_output": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "row_input": "gender",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "parent": "age",
+      "values": [
+        "elderly"
+      ],
+      "n_values": 1,
+      "study_rr": 3.3372,
+      "query_rr": 2.6964,
+      "pct_error": 19.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 526,
+      "row_output": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "row_input": "age",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_3_epigenetic_alterations_epigenetic_age",
+      "parent": "dietary_zinc_mg",
+      "values": [
+        "dietary_zinc_mg_quartile_1_6.10_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3526,
+      "query_rr": 1.2427,
+      "pct_error": 8.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 530,
+      "row_output": "hallmark_3_epigenetic_alterations_epigenetic_age",
+      "row_input": "dietary_zinc_mg",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_3_epigenetic_alterations_epigenetic_age",
+      "parent": "bmi",
+      "values": [
+        "bmi_over_30_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 1.7857,
+      "query_rr": 1.4888,
+      "pct_error": 16.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 531,
+      "row_output": "hallmark_3_epigenetic_alterations_epigenetic_age",
+      "row_input": "bmi",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_3_epigenetic_alterations_epigenetic_age",
+      "parent": "unhealthy_waist",
+      "values": [
+        "unhealthy_waist"
+      ],
+      "n_values": 1,
+      "study_rr": 1.7857,
+      "query_rr": 1.1652,
+      "pct_error": 34.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 532,
+      "row_output": "hallmark_3_epigenetic_alterations_epigenetic_age",
+      "row_input": "unhealthy_waist",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "diabetes",
+      "parent": "diabetes_physical_activity",
+      "values": [
+        "physical_activity_low"
+      ],
+      "n_values": 1,
+      "study_rr": 1.36,
+      "query_rr": 1.2924,
+      "pct_error": 5.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 542,
+      "row_output": "diabetes_healthy_diet",
+      "row_input": "diabetes_physical_activity",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_25_to_29_overweight"
+      ],
+      "n_values": 1,
+      "study_rr": 2.24,
+      "query_rr": 0.6092,
+      "pct_error": 72.8,
+      "direction_match": false,
+      "study_dir": "UP",
+      "query_dir": "DOWN",
+      "row_index": 546,
+      "row_output": "diabetes_bmi",
+      "row_input": "bmi_naive",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "bmi",
+      "values": [
+        "bmi_over_30_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 4.56,
+      "query_rr": 1.3132,
+      "pct_error": 71.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 547,
+      "row_output": "diabetes_bmi",
+      "row_input": "bmi",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "unhealthy_waist",
+      "values": [
+        "unhealthy_waist"
+      ],
+      "n_values": 1,
+      "study_rr": 1.87,
+      "query_rr": 1.0604,
+      "pct_error": 43.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 551,
+      "row_output": "diabetes_belly_fat",
+      "row_input": "unhealthy_waist",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "values": [
+        "hallmark_2_telomere_attrition_telomere_length_rtl_below_.93"
+      ],
+      "n_values": 1,
+      "study_rr": 2.77,
+      "query_rr": 1.3034,
+      "pct_error": 52.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 554,
+      "row_output": "diabetes_signs",
+      "row_input": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes",
+      "parent": "age_at_menarche",
+      "values": [
+        "age_at_menarche_younger_than_10"
+      ],
+      "n_values": 1,
+      "study_rr": 1.22,
+      "query_rr": 1.3034,
+      "pct_error": 6.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 555,
+      "row_output": "diabetes_signs",
+      "row_input": "age_at_menarche",
+      "row_type": "diabetes",
+      "target_source": "Type"
+    },
+    {
+      "target": "total_cholesterol_mg_dL",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.5185,
+      "query_rr": 0.6784,
+      "pct_error": 30.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 598,
+      "row_output": "total_cholesterol_mg_dL",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "total_cholesterol_mg_dL",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.2161,
+      "query_rr": 0.2657,
+      "pct_error": 23.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 599,
+      "row_output": "total_cholesterol_mg_dL",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "direct_HDL_mg_dL",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.6826,
+      "query_rr": 1.5984,
+      "pct_error": 5.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 602,
+      "row_output": "direct_HDL_mg_dL",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "ldl_mg_dL",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.4026,
+      "query_rr": 0.6005,
+      "pct_error": 49.2,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 606,
+      "row_output": "ldl_mg_dL",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "triglycerides_mg_dL",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.3999,
+      "query_rr": 0.4324,
+      "pct_error": 8.1,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 610,
+      "row_output": "triglycerides_mg_dL",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "apoB_mg_dL",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.2069,
+      "query_rr": 0.2141,
+      "pct_error": 3.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 670,
+      "row_output": "apoB_mg_dL",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "homa_ir",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.082,
+      "query_rr": 0.0865,
+      "pct_error": 5.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 686,
+      "row_output": "homa_ir",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "homa_ir",
+      "parent": "age_at_menarche",
+      "values": [
+        "age_at_menarche_younger_than_10"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3013,
+      "query_rr": 1.2939,
+      "pct_error": 0.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 687,
+      "row_output": "homa_ir",
+      "row_input": "age_at_menarche",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "homa_ir",
+      "parent": "sarcopenia",
+      "values": [
+        "sarcopenia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0309,
+      "query_rr": 1.0246,
+      "pct_error": 0.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 688,
+      "row_output": "homa_ir",
+      "row_input": "sarcopenia",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "homa_ir",
+      "parent": "vitamin_d_supplementation_mcg",
+      "values": [
+        "vitamin_d_supplementation_mcg_quartile_4_above_25.00"
+      ],
+      "n_values": 1,
+      "study_rr": 0.4488,
+      "query_rr": 0.5231,
+      "pct_error": 16.5,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 689,
+      "row_output": "homa_ir",
+      "row_input": "vitamin_d_supplementation_mcg",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "homa_ir",
+      "parent": "dietary_restriction",
+      "values": [
+        "dietary_restriction_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.7506,
+      "query_rr": 0.8015,
+      "pct_error": 6.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 690,
+      "row_output": "homa_ir",
+      "row_input": "dietary_restriction",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "apoB_mg_dL",
+      "values": [
+        "apoB_mg_dL_high_above_130"
+      ],
+      "n_values": 1,
+      "study_rr": 1.99,
+      "query_rr": 1.385,
+      "pct_error": 30.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 695,
+      "row_output": "cad_apo_level",
+      "row_input": "apoB_mg_dL",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "apoBA_mg_dL",
+      "values": [
+        "apoBA_mg_dL_quartile_4_above_.84"
+      ],
+      "n_values": 1,
+      "study_rr": 1.86,
+      "query_rr": 1.3836,
+      "pct_error": 25.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 696,
+      "row_output": "cad_apo_level",
+      "row_input": "apoBA_mg_dL",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "apoA1_mg_dL",
+      "values": [
+        "apoA1_mg_dL_quartile_1_.93_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.62,
+      "query_rr": 1.3836,
+      "pct_error": 14.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 697,
+      "row_output": "cad_apo_level",
+      "row_input": "apoA1_mg_dL",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "fasting_glucose_mg_dL",
+      "values": [
+        "fasting_glucose_mg_dL_high_above_100"
+      ],
+      "n_values": 1,
+      "study_rr": 1.52,
+      "query_rr": 1.2039,
+      "pct_error": 20.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 700,
+      "row_output": "cad_blood_sugar_level",
+      "row_input": "fasting_glucose_mg_dL",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "homa_ir",
+      "values": [
+        "homa_ir_high_above_2.9"
+      ],
+      "n_values": 1,
+      "study_rr": 1.64,
+      "query_rr": 1.104,
+      "pct_error": 32.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 701,
+      "row_output": "cad_blood_sugar_level",
+      "row_input": "homa_ir",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "insulin_uU_mL",
+      "values": [
+        "insulin_uU_mL_high_25_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 1.12,
+      "query_rr": 1.1012,
+      "pct_error": 1.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 702,
+      "row_output": "cad_blood_sugar_level",
+      "row_input": "insulin_uU_mL",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "a1c",
+      "values": [
+        "a1c_diabetes_6.5_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2,
+      "query_rr": 1.1005,
+      "pct_error": 8.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 703,
+      "row_output": "cad_blood_sugar_level",
+      "row_input": "a1c",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "values": [
+        "hallmark_2_telomere_attrition_telomere_length_rtl_below_.93"
+      ],
+      "n_values": 1,
+      "study_rr": 1.54,
+      "query_rr": 1.3556,
+      "pct_error": 12.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 706,
+      "row_output": "cad_blood_cellular",
+      "row_input": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "mean_platelet_volume_fL",
+      "values": [
+        "mean_platelet_volume_fL_high_11.5_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 1.6474,
+      "query_rr": 1.3503,
+      "pct_error": 18.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 707,
+      "row_output": "cad_blood_cellular",
+      "row_input": "mean_platelet_volume_fL",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "household_pollution",
+      "values": [
+        "household_pollution_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1,
+      "query_rr": 1.0367,
+      "pct_error": 5.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 710,
+      "row_output": "cad_toxins",
+      "row_input": "household_pollution",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "ever_vaped",
+      "values": [
+        "ever_vaped_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0753,
+      "query_rr": 1.0367,
+      "pct_error": 3.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 711,
+      "row_output": "cad_toxins",
+      "row_input": "ever_vaped",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "diet_fruits_and_vegetables",
+      "values": [
+        "diet_fruits_and_vegetables_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.087,
+      "query_rr": 1.1231,
+      "pct_error": 3.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 715,
+      "row_output": "cad_behaviors",
+      "row_input": "diet_fruits_and_vegetables",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "intermittent_fasting",
+      "values": [
+        "intermittent_fasting_no"
+      ],
+      "n_values": 1,
+      "study_rr": 2.6299,
+      "query_rr": 1.0142,
+      "pct_error": 61.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 716,
+      "row_output": "cad_behaviors",
+      "row_input": "intermittent_fasting",
+      "row_type": "coronary_artery_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "coronary_artery_disease",
+      "parent": "dietary_alpha_tocopherol_mg",
+      "values": [
+        "dietary_alpha_tocopherol_mg_quartile_4_above_9.26"
+      ],
+      "n_values": 1,
+      "study_rr": 0.66,
+      "query_rr": 0.7056,
+      "pct_error": 6.9,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 732,
+      "row_output": "coronary_artery_disease",
+      "row_input": "dietary_alpha_tocopherol_mg",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "creatine_phosphokinase_IU_L",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.5033,
+      "query_rr": 0.5102,
+      "pct_error": 1.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 743,
+      "row_output": "creatine_phosphokinase_IU_L",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "stroke",
+      "parent": "apoB_mg_dL",
+      "values": [
+        "apoB_mg_dL_high_above_130"
+      ],
+      "n_values": 1,
+      "study_rr": 1.66,
+      "query_rr": 1.2269,
+      "pct_error": 26.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 747,
+      "row_output": "stroke_biomarkers",
+      "row_input": "apoB_mg_dL",
+      "row_type": "stroke",
+      "target_source": "Type"
+    },
+    {
+      "target": "stroke",
+      "parent": "apoBA_mg_dL",
+      "values": [
+        "apoBA_mg_dL_quartile_4_above_.84"
+      ],
+      "n_values": 1,
+      "study_rr": 1.66,
+      "query_rr": 1.2265,
+      "pct_error": 26.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 748,
+      "row_output": "stroke_biomarkers",
+      "row_input": "apoBA_mg_dL",
+      "row_type": "stroke",
+      "target_source": "Type"
+    },
+    {
+      "target": "stroke",
+      "parent": "apoA1_mg_dL",
+      "values": [
+        "apoA1_mg_dL_quartile_1_.93_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0989,
+      "query_rr": 1.2265,
+      "pct_error": 11.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 749,
+      "row_output": "stroke_biomarkers",
+      "row_input": "apoA1_mg_dL",
+      "row_type": "stroke",
+      "target_source": "Type"
+    },
+    {
+      "target": "stroke",
+      "parent": "mmp9_ng_ml",
+      "values": [
+        "mmp9_ng_ml_high_above_59.4"
+      ],
+      "n_values": 1,
+      "study_rr": 1.9543,
+      "query_rr": 1.2265,
+      "pct_error": 37.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 750,
+      "row_output": "stroke_biomarkers",
+      "row_input": "mmp9_ng_ml",
+      "row_type": "stroke",
+      "target_source": "Type"
+    },
+    {
+      "target": "stroke",
+      "parent": "mediterranean_diet",
+      "values": [
+        "mediterranean_diet_no"
+      ],
+      "n_values": 1,
+      "study_rr": 0.6399,
+      "query_rr": 0.9726,
+      "pct_error": 52.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 753,
+      "row_output": "stroke",
+      "row_input": "mediterranean_diet",
+      "row_type": "stroke",
+      "target_source": "output"
+    },
+    {
+      "target": "stroke",
+      "parent": "household_pollution",
+      "values": [
+        "household_pollution_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.09,
+      "query_rr": 1.0442,
+      "pct_error": 4.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 754,
+      "row_output": "stroke_risk_behaviors",
+      "row_input": "household_pollution",
+      "row_type": "stroke",
+      "target_source": "Type"
+    },
+    {
+      "target": "stroke",
+      "parent": "a1c",
+      "values": [
+        "a1c_prediabetes_5.7_to_6.4"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2,
+      "query_rr": 1.0442,
+      "pct_error": 13.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 755,
+      "row_output": "stroke_risk_behaviors",
+      "row_input": "a1c",
+      "row_type": "stroke",
+      "target_source": "Type"
+    },
+    {
+      "target": "stroke",
+      "parent": "ever_vaped",
+      "values": [
+        "ever_vaped_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.28,
+      "query_rr": 1.0442,
+      "pct_error": 18.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 756,
+      "row_output": "stroke_risk_behaviors",
+      "row_input": "ever_vaped",
+      "row_type": "stroke",
+      "target_source": "Type"
+    },
+    {
+      "target": "stroke",
+      "parent": "diet_fruits_and_vegetables",
+      "values": [
+        "diet_fruits_and_vegetables_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2013,
+      "query_rr": 1.0442,
+      "pct_error": 13.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 757,
+      "row_output": "stroke_risk_behaviors",
+      "row_input": "diet_fruits_and_vegetables",
+      "row_type": "stroke",
+      "target_source": "Type"
+    },
+    {
+      "target": "stroke",
+      "parent": "hypertension",
+      "values": [
+        "hypertension_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.72,
+      "query_rr": 1.409,
+      "pct_error": 18.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 760,
+      "row_output": "stroke",
+      "row_input": "hypertension",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "heart_attack",
+      "parent": "mediterranean_diet",
+      "values": [
+        "mediterranean_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.6308,
+      "query_rr": 0.5849,
+      "pct_error": 7.3,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 765,
+      "row_output": "heart_attack",
+      "row_input": "mediterranean_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "heart_attack",
+      "parent": "metabolic_syndrome",
+      "values": [
+        "metabolic_syndrome_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.78,
+      "query_rr": 1.0146,
+      "pct_error": 43.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 766,
+      "row_output": "heart_attack",
+      "row_input": "metabolic_syndrome",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cardiovascular_disease",
+      "parent": "metabolic_syndrome",
+      "values": [
+        "metabolic_syndrome_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.53,
+      "query_rr": 1.124,
+      "pct_error": 26.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 774,
+      "row_output": "cardiovascular_state",
+      "row_input": "metabolic_syndrome",
+      "row_type": "cardiovascular_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_disease",
+      "parent": "hypertension",
+      "values": [
+        "hypertension_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.26,
+      "query_rr": 1.1366,
+      "pct_error": 9.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 775,
+      "row_output": "cardiovascular_state",
+      "row_input": "hypertension",
+      "row_type": "cardiovascular_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_disease",
+      "parent": "mtDNA_copy_number",
+      "values": [
+        "mtDNA_copy_number_quartile_1_below_120",
+        "mtDNA_copy_number_quartile_2_121_to_135"
+      ],
+      "n_values": 2,
+      "study_rr": 1.541,
+      "query_rr": 1.118,
+      "pct_error": 27.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 776,
+      "row_output": "cardiovascular_state",
+      "row_input": "mtDNA_copy_number",
+      "row_type": "cardiovascular_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_disease",
+      "parent": "mtDNA_copy_number",
+      "values": [
+        "mtDNA_copy_number_quartile_1_below_120"
+      ],
+      "n_values": 1,
+      "study_rr": 1.6699,
+      "query_rr": 1.118,
+      "pct_error": 33.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 777,
+      "row_output": "cardiovascular_state",
+      "row_input": "mtDNA_copy_number",
+      "row_type": "cardiovascular_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_disease",
+      "parent": "diet_fruits_and_vegetables",
+      "values": [
+        "diet_fruits_and_vegetables_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.087,
+      "query_rr": 1.0507,
+      "pct_error": 3.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 780,
+      "row_output": "cardiovascular_disease",
+      "row_input": "diet_fruits_and_vegetables",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cardiovascular_disease",
+      "parent": "healthy_lifestyle",
+      "values": [
+        "healthy_lifestyle_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.85,
+      "query_rr": 1.1048,
+      "pct_error": 40.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 781,
+      "row_output": "cardiovascular_disease",
+      "row_input": "healthy_lifestyle",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cardiovascular_disease",
+      "parent": "daily_time_sitting",
+      "values": [
+        "daily_time_sitting_12_or_more_hours"
+      ],
+      "n_values": 1,
+      "study_rr": 1.121,
+      "query_rr": 1.1014,
+      "pct_error": 1.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 783,
+      "row_output": "healthy_lifestyle",
+      "row_input": "daily_time_sitting",
+      "row_type": "cardiovascular_disease",
+      "target_source": "Type"
+    },
+    {
+      "target": "heart_disease",
+      "parent": "ever_vaped",
+      "values": [
+        "ever_vaped_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.17,
+      "query_rr": 1.1278,
+      "pct_error": 3.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 788,
+      "row_output": "heart_disease",
+      "row_input": "ever_vaped",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cardiac_event",
+      "parent": "endothelial_progenitor_cell",
+      "values": [
+        "endothelial_progenitor_cell_expression_high_above_200"
+      ],
+      "n_values": 1,
+      "study_rr": 2.0,
+      "query_rr": 1.5373,
+      "pct_error": 23.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 795,
+      "row_output": "cardiac_event",
+      "row_input": "endothelial_progenitor_cell",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cardiac_event",
+      "parent": "dietary_fiber_gm",
+      "values": [
+        "dietary_fiber_gm_quartile_4_above_18.90"
+      ],
+      "n_values": 1,
+      "study_rr": 0.93,
+      "query_rr": 0.9466,
+      "pct_error": 1.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 796,
+      "row_output": "cardiac_event",
+      "row_input": "dietary_fiber_gm",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cardiac_event",
+      "parent": "lower_urinary_tract_symptoms",
+      "values": [
+        "lower_urinary_tract_symptoms_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.6788,
+      "query_rr": 1.4297,
+      "pct_error": 14.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 797,
+      "row_output": "cardiac_event",
+      "row_input": "lower_urinary_tract_symptoms",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cardiovascular_event",
+      "parent": "vo2max_cardiovascular_fitness",
+      "values": [
+        "vo2max_cardiovascular_fitness_low"
+      ],
+      "n_values": 1,
+      "study_rr": 1.56,
+      "query_rr": 1.2292,
+      "pct_error": 21.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 802,
+      "row_output": "cardiovascular_event",
+      "row_input": "vo2max_cardiovascular_fitness",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "artificially_sweetened_beverages",
+      "values": [
+        "artificially_sweetened_beverages_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.25,
+      "query_rr": 1.1031,
+      "pct_error": 11.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 807,
+      "row_output": "cardiovascular_beverage",
+      "row_input": "artificially_sweetened_beverages",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "water_drank_yesterday_gm",
+      "values": [
+        "water_drank_yesterday_gm_quartile_1_59.25_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.148,
+      "query_rr": 1.1031,
+      "pct_error": 3.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 808,
+      "row_output": "cardiovascular_beverage",
+      "row_input": "water_drank_yesterday_gm",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "sugary_beverages_per_month",
+      "values": [
+        "sugary_beverages_per_month_quartile_4_above_3.00"
+      ],
+      "n_values": 1,
+      "study_rr": 1.09,
+      "query_rr": 1.1031,
+      "pct_error": 1.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 809,
+      "row_output": "cardiovascular_beverage",
+      "row_input": "sugary_beverages_per_month",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "pastries_per_month",
+      "values": [
+        "pastries_per_month_quartile_4_above_2.00"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5,
+      "query_rr": 1.1103,
+      "pct_error": 26.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 812,
+      "row_output": "cardiovascular_processed_food",
+      "row_input": "pastries_per_month",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "dietary_fiber_gm",
+      "values": [
+        "dietary_fiber_gm_quartile_1_8.20_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2615,
+      "query_rr": 1.1103,
+      "pct_error": 12.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 813,
+      "row_output": "cardiovascular_processed_food",
+      "row_input": "dietary_fiber_gm",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "eat_away_from_home",
+      "values": [
+        "eat_away_from_home_over_7_times_per_week",
+        "eat_away_from_home_4_to_7_times_per_week"
+      ],
+      "n_values": 2,
+      "study_rr": 1.5555,
+      "query_rr": 1.1103,
+      "pct_error": 28.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 814,
+      "row_output": "cardiovascular_processed_food",
+      "row_input": "eat_away_from_home",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "vegetarian",
+      "values": [
+        "vegetarian_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.363,
+      "query_rr": 1.0035,
+      "pct_error": 26.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 818,
+      "row_output": "cardiovascular_diet",
+      "row_input": "vegetarian",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "household_pollution",
+      "values": [
+        "household_pollution_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.07,
+      "query_rr": 1.0648,
+      "pct_error": 0.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 822,
+      "row_output": "cardiovascular_behavior",
+      "row_input": "household_pollution",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "long_sleep",
+      "values": [
+        "long_sleep_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.38,
+      "query_rr": 1.0646,
+      "pct_error": 22.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 823,
+      "row_output": "cardiovascular_behavior",
+      "row_input": "long_sleep",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "daily_time_sitting",
+      "values": [
+        "daily_time_sitting_12_or_more_hours"
+      ],
+      "n_values": 1,
+      "study_rr": 1.143,
+      "query_rr": 1.065,
+      "pct_error": 6.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 824,
+      "row_output": "cardiovascular_behavior",
+      "row_input": "daily_time_sitting",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "high_cholesterol_young_adult",
+      "values": [
+        "high_cholesterol_young_adult_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 4.3397,
+      "query_rr": 1.2176,
+      "pct_error": 71.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 851,
+      "row_output": "cv_high_cholesterol",
+      "row_input": "high_cholesterol_young_adult",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "high_cholesterol_adult",
+      "values": [
+        "high_cholesterol_adult_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.7855,
+      "query_rr": 1.2176,
+      "pct_error": 56.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 852,
+      "row_output": "cv_high_cholesterol",
+      "row_input": "high_cholesterol_adult",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "high_cholesterol_elderly",
+      "values": [
+        "high_cholesterol_elderly_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.428,
+      "query_rr": 1.2188,
+      "pct_error": 49.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 853,
+      "row_output": "cv_high_cholesterol",
+      "row_input": "high_cholesterol_elderly",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "elevated_cholesterol_young_adult",
+      "values": [
+        "elevated_cholesterol_young_adult_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.3827,
+      "query_rr": 1.2176,
+      "pct_error": 48.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 856,
+      "row_output": "cv_elevated_cholesterol",
+      "row_input": "elevated_cholesterol_young_adult",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "elevated_cholesterol_adult",
+      "values": [
+        "elevated_cholesterol_adult_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5916,
+      "query_rr": 1.2176,
+      "pct_error": 23.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 857,
+      "row_output": "cv_elevated_cholesterol",
+      "row_input": "elevated_cholesterol_adult",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "elevated_cholesterol_elderly",
+      "values": [
+        "elevated_cholesterol_elderly_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3122,
+      "query_rr": 1.2188,
+      "pct_error": 7.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 858,
+      "row_output": "cv_elevated_cholesterol",
+      "row_input": "elevated_cholesterol_elderly",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "interleukin6_pg_mL",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.6743,
+      "query_rr": 0.5975,
+      "pct_error": 11.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 863,
+      "row_output": "il6_diet",
+      "row_input": "low_calorie_diet",
+      "row_type": "interleukin6_pg_mL",
+      "target_source": "Type"
+    },
+    {
+      "target": "interleukin6_pg_mL",
+      "parent": "dietary_restriction",
+      "values": [
+        "dietary_restriction_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.4043,
+      "query_rr": 0.5975,
+      "pct_error": 47.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 864,
+      "row_output": "il6_diet",
+      "row_input": "dietary_restriction",
+      "row_type": "interleukin6_pg_mL",
+      "target_source": "Type"
+    },
+    {
+      "target": "interleukin6_pg_mL",
+      "parent": "mediterranean_diet",
+      "values": [
+        "mediterranean_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.9105,
+      "query_rr": 0.5975,
+      "pct_error": 34.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 865,
+      "row_output": "il6_diet",
+      "row_input": "mediterranean_diet",
+      "row_type": "interleukin6_pg_mL",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_disease_mortality",
+      "parent": "household_pollution",
+      "values": [
+        "household_pollution_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.18,
+      "query_rr": 1.0759,
+      "pct_error": 8.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 877,
+      "row_output": "lung_disease_mortality",
+      "row_input": "household_pollution",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "copd",
+      "parent": "household_pollution",
+      "values": [
+        "household_pollution_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.7,
+      "query_rr": 1.0341,
+      "pct_error": 39.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 881,
+      "row_output": "copd",
+      "row_input": "household_pollution",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "interleukin6_pg_mL",
+      "parent": "copd",
+      "values": [
+        "copd_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.5183,
+      "query_rr": 2.3746,
+      "pct_error": 5.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 886,
+      "row_output": "interleukin6_pg_mL",
+      "row_input": "copd",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "interleukin6_pg_mL",
+      "parent": "vitamin_C_mg_dL",
+      "values": [
+        "vitamin_C_mg_dL_low_below_0.6"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1765,
+      "query_rr": 1.1351,
+      "pct_error": 3.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 887,
+      "row_output": "interleukin6_pg_mL",
+      "row_input": "vitamin_C_mg_dL",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "interleukin6_pg_mL",
+      "parent": "ptsd",
+      "values": [
+        "ptsd_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.5852,
+      "query_rr": 2.4456,
+      "pct_error": 5.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 888,
+      "row_output": "interleukin6_pg_mL",
+      "row_input": "ptsd",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "tnf_alpha_pg_mL",
+      "parent": "dietary_restriction",
+      "values": [
+        "dietary_restriction_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.0195,
+      "query_rr": 0.1128,
+      "pct_error": 479.2,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 895,
+      "row_output": "tnf_alpha_pg_mL",
+      "row_input": "dietary_restriction",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "tnf_alpha_pg_mL",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.5872,
+      "query_rr": 0.542,
+      "pct_error": 7.7,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 896,
+      "row_output": "tnf_alpha_pg_mL",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "tnf_alpha_pg_mL",
+      "parent": "ptsd",
+      "values": [
+        "ptsd_no"
+      ],
+      "n_values": 1,
+      "study_rr": 0.2038,
+      "query_rr": 0.8777,
+      "pct_error": 330.7,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 897,
+      "row_output": "tnf_alpha_pg_mL",
+      "row_input": "ptsd",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "tnf_alpha_pg_mL",
+      "values": [
+        "tnf_alpha_pg_mL_high_above_7.23"
+      ],
+      "n_values": 1,
+      "study_rr": 1.076,
+      "query_rr": 1.2179,
+      "pct_error": 13.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 900,
+      "row_output": "cardiovascular_hallmarks",
+      "row_input": "tnf_alpha_pg_mL",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "interleukin6_pg_mL",
+      "values": [
+        "interleukin6_pg_mL_quartile_4_above_2.28"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3098,
+      "query_rr": 1.218,
+      "pct_error": 7.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 901,
+      "row_output": "cardiovascular_hallmarks",
+      "row_input": "interleukin6_pg_mL",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "mtDNA_copy_number",
+      "values": [
+        "mtDNA_copy_number_quartile_1_below_120"
+      ],
+      "n_values": 1,
+      "study_rr": 2.09,
+      "query_rr": 1.2177,
+      "pct_error": 41.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 902,
+      "row_output": "cardiovascular_hallmarks",
+      "row_input": "mtDNA_copy_number",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "resting_heart_rate_bpm",
+      "values": [
+        "resting_heart_rate_bpm_high_80_to_90"
+      ],
+      "n_values": 1,
+      "study_rr": 1.08,
+      "query_rr": 1.2177,
+      "pct_error": 12.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 907,
+      "row_output": "cardiovascular_biomarkers",
+      "row_input": "resting_heart_rate_bpm",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "heart_rate_anomaly",
+      "values": [
+        "resting_heart_rate_bpm_very_high_91_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 1.33,
+      "query_rr": 1.2177,
+      "pct_error": 8.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 908,
+      "row_output": "cardiovascular_biomarkers",
+      "row_input": "heart_rate_anomaly",
+      "row_type": "cardiovascular_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cardiovascular_mortality",
+      "parent": "diabetes",
+      "values": [
+        "diabetes_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1425,
+      "query_rr": 1.1236,
+      "pct_error": 1.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 913,
+      "row_output": "cardiovascular_mortality",
+      "row_input": "diabetes",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "heart_disease_mortality",
+      "parent": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "values": [
+        "hallmark_2_telomere_attrition_telomere_length_rtl_below_.93"
+      ],
+      "n_values": 1,
+      "study_rr": 1.54,
+      "query_rr": 1.359,
+      "pct_error": 11.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 920,
+      "row_output": "heart_disease_mortality",
+      "row_input": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "heart_disease_mortality",
+      "parent": "vegetarian",
+      "values": [
+        "vegetarian_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4085,
+      "query_rr": 1.0078,
+      "pct_error": 28.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 921,
+      "row_output": "heart_disease_mortality",
+      "row_input": "vegetarian",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fatal_myocardial_infraction",
+      "parent": "dietary_fiber_gm",
+      "values": [
+        "dietary_fiber_gm_quartile_1_8.20_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2048,
+      "query_rr": 1.1504,
+      "pct_error": 4.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 926,
+      "row_output": "fatal_myocardial_infraction",
+      "row_input": "dietary_fiber_gm",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fatal_myocardial_infraction",
+      "parent": "ever_vaped",
+      "values": [
+        "ever_vaped_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.13,
+      "query_rr": 1.0642,
+      "pct_error": 5.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 927,
+      "row_output": "fatal_myocardial_infraction",
+      "row_input": "ever_vaped",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fatal_stroke",
+      "parent": "vegetarian",
+      "values": [
+        "vegetarian_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1364,
+      "query_rr": 1.007,
+      "pct_error": 11.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 932,
+      "row_output": "fatal_stroke",
+      "row_input": "vegetarian",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "asthma",
+      "parent": "household_pollution",
+      "values": [
+        "household_pollution_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.23,
+      "query_rr": 1.0722,
+      "pct_error": 12.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 952,
+      "row_output": "asthma",
+      "row_input": "household_pollution",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "gamma_glutamyl_transferase_U_L",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_no"
+      ],
+      "n_values": 1,
+      "study_rr": 3.0498,
+      "query_rr": 1.0108,
+      "pct_error": 66.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 964,
+      "row_output": "gamma_glutamyl_transferase_U_L",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "aspartate_aminotransferase_U_L",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_no"
+      ],
+      "n_values": 1,
+      "study_rr": 3.1255,
+      "query_rr": 1.0109,
+      "pct_error": 67.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 968,
+      "row_output": "aspartate_aminotransferase_U_L",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "creatinine_mg_dL",
+      "parent": "angina",
+      "values": [
+        "angina_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.6445,
+      "query_rr": 1.3489,
+      "pct_error": 18.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 985,
+      "row_output": "creatinine_mg_dL",
+      "row_input": "angina",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "albumin_g_dL",
+      "parent": "frailty",
+      "values": [
+        "frailty_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.7672,
+      "query_rr": 1.3954,
+      "pct_error": 21.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 990,
+      "row_output": "albumin_g_dL",
+      "row_input": "frailty",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "testosterone_ng_dL",
+      "parent": "frailty",
+      "values": [
+        "frailty_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1217,
+      "query_rr": 1.1163,
+      "pct_error": 0.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 993,
+      "row_output": "testosterone_ng_dL",
+      "row_input": "frailty",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "peridontal_disease",
+      "parent": "vitamin_d_supplementation_mcg",
+      "values": [
+        "vitamin_d_supplementation_mcg_quartile_4_above_25.00"
+      ],
+      "n_values": 1,
+      "study_rr": 0.8696,
+      "query_rr": 0.8987,
+      "pct_error": 3.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1006,
+      "row_output": "peridontal_disease",
+      "row_input": "vitamin_d_supplementation_mcg",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "urine_leakage_bother",
+      "parent": "frailty",
+      "values": [
+        "frailty_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.1212,
+      "query_rr": 2.0319,
+      "pct_error": 4.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1021,
+      "row_output": "urine_leakage_bother",
+      "row_input": "frailty",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "multimorbidity",
+      "parent": "education_level",
+      "values": [
+        "education_level_less_than_9th_grade"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5516,
+      "query_rr": 1.4568,
+      "pct_error": 6.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1026,
+      "row_output": "multimorbidity",
+      "row_input": "education_level",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "depression",
+      "parent": "physical_activity",
+      "values": [
+        "physical_activity_high"
+      ],
+      "n_values": 1,
+      "study_rr": 0.8408,
+      "query_rr": 0.8977,
+      "pct_error": 6.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1048,
+      "row_output": "depression",
+      "row_input": "physical_activity",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "depression",
+      "parent": "inflammatory_diet",
+      "values": [
+        "inflammatory_diet_no"
+      ],
+      "n_values": 1,
+      "study_rr": 0.7062,
+      "query_rr": 0.9606,
+      "pct_error": 36.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1049,
+      "row_output": "depression",
+      "row_input": "inflammatory_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "depression",
+      "parent": "vitamin_d_nmol_per_liter_naive",
+      "values": [
+        "vitamin_d_nmol_per_liter_normal_50_to_124"
+      ],
+      "n_values": 1,
+      "study_rr": 0.9256,
+      "query_rr": 0.9704,
+      "pct_error": 4.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1050,
+      "row_output": "depression",
+      "row_input": "vitamin_d_nmol_per_liter_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "parkinsons",
+      "parent": "hallmark_5_disabled_macroautophagy_nad_atp_ratio",
+      "values": [
+        "hallmark_5_disabled_macroautophagy_nad_atp_ratio_low_below_0.26"
+      ],
+      "n_values": 1,
+      "study_rr": 4.607,
+      "query_rr": 2.9284,
+      "pct_error": 36.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1067,
+      "row_output": "parkinsons",
+      "row_input": "hallmark_5_disabled_macroautophagy_nad_atp_ratio",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "parkinsons",
+      "parent": "pesticide_exposure",
+      "values": [
+        "pesticide_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.15,
+      "query_rr": 1.0982,
+      "pct_error": 48.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1068,
+      "row_output": "parkinsons",
+      "row_input": "pesticide_exposure",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells",
+      "parent": "daily_servings_fruit",
+      "values": [
+        "daily_servings_fruit_none"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4706,
+      "query_rr": 1.3812,
+      "pct_error": 6.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1084,
+      "row_output": "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells",
+      "row_input": "daily_servings_fruit",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells",
+      "parent": "heavy_smoking",
+      "values": [
+        "heavy_smoking_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.37,
+      "query_rr": 1.3534,
+      "pct_error": 1.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1085,
+      "row_output": "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells",
+      "row_input": "heavy_smoking",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "microbiome_shannon_diversity",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.1374,
+      "query_rr": 0.1393,
+      "pct_error": 1.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1092,
+      "row_output": "microbiome_shannon_diversity",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "butyrate_mmol_gm",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.2742,
+      "query_rr": 2.2263,
+      "pct_error": 2.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1095,
+      "row_output": "butyrate_mmol_gm",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "alzheimers",
+      "parent": "microbiome_shannon_diversity",
+      "values": [
+        "microbiome_shannon_diversity_normal_3.08_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 0.6642,
+      "query_rr": 0.9268,
+      "pct_error": 39.5,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1102,
+      "row_output": "alzheimers",
+      "row_input": "microbiome_shannon_diversity",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "alzheimers",
+      "parent": "hallmark_4_loss_of_proteostasis_clusterin_ng_mL",
+      "values": [
+        "hallmark_4_loss_of_proteostasis_clusterin_ng_mL_quartile_4_above_93.82"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1561,
+      "query_rr": 1.1116,
+      "pct_error": 3.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1103,
+      "row_output": "alzheimers",
+      "row_input": "hallmark_4_loss_of_proteostasis_clusterin_ng_mL",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "alzheimers",
+      "parent": "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells",
+      "values": [
+        "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells_1.7_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 5.9155,
+      "query_rr": 4.32,
+      "pct_error": 27.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1104,
+      "row_output": "alzheimers",
+      "row_input": "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "alzheimers",
+      "parent": "grip_strength_kg",
+      "values": [
+        "grip_strength_kg_quartile_1_45.10_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4039,
+      "query_rr": 1.2642,
+      "pct_error": 9.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1105,
+      "row_output": "alzheimers",
+      "row_input": "grip_strength_kg",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "alzheimers",
+      "parent": "total_cholesterol_mg_dL",
+      "values": [
+        "total_cholesterol_mg_dL_high_240_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 2.14,
+      "query_rr": 1.9287,
+      "pct_error": 9.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1106,
+      "row_output": "alzheimers",
+      "row_input": "total_cholesterol_mg_dL",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "non_alzheimers_dementia",
+      "parent": "grip_strength_kg",
+      "values": [
+        "grip_strength_kg_quartile_1_45.10_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4461,
+      "query_rr": 1.267,
+      "pct_error": 12.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1109,
+      "row_output": "non_alzheimers_dementia",
+      "row_input": "grip_strength_kg",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "dementia",
+      "parent": "interleukin6_pg_mL",
+      "values": [
+        "interleukin6_pg_mL_quartile_4_above_2.28"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3161,
+      "query_rr": 1.1747,
+      "pct_error": 10.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1118,
+      "row_output": "dementia",
+      "row_input": "interleukin6_pg_mL",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "dementia",
+      "parent": "mic1_gdf15_pg_ml",
+      "values": [
+        "mic1_gdf15_pg_ml_high_2764_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 1.601,
+      "query_rr": 1.4895,
+      "pct_error": 7.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1119,
+      "row_output": "dementia",
+      "row_input": "mic1_gdf15_pg_ml",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "dementia",
+      "parent": "grip_strength_kg",
+      "values": [
+        "grip_strength_kg_quartile_1_45.10_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5324,
+      "query_rr": 1.3356,
+      "pct_error": 12.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1121,
+      "row_output": "dementia",
+      "row_input": "grip_strength_kg",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fat_oxidation_J_kg_min",
+      "parent": "L_carnitine_supplementation",
+      "values": [
+        "L_carnitine_supplementation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.6489,
+      "query_rr": 2.5228,
+      "pct_error": 4.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1128,
+      "row_output": "fat_oxidation_J_kg_min",
+      "row_input": "L_carnitine_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cognitive_impairment",
+      "parent": "physical_activity",
+      "values": [
+        "physical_activity_high"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5198,
+      "query_rr": 1.0314,
+      "pct_error": 32.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1136,
+      "row_output": "cognitive_impairment",
+      "row_input": "physical_activity",
+      "row_type": "cognitive_impairment",
+      "target_source": "output"
+    },
+    {
+      "target": "cognitive_impairment",
+      "parent": "moderate_physical_activity",
+      "values": [
+        "moderate_physical_activity_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3762,
+      "query_rr": 1.0,
+      "pct_error": 27.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1137,
+      "row_output": "cognitive_impairment",
+      "row_input": "moderate_physical_activity",
+      "row_type": "cognitive_impairment",
+      "target_source": "output"
+    },
+    {
+      "target": "cognitive_impairment",
+      "parent": "dexterity",
+      "values": [
+        "dexterity_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8826,
+      "query_rr": 1.0021,
+      "pct_error": 46.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1140,
+      "row_output": "ci_movement",
+      "row_input": "dexterity",
+      "row_type": "cognitive_impairment",
+      "target_source": "Type"
+    },
+    {
+      "target": "cognitive_impairment",
+      "parent": "grip_strength_kg",
+      "values": [
+        "grip_strength_kg_quartile_1_45.10_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8274,
+      "query_rr": 1.1687,
+      "pct_error": 36.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1142,
+      "row_output": "ci_movement",
+      "row_input": "grip_strength_kg",
+      "row_type": "cognitive_impairment",
+      "target_source": "Type"
+    },
+    {
+      "target": "cognitive_impairment",
+      "parent": "IGF1_ng_ml",
+      "values": [
+        "IGF1_ng_ml_quartile_4_above_210"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4811,
+      "query_rr": 1.3199,
+      "pct_error": 10.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1146,
+      "row_output": "cognitive_impairment",
+      "row_input": "IGF1_ng_ml",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cognitive_impairment",
+      "parent": "vitamin_d_nmol_per_liter_naive",
+      "values": [
+        "vitamin_d_nmol_per_liter_deficiency_under_30"
+      ],
+      "n_values": 1,
+      "study_rr": 1.205,
+      "query_rr": 1.2168,
+      "pct_error": 1.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1149,
+      "row_output": "cognitive_impairment",
+      "row_input": "vitamin_d_nmol_per_liter_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cognitive_impairment",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_no"
+      ],
+      "n_values": 1,
+      "study_rr": 2.13,
+      "query_rr": 1.0086,
+      "pct_error": 52.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1150,
+      "row_output": "cognitive_impairment",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "sleep_apnea",
+      "parent": "snore_how_often_per_week",
+      "values": [
+        "snore_5_or_more_nights"
+      ],
+      "n_values": 1,
+      "study_rr": 3.5914,
+      "query_rr": 1.0934,
+      "pct_error": 69.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1159,
+      "row_output": "sleep_apnea",
+      "row_input": "snore_how_often_per_week",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "sleep_apnea",
+      "parent": "bmi",
+      "values": [
+        "bmi_over_30_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 4.0903,
+      "query_rr": 1.0796,
+      "pct_error": 73.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1160,
+      "row_output": "sleep_apnea",
+      "row_input": "bmi",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "frailty",
+      "parent": "osteoporosis",
+      "values": [
+        "osteoporosis_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.9714,
+      "query_rr": 1.0349,
+      "pct_error": 47.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1163,
+      "row_output": "frailty_chronic_illness",
+      "row_input": "osteoporosis",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "pain",
+      "values": [
+        "pain_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.65,
+      "query_rr": 1.0349,
+      "pct_error": 37.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1164,
+      "row_output": "frailty_chronic_illness",
+      "row_input": "pain",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "polypharmacy",
+      "values": [
+        "polypharmacy_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.4237,
+      "query_rr": 1.0349,
+      "pct_error": 57.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1165,
+      "row_output": "frailty_chronic_illness",
+      "row_input": "polypharmacy",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "lung_disease",
+      "values": [
+        "lung_disease_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.41,
+      "query_rr": 1.0349,
+      "pct_error": 26.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1166,
+      "row_output": "frailty_chronic_illness",
+      "row_input": "lung_disease",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "diabetes",
+      "values": [
+        "diabetes_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1,
+      "query_rr": 1.0408,
+      "pct_error": 5.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1167,
+      "row_output": "frailty_chronic_illness",
+      "row_input": "diabetes",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "dementia",
+      "values": [
+        "dementia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.32,
+      "query_rr": 1.1,
+      "pct_error": 16.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1170,
+      "row_output": "frailty_nervous_dysfunction",
+      "row_input": "dementia",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "depression",
+      "values": [
+        "depression_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 3.47,
+      "query_rr": 1.0349,
+      "pct_error": 70.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1171,
+      "row_output": "frailty_nervous_dysfunction",
+      "row_input": "depression",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "hearing_difficulty_how_often",
+      "values": [
+        "hearing_difficulty_always"
+      ],
+      "n_values": 1,
+      "study_rr": 1.9,
+      "query_rr": 1.0349,
+      "pct_error": 45.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1172,
+      "row_output": "frailty_nervous_dysfunction",
+      "row_input": "hearing_difficulty_how_often",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "fall_history",
+      "values": [
+        "fall_history_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.41,
+      "query_rr": 1.0349,
+      "pct_error": 57.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1173,
+      "row_output": "frailty_nervous_dysfunction",
+      "row_input": "fall_history",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "insomnia",
+      "values": [
+        "insomnia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0832,
+      "query_rr": 1.0349,
+      "pct_error": 4.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1176,
+      "row_output": "frailty_sleep_onset",
+      "row_input": "insomnia",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "sleep_apnea",
+      "values": [
+        "sleep_apnea_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.201,
+      "query_rr": 1.0351,
+      "pct_error": 13.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1180,
+      "row_output": "frailty_sleep_quality",
+      "row_input": "sleep_apnea",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "daytime_drowsiness",
+      "values": [
+        "daytime_drowsiness_almost_always"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1547,
+      "query_rr": 1.0349,
+      "pct_error": 10.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1181,
+      "row_output": "frailty_sleep_quality",
+      "row_input": "daytime_drowsiness",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "inadequate_sleep",
+      "values": [
+        "inadequate_sleep_almost_always"
+      ],
+      "n_values": 1,
+      "study_rr": 1.71,
+      "query_rr": 1.1359,
+      "pct_error": 33.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1182,
+      "row_output": "frailty_sleep_quality",
+      "row_input": "inadequate_sleep",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "long_sleep",
+      "values": [
+        "long_sleep_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0643,
+      "query_rr": 1.0349,
+      "pct_error": 2.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1185,
+      "row_output": "frailty_sleep",
+      "row_input": "long_sleep",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "gender",
+      "values": [
+        "female"
+      ],
+      "n_values": 1,
+      "study_rr": 1.789,
+      "query_rr": 1.0349,
+      "pct_error": 42.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1190,
+      "row_output": "frailty_demographics",
+      "row_input": "gender",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "marital_status",
+      "values": [
+        "marital_status_widowed_divorced_single"
+      ],
+      "n_values": 1,
+      "study_rr": 2.5443,
+      "query_rr": 1.0349,
+      "pct_error": 59.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1191,
+      "row_output": "frailty_demographics",
+      "row_input": "marital_status",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "age",
+      "values": [
+        "elderly"
+      ],
+      "n_values": 1,
+      "study_rr": 3.8707,
+      "query_rr": 1.0349,
+      "pct_error": 73.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1192,
+      "row_output": "frailty_demographics",
+      "row_input": "age",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "multimorbidity",
+      "values": [
+        "multimorbidity_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.0488,
+      "query_rr": 1.0349,
+      "pct_error": 49.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1199,
+      "row_output": "frailty_conditions",
+      "row_input": "multimorbidity",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "unhealthy_waist",
+      "values": [
+        "unhealthy_waist"
+      ],
+      "n_values": 1,
+      "study_rr": 1.57,
+      "query_rr": 1.0069,
+      "pct_error": 35.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1202,
+      "row_output": "frailty_weight",
+      "row_input": "unhealthy_waist",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "bmi",
+      "values": [
+        "bmi_over_30_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4,
+      "query_rr": 1.0134,
+      "pct_error": 27.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1203,
+      "row_output": "frailty_weight",
+      "row_input": "bmi",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_25_to_29_overweight"
+      ],
+      "n_values": 1,
+      "study_rr": 0.93,
+      "query_rr": 0.9982,
+      "pct_error": 7.3,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1204,
+      "row_output": "frailty_weight",
+      "row_input": "bmi_naive",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_under_19_underweight"
+      ],
+      "n_values": 1,
+      "study_rr": 1.45,
+      "query_rr": 0.9992,
+      "pct_error": 31.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1205,
+      "row_output": "frailty_weight",
+      "row_input": "bmi_naive",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "malnutrition",
+      "values": [
+        "malnutrition_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.11,
+      "query_rr": 1.0015,
+      "pct_error": 52.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1206,
+      "row_output": "frailty_weight",
+      "row_input": "malnutrition",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "frailty_lifestyle",
+      "values": [
+        "frailty_lifestyle_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.0,
+      "query_rr": 1.0001,
+      "pct_error": 50.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1207,
+      "row_output": "frailty_weight",
+      "row_input": "frailty_lifestyle",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "frailty_healthy_diet",
+      "values": [
+        "frailty_healthy_diet_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1,
+      "query_rr": 1.0,
+      "pct_error": 9.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1208,
+      "row_output": "frailty_weight",
+      "row_input": "frailty_healthy_diet",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "dietary_protein_gm",
+      "values": [
+        "dietary_protein_gm_quartile_2_above_45.78_to_65.79_and_below",
+        "dietary_protein_gm_quartile_1_45.78_and_below"
+      ],
+      "n_values": 2,
+      "study_rr": 0.9042,
+      "query_rr": 1.0,
+      "pct_error": 10.6,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "NONE",
+      "row_index": 1212,
+      "row_output": "frailty_healthy_diet",
+      "row_input": "dietary_protein_gm",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "vitamin_d_nmol_per_liter_naive",
+      "values": [
+        "vitamin_d_nmol_per_liter_normal_50_to_124"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1236,
+      "query_rr": 0.9999,
+      "pct_error": 11.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1213,
+      "row_output": "frailty_healthy_diet",
+      "row_input": "vitamin_d_nmol_per_liter_naive",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "heavy_alcohol_consumption_last_year",
+      "values": [
+        "heavy_alcohol_consumption_days_4_or_5_drinks_last_year_daily"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2821,
+      "query_rr": 1.0,
+      "pct_error": 22.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1216,
+      "row_output": "frailty_lifestyle",
+      "row_input": "heavy_alcohol_consumption_last_year",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "exercise",
+      "values": [
+        "exercise_high_not"
+      ],
+      "n_values": 1,
+      "study_rr": 1.41,
+      "query_rr": 1.0003,
+      "pct_error": 29.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1217,
+      "row_output": "frailty_lifestyle",
+      "row_input": "exercise",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "five_days_smoke_cigarettes",
+      "values": [
+        "five_days_smoke_cigarettes_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.18,
+      "query_rr": 1.0,
+      "pct_error": 15.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1218,
+      "row_output": "frailty_lifestyle",
+      "row_input": "five_days_smoke_cigarettes",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "frailty_healthy_diet",
+      "values": [
+        "frailty_healthy_diet_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.36,
+      "query_rr": 1.0,
+      "pct_error": 26.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1219,
+      "row_output": "frailty_lifestyle",
+      "row_input": "frailty_healthy_diet",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells",
+      "values": [
+        "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells_1.7_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 4.0221,
+      "query_rr": 2.0292,
+      "pct_error": 49.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1227,
+      "row_output": "frailty_hallmarks",
+      "row_input": "hallmark_1_genomic_instability_micronucleus_frequency_thousand_cells",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "hallmark_9_stem_cell_exhaustion",
+      "values": [
+        "hallmark_9_stem_cell_exhaustion_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.4859,
+      "query_rr": 2.0245,
+      "pct_error": 18.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1228,
+      "row_output": "frailty_hallmarks",
+      "row_input": "hallmark_9_stem_cell_exhaustion",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "hallmark_6_deregulated_nutrient_sensing",
+      "values": [
+        "hallmark_6_deregulated_nutrient_sensing_yes"
+      ],
+      "n_values": 1,
+      "study_rr": NaN,
+      "query_rr": 2.0248,
+      "pct_error": NaN,
+      "direction_match": true,
+      "study_dir": "NONE",
+      "query_dir": "UP",
+      "row_index": 1229,
+      "row_output": "frailty_hallmarks",
+      "row_input": "hallmark_6_deregulated_nutrient_sensing",
+      "row_type": "frailty",
+      "target_source": "Type"
+    },
+    {
+      "target": "frailty",
+      "parent": "sarcopenia",
+      "values": [
+        "sarcopenia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 4.1159,
+      "query_rr": 2.7719,
+      "pct_error": 32.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1234,
+      "row_output": "frailty",
+      "row_input": "sarcopenia",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "peridontal_disease",
+      "values": [
+        "peridontal_disease_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.628,
+      "query_rr": 1.3794,
+      "pct_error": 15.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1243,
+      "row_output": "crp_chronic_illness",
+      "row_input": "peridontal_disease",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "coronary_artery_disease",
+      "values": [
+        "coronary_artery_disease_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.63,
+      "query_rr": 1.3964,
+      "pct_error": 14.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1244,
+      "row_output": "crp_chronic_illness",
+      "row_input": "coronary_artery_disease",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "stroke",
+      "values": [
+        "stroke_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.44,
+      "query_rr": 1.3615,
+      "pct_error": 5.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1245,
+      "row_output": "crp_chronic_illness",
+      "row_input": "stroke",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "copd",
+      "values": [
+        "copd_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 4.9169,
+      "query_rr": 1.3872,
+      "pct_error": 71.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1246,
+      "row_output": "crp_chronic_illness",
+      "row_input": "copd",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "alzheimers",
+      "values": [
+        "alzheimers_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1986,
+      "query_rr": 1.629,
+      "pct_error": 35.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1249,
+      "row_output": "crp_mental_illness",
+      "row_input": "alzheimers",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "dementia",
+      "values": [
+        "dementia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4082,
+      "query_rr": 1.6251,
+      "pct_error": 15.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1250,
+      "row_output": "crp_mental_illness",
+      "row_input": "dementia",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "ptsd",
+      "values": [
+        "ptsd_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.9526,
+      "query_rr": 1.6149,
+      "pct_error": 45.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1251,
+      "row_output": "crp_mental_illness",
+      "row_input": "ptsd",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.512,
+      "query_rr": 0.3917,
+      "pct_error": 23.5,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1254,
+      "row_output": "crp_diet",
+      "row_input": "low_calorie_diet",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "dietary_restriction",
+      "values": [
+        "dietary_restriction_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.313,
+      "query_rr": 0.3913,
+      "pct_error": 25.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1255,
+      "row_output": "crp_diet",
+      "row_input": "dietary_restriction",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "mediterranean_diet",
+      "values": [
+        "mediterranean_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.0628,
+      "query_rr": 0.4008,
+      "pct_error": 537.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1256,
+      "row_output": "crp_diet",
+      "row_input": "mediterranean_diet",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.5348,
+      "query_rr": 0.3923,
+      "pct_error": 26.6,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1257,
+      "row_output": "crp_diet",
+      "row_input": "probiotic_supplementation",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "frailty",
+      "values": [
+        "frailty_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 3.6714,
+      "query_rr": 1.8589,
+      "pct_error": 49.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1261,
+      "row_output": "crp_age_related_condition",
+      "row_input": "frailty",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "sarcopenia",
+      "values": [
+        "sarcopenia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.1508,
+      "query_rr": 1.8173,
+      "pct_error": 15.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1262,
+      "row_output": "crp_age_related_condition",
+      "row_input": "sarcopenia",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "age_related_macular_degeneration",
+      "values": [
+        "late_age_related_macular_degeneration"
+      ],
+      "n_values": 1,
+      "study_rr": 1.9274,
+      "query_rr": 1.8173,
+      "pct_error": 5.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1263,
+      "row_output": "crp_age_related_condition",
+      "row_input": "age_related_macular_degeneration",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "c_reactive_protein_mg_L",
+      "parent": "age_related_macular_degeneration",
+      "values": [
+        "early_age_related_macular_degeneration"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8241,
+      "query_rr": 1.8173,
+      "pct_error": 0.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1264,
+      "row_output": "crp_age_related_condition",
+      "row_input": "age_related_macular_degeneration",
+      "row_type": "c_reactive_protein_mg_L",
+      "target_source": "Type"
+    },
+    {
+      "target": "platelet_distribution_width_percent",
+      "parent": "diabetes",
+      "values": [
+        "diabetes_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 4.6673,
+      "query_rr": 3.2644,
+      "pct_error": 30.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1283,
+      "row_output": "platelet_distribution_width_percent",
+      "row_input": "diabetes",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "platelet_distribution_width_percent",
+      "parent": "non_alcoholic_fatty_liver_disease",
+      "values": [
+        "non_alcoholic_fatty_liver_disease_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.5536,
+      "query_rr": 2.5007,
+      "pct_error": 2.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1284,
+      "row_output": "platelet_distribution_width_percent",
+      "row_input": "non_alcoholic_fatty_liver_disease",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "icam1_ng_mL",
+      "parent": "mediterranean_diet",
+      "values": [
+        "mediterranean_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.9133,
+      "query_rr": 0.9167,
+      "pct_error": 0.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1287,
+      "row_output": "icam1_ng_mL",
+      "row_input": "mediterranean_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "white_blood_cell_count_si",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 4.4571,
+      "query_rr": 3.0067,
+      "pct_error": 32.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1290,
+      "row_output": "white_blood_cell_count_si",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "white_blood_cell_count_si",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5939,
+      "query_rr": 1.0897,
+      "pct_error": 31.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1291,
+      "row_output": "white_blood_cell_count_si",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "eosinophils_percent",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.7681,
+      "query_rr": 0.7845,
+      "pct_error": 2.1,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1295,
+      "row_output": "eosinophils_percent",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "lymphocite_number_1000_cells_uL",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.7018,
+      "query_rr": 0.5511,
+      "pct_error": 21.5,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1299,
+      "row_output": "lymphocite_number_1000_cells_uL",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "segmented_neutrophils",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.6507,
+      "query_rr": 0.5765,
+      "pct_error": 11.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1303,
+      "row_output": "segmented_neutrophils",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "interleukin6_1beta_pg_mL",
+      "parent": "low_calorie_diet",
+      "values": [
+        "low_calorie_diet_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.6392,
+      "query_rr": 0.6509,
+      "pct_error": 1.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1314,
+      "row_output": "interleukin6_1beta_pg_mL",
+      "row_input": "low_calorie_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_8_cellular_senescence_p16_mrna_log2",
+      "parent": "sirt1_ng_uL",
+      "values": [
+        "sirt1_ng_uL_low_below_4.29"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8758,
+      "query_rr": 1.5839,
+      "pct_error": 15.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1318,
+      "row_output": "hallmark_8_cellular_senescence_p16_mrna_log2",
+      "row_input": "sirt1_ng_uL",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_8_cellular_senescence_p16_mrna_log2",
+      "parent": "heavy_smoking",
+      "values": [
+        "heavy_smoking_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3549,
+      "query_rr": 1.3408,
+      "pct_error": 1.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1319,
+      "row_output": "hallmark_8_cellular_senescence_p16_mrna_log2",
+      "row_input": "heavy_smoking",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_8_cellular_senescence_p16_mrna_log2",
+      "parent": "interleukin6_pg_mL",
+      "values": [
+        "interleukin6_pg_mL_quartile_4_above_2.28"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3066,
+      "query_rr": 1.2134,
+      "pct_error": 7.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1320,
+      "row_output": "hallmark_8_cellular_senescence_p16_mrna_log2",
+      "row_input": "interleukin6_pg_mL",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_8_cellular_senescence_p16_mrna_log2",
+      "parent": "exercise",
+      "values": [
+        "exercise_high_not"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3938,
+      "query_rr": 1.0014,
+      "pct_error": 28.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1321,
+      "row_output": "hallmark_8_cellular_senescence_p16_mrna_log2",
+      "row_input": "exercise",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_10_altered_intercellular_communication_immune_age",
+      "parent": "cardiovascular_disease",
+      "values": [
+        "cardiovascular_disease_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1327,
+      "query_rr": 1.096,
+      "pct_error": 3.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1329,
+      "row_output": "hallmark_10_altered_intercellular_communication_immune_age",
+      "row_input": "cardiovascular_disease",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hallmark_10_altered_intercellular_communication_immune_age",
+      "parent": "hallmark_11_chronic_inflammation",
+      "values": [
+        "hallmark_11_chronic_inflammation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1874,
+      "query_rr": 1.1721,
+      "pct_error": 1.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1330,
+      "row_output": "hallmark_10_altered_intercellular_communication_immune_age",
+      "row_input": "hallmark_11_chronic_inflammation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "malondialdehyde_mg_g_creatinine",
+      "parent": "probiotic_supplementation",
+      "values": [
+        "probiotic_supplementation_no"
+      ],
+      "n_values": 1,
+      "study_rr": 2.9336,
+      "query_rr": 1.0122,
+      "pct_error": 65.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1334,
+      "row_output": "malondialdehyde_mg_g_creatinine",
+      "row_input": "probiotic_supplementation",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fibrinogen_mg_dL",
+      "parent": "copd",
+      "values": [
+        "copd_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.4673,
+      "query_rr": 2.3314,
+      "pct_error": 5.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1337,
+      "row_output": "fibrinogen_mg_dL",
+      "row_input": "copd",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "mean_platelet_volume_fL",
+      "parent": "inflammatory_bowel_disease",
+      "values": [
+        "inflammatory_bowel_disease_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4909,
+      "query_rr": 6.5556,
+      "pct_error": 339.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1342,
+      "row_output": "mean_platelet_volume_fL",
+      "row_input": "inflammatory_bowel_disease",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "mean_platelet_volume_fL",
+      "parent": "non_alcoholic_steatohepatitis",
+      "values": [
+        "non_alcoholic_steatohepatitis_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8615,
+      "query_rr": 7.4989,
+      "pct_error": 302.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1343,
+      "row_output": "mean_platelet_volume_fL",
+      "row_input": "non_alcoholic_steatohepatitis",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "mean_platelet_volume_fL",
+      "parent": "non_alcoholic_fatty_liver_disease",
+      "values": [
+        "non_alcoholic_fatty_liver_disease_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 4.5847,
+      "query_rr": 2.4376,
+      "pct_error": 46.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1344,
+      "row_output": "mean_platelet_volume_fL",
+      "row_input": "non_alcoholic_fatty_liver_disease",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "mean_platelet_volume_fL",
+      "parent": "bmi",
+      "values": [
+        "bmi_over_30_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 2.1639,
+      "query_rr": 0.9833,
+      "pct_error": 54.6,
+      "direction_match": false,
+      "study_dir": "UP",
+      "query_dir": "DOWN",
+      "row_index": 1347,
+      "row_output": "mean_platelet_volume_fL",
+      "row_input": "bmi",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "mean_platelet_volume_fL",
+      "parent": "diabetes",
+      "values": [
+        "diabetes_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.7397,
+      "query_rr": 1.1167,
+      "pct_error": 59.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1348,
+      "row_output": "mean_platelet_volume_fL",
+      "row_input": "diabetes",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "mean_platelet_volume_fL",
+      "parent": "fasting_glucose_mg_dL",
+      "values": [
+        "fasting_glucose_mg_dL_high_above_100"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8666,
+      "query_rr": 1.0953,
+      "pct_error": 41.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1349,
+      "row_output": "mean_platelet_volume_fL",
+      "row_input": "fasting_glucose_mg_dL",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "platelet_count_si",
+      "parent": "non_alcoholic_steatohepatitis",
+      "values": [
+        "non_alcoholic_steatohepatitis_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4508,
+      "query_rr": 1.4461,
+      "pct_error": 0.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1357,
+      "row_output": "platelet_count_si",
+      "row_input": "non_alcoholic_steatohepatitis",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "platelet_count_si",
+      "parent": "non_alcoholic_fatty_liver_disease",
+      "values": [
+        "non_alcoholic_fatty_liver_disease_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.7043,
+      "query_rr": 1.3941,
+      "pct_error": 18.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1358,
+      "row_output": "platelet_count_si",
+      "row_input": "non_alcoholic_fatty_liver_disease",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "platelet_count_si",
+      "parent": "fasting_glucose_mg_dL",
+      "values": [
+        "fasting_glucose_mg_dL_high_above_100"
+      ],
+      "n_values": 1,
+      "study_rr": 1.9596,
+      "query_rr": 1.0358,
+      "pct_error": 47.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1360,
+      "row_output": "platelet_count_si",
+      "row_input": "fasting_glucose_mg_dL",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "osteoporosis",
+      "parent": "vitamin_d_supplementation_mcg",
+      "values": [
+        "vitamin_d_supplementation_mcg_quartile_4_above_25.00"
+      ],
+      "n_values": 1,
+      "study_rr": 0.7,
+      "query_rr": 0.7457,
+      "pct_error": 6.5,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1435,
+      "row_output": "osteoporosis",
+      "row_input": "vitamin_d_supplementation_mcg",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "hip_fracture",
+      "parent": "vitamin_d_supplementation_mcg",
+      "values": [
+        "vitamin_d_supplementation_mcg_quartile_4_above_25.00"
+      ],
+      "n_values": 1,
+      "study_rr": 0.7,
+      "query_rr": 0.8665,
+      "pct_error": 23.8,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1438,
+      "row_output": "hip_fracture",
+      "row_input": "vitamin_d_supplementation_mcg",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fracture_risk",
+      "parent": "how_healthy_diet",
+      "values": [
+        "how_healthy_diet_excellent"
+      ],
+      "n_values": 1,
+      "study_rr": 0.6748,
+      "query_rr": 0.6949,
+      "pct_error": 3.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1445,
+      "row_output": "fracture_risk",
+      "row_input": "how_healthy_diet",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fracture_risk",
+      "parent": "eat_red_meat",
+      "values": [
+        "eat_red_meat_no"
+      ],
+      "n_values": 1,
+      "study_rr": 0.804,
+      "query_rr": 0.8126,
+      "pct_error": 1.1,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1446,
+      "row_output": "fracture_risk",
+      "row_input": "eat_red_meat",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fracture_risk",
+      "parent": "daily_servings_milk",
+      "values": [
+        "daily_servings_milk_3_or_more"
+      ],
+      "n_values": 1,
+      "study_rr": 0.6277,
+      "query_rr": 0.6552,
+      "pct_error": 4.4,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1447,
+      "row_output": "fracture_risk",
+      "row_input": "daily_servings_milk",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "hallmark_10_altered_intercellular_communication_immune_age",
+      "values": [
+        "hallmark_10_altered_intercellular_communication_immune_age_older_5_or_more_years"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0473,
+      "query_rr": 1.0214,
+      "pct_error": 2.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1450,
+      "row_output": "acm_hallmarks",
+      "row_input": "hallmark_10_altered_intercellular_communication_immune_age",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "values": [
+        "hallmark_2_telomere_attrition_telomere_length_rtl_below_.93"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2293,
+      "query_rr": 1.027,
+      "pct_error": 16.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1451,
+      "row_output": "acm_hallmarks",
+      "row_input": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "hallmark_3_epigenetic_alterations_epigenetic_age",
+      "values": [
+        "hallmark_3_epigenetic_alterations_epigenetic_age_older_5_or_more_years"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4307,
+      "query_rr": 1.0239,
+      "pct_error": 28.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1452,
+      "row_output": "acm_hallmarks",
+      "row_input": "hallmark_3_epigenetic_alterations_epigenetic_age",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "tnf_alpha_pg_mL",
+      "values": [
+        "tnf_alpha_pg_mL_high_above_7.23"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0393,
+      "query_rr": 1.1165,
+      "pct_error": 7.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1455,
+      "row_output": "all_cause_mortality",
+      "row_input": "tnf_alpha_pg_mL",
+      "row_type": "all_cause_mortality",
+      "target_source": "output"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "interleukin6_1beta_pg_mL",
+      "values": [
+        "interleukin6_1beta_pg_mL_high_above_10"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0577,
+      "query_rr": 1.0422,
+      "pct_error": 1.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1456,
+      "row_output": "all_cause_mortality",
+      "row_input": "interleukin6_1beta_pg_mL",
+      "row_type": "all_cause_mortality",
+      "target_source": "output"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "interleukin6_pg_mL",
+      "values": [
+        "interleukin6_pg_mL_quartile_4_above_2.28"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0833,
+      "query_rr": 1.083,
+      "pct_error": 0.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1457,
+      "row_output": "all_cause_mortality",
+      "row_input": "interleukin6_pg_mL",
+      "row_type": "all_cause_mortality",
+      "target_source": "output"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "mic1_gdf15_pg_ml",
+      "values": [
+        "mic1_gdf15_pg_ml_high_2764_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 2.1121,
+      "query_rr": 1.0208,
+      "pct_error": 51.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1460,
+      "row_output": "acm_metabolism",
+      "row_input": "mic1_gdf15_pg_ml",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "IGF1_ng_ml",
+      "values": [
+        "IGF1_ng_ml_quartile_3_above_170_to_210_and_below"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2077,
+      "query_rr": 1.0206,
+      "pct_error": 15.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1461,
+      "row_output": "acm_metabolism",
+      "row_input": "IGF1_ng_ml",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "IGF1_ng_ml",
+      "values": [
+        "IGF1_ng_ml_quartile_4_above_210"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2957,
+      "query_rr": 1.0218,
+      "pct_error": 21.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1462,
+      "row_output": "acm_metabolism",
+      "row_input": "IGF1_ng_ml",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "bmi",
+      "values": [
+        "bmi_over_30_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2753,
+      "query_rr": 1.0263,
+      "pct_error": 19.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1463,
+      "row_output": "acm_metabolism",
+      "row_input": "bmi",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "a1c",
+      "values": [
+        "a1c_prediabetes_5.7_to_6.4",
+        "a1c_diabetes_6.5_and_above"
+      ],
+      "n_values": 2,
+      "study_rr": 1.32,
+      "query_rr": 1.0207,
+      "pct_error": 22.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1464,
+      "row_output": "acm_metabolism",
+      "row_input": "a1c",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "age_at_menarche",
+      "values": [
+        "age_at_menarche_younger_than_10"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2132,
+      "query_rr": 1.0248,
+      "pct_error": 15.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1467,
+      "row_output": "acm_state",
+      "row_input": "age_at_menarche",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "vitamin_d_nmol_per_liter",
+      "values": [
+        "vitamin_d_nmol_per_liter_deficiency_under_30"
+      ],
+      "n_values": 1,
+      "study_rr": 1.57,
+      "query_rr": 1.0211,
+      "pct_error": 35.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1468,
+      "row_output": "acm_state",
+      "row_input": "vitamin_d_nmol_per_liter",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "heart_rate_anomaly",
+      "values": [
+        "resting_heart_rate_bpm_very_high_91_and_above"
+      ],
+      "n_values": 1,
+      "study_rr": 1.45,
+      "query_rr": 1.1054,
+      "pct_error": 23.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1474,
+      "row_output": "acm_poor_fitness",
+      "row_input": "heart_rate_anomaly",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "resting_heart_rate_bpm",
+      "values": [
+        "resting_heart_rate_bpm_high_80_to_90",
+        "resting_heart_rate_bpm_very_high_91_and_above"
+      ],
+      "n_values": 2,
+      "study_rr": 1.45,
+      "query_rr": 1.1054,
+      "pct_error": 23.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1475,
+      "row_output": "acm_poor_fitness",
+      "row_input": "resting_heart_rate_bpm",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "vo2max_cardiovascular_fitness",
+      "values": [
+        "vo2max_cardiovascular_fitness_low"
+      ],
+      "n_values": 1,
+      "study_rr": 1.7,
+      "query_rr": 1.0207,
+      "pct_error": 40.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1476,
+      "row_output": "acm_poor_fitness",
+      "row_input": "vo2max_cardiovascular_fitness",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "daily_time_sitting",
+      "values": [
+        "daily_time_sitting_12_or_more_hours"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1592,
+      "query_rr": 1.053,
+      "pct_error": 9.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1477,
+      "row_output": "acm_poor_fitness",
+      "row_input": "daily_time_sitting",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "eat_away_from_home",
+      "values": [
+        "eat_away_from_home_over_7_times_per_week",
+        "eat_away_from_home_4_to_7_times_per_week"
+      ],
+      "n_values": 2,
+      "study_rr": 1.4143,
+      "query_rr": 1.0518,
+      "pct_error": 25.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1482,
+      "row_output": "acm_unhealthy_diet",
+      "row_input": "eat_away_from_home",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "dietary_fiber_gm",
+      "values": [
+        "dietary_fiber_gm_quartile_1_8.20_and_below",
+        "dietary_fiber_gm_quartile_2_above_8.20_to_12.80_and_below"
+      ],
+      "n_values": 2,
+      "study_rr": 1.1905,
+      "query_rr": 1.0229,
+      "pct_error": 14.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1483,
+      "row_output": "acm_unhealthy_diet",
+      "row_input": "dietary_fiber_gm",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "diet_fruits_and_vegetables",
+      "values": [
+        "diet_fruits_and_vegetables_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1111,
+      "query_rr": 1.002,
+      "pct_error": 9.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1484,
+      "row_output": "acm_unhealthy_diet",
+      "row_input": "diet_fruits_and_vegetables",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "vegetarian",
+      "values": [
+        "vegetarian_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0989,
+      "query_rr": 1.0019,
+      "pct_error": 8.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1485,
+      "row_output": "acm_unhealthy_diet",
+      "row_input": "vegetarian",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "insomnia",
+      "values": [
+        "insomnia_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.12,
+      "query_rr": 1.022,
+      "pct_error": 8.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1488,
+      "row_output": "acm_sleep",
+      "row_input": "insomnia",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "long_sleep",
+      "values": [
+        "long_sleep_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.34,
+      "query_rr": 1.0539,
+      "pct_error": 21.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1489,
+      "row_output": "acm_sleep",
+      "row_input": "long_sleep",
+      "row_type": "all_cause_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "all_cause_mortality",
+      "parent": "diabetes",
+      "values": [
+        "diabetes_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1283,
+      "query_rr": 1.1156,
+      "pct_error": 1.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1499,
+      "row_output": "all_cause_mortality",
+      "row_input": "diabetes",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "skin_cancer_non_melanoma",
+      "parent": "hallmark_5_disabled_macroautophagy_nad_atp_ratio",
+      "values": [
+        "hallmark_5_disabled_macroautophagy_nad_atp_ratio_low_below_0.26"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2987,
+      "query_rr": 1.1381,
+      "pct_error": 12.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1528,
+      "row_output": "skin_cancer_non_melanoma",
+      "row_input": "hallmark_5_disabled_macroautophagy_nad_atp_ratio",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "skin_cancer_non_melanoma",
+      "parent": "sunburn_last_year",
+      "values": [
+        "sunburn_last_year_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3957,
+      "query_rr": 1.179,
+      "pct_error": 15.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1529,
+      "row_output": "skin_cancer_non_melanoma",
+      "row_input": "sunburn_last_year",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "melanoma",
+      "parent": "sunburn_last_year",
+      "values": [
+        "sunburn_last_year_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.03,
+      "query_rr": 1.4035,
+      "pct_error": 30.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1532,
+      "row_output": "melanoma",
+      "row_input": "sunburn_last_year",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "melanoma",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8739,
+      "query_rr": 1.6059,
+      "pct_error": 14.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1534,
+      "row_output": "melanoma",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "melanoma",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_25_to_29_overweight"
+      ],
+      "n_values": 1,
+      "study_rr": 1.17,
+      "query_rr": 1.0714,
+      "pct_error": 8.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1535,
+      "row_output": "melanoma",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "leukemia",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8739,
+      "query_rr": 1.1631,
+      "pct_error": 37.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1546,
+      "row_output": "leukemia",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "leukemia",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_25_to_29_overweight"
+      ],
+      "n_values": 1,
+      "study_rr": 1.17,
+      "query_rr": 1.0495,
+      "pct_error": 10.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1547,
+      "row_output": "leukemia",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "myeloma",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5181,
+      "query_rr": 13.8196,
+      "pct_error": 810.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1551,
+      "row_output": "myeloma",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "non_hodgkin_lymphoma",
+      "parent": "glyphosate_based_herbicides",
+      "values": [
+        "glyphosate_based_herbicides_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.41,
+      "query_rr": 1.0417,
+      "pct_error": 26.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1556,
+      "row_output": "non_hodgkin_lymphoma",
+      "row_input": "glyphosate_based_herbicides",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "non_hodgkin_lymphoma",
+      "parent": "phenoxy_herbicide",
+      "values": [
+        "phenoxy_herbicide_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4,
+      "query_rr": 1.3503,
+      "pct_error": 3.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1557,
+      "row_output": "non_hodgkin_lymphoma",
+      "row_input": "phenoxy_herbicide",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "lymphocitic_lymphoma",
+      "parent": "phenoxy_herbicide",
+      "values": [
+        "phenoxy_herbicide_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8,
+      "query_rr": 4.0045,
+      "pct_error": 122.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1561,
+      "row_output": "lymphocitic_lymphoma",
+      "row_input": "phenoxy_herbicide",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "b_cell_lymphoma",
+      "parent": "glyphosate_based_herbicides",
+      "values": [
+        "glyphosate_based_herbicides_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.0,
+      "query_rr": 1.1126,
+      "pct_error": 44.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1565,
+      "row_output": "b_cell_lymphoma",
+      "row_input": "glyphosate_based_herbicides",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "b_cell_lymphoma",
+      "parent": "phenoxy_herbicide",
+      "values": [
+        "phenoxy_herbicide_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8,
+      "query_rr": 1.3491,
+      "pct_error": 25.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1566,
+      "row_output": "b_cell_lymphoma",
+      "row_input": "phenoxy_herbicide",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "diffuse_large_b_cell_lymphoma",
+      "parent": "phenoxy_herbicide",
+      "values": [
+        "phenoxy_herbicide_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.0,
+      "query_rr": 1.5452,
+      "pct_error": 22.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1570,
+      "row_output": "diffuse_large_b_cell_lymphoma",
+      "row_input": "phenoxy_herbicide",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "smoked_100_cigarettes",
+      "values": [
+        "smoked_100_cigarettes_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 5.5,
+      "query_rr": 1.7299,
+      "pct_error": 68.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1579,
+      "row_output": "lc_smoking",
+      "row_input": "smoked_100_cigarettes",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "five_days_smoke_cigarettes",
+      "values": [
+        "five_days_smoke_cigarettes_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 8.43,
+      "query_rr": 1.7299,
+      "pct_error": 79.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1580,
+      "row_output": "lc_smoking",
+      "row_input": "five_days_smoke_cigarettes",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "environmental_or_occupational_pollution_exposure",
+      "values": [
+        "environmental_or_occupational_pollution_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.6694,
+      "query_rr": 1.02,
+      "pct_error": 38.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1602,
+      "row_output": "lc_places_of_exposure",
+      "row_input": "environmental_or_occupational_pollution_exposure",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "environmental_pollution_exposure",
+      "values": [
+        "environmental_pollution_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.9894,
+      "query_rr": 1.02,
+      "pct_error": 48.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1603,
+      "row_output": "lc_places_of_exposure",
+      "row_input": "environmental_pollution_exposure",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "occupational_pollution_exposure",
+      "values": [
+        "occupational_pollution_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4897,
+      "query_rr": 1.02,
+      "pct_error": 31.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1604,
+      "row_output": "lc_places_of_exposure",
+      "row_input": "occupational_pollution_exposure",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "household_pollution",
+      "values": [
+        "household_pollution_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.69,
+      "query_rr": 1.02,
+      "pct_error": 39.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1605,
+      "row_output": "lc_places_of_exposure",
+      "row_input": "household_pollution",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "wood_and_gypsum_paint_exposure",
+      "values": [
+        "wood_and_gypsum_paint_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2922,
+      "query_rr": 1.02,
+      "pct_error": 21.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1608,
+      "row_output": "lc_wood_toxin_exposure",
+      "row_input": "wood_and_gypsum_paint_exposure",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "wood_varnish_stain_exposure",
+      "values": [
+        "wood_varnish_stain_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.581,
+      "query_rr": 1.02,
+      "pct_error": 35.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1609,
+      "row_output": "lc_wood_toxin_exposure",
+      "row_input": "wood_varnish_stain_exposure",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "painter_occupation",
+      "values": [
+        "painter_occupation_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2998,
+      "query_rr": 1.02,
+      "pct_error": 21.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1614,
+      "row_output": "lc_industrial_exposure",
+      "row_input": "painter_occupation",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "diesel_exhaust_exposure",
+      "values": [
+        "diesel_exhaust_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.47,
+      "query_rr": 1.02,
+      "pct_error": 30.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1615,
+      "row_output": "lc_industrial_exposure",
+      "row_input": "diesel_exhaust_exposure",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "metal_coatings_exposure",
+      "values": [
+        "metal_coatings_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0999,
+      "query_rr": 1.02,
+      "pct_error": 7.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1616,
+      "row_output": "lc_industrial_exposure",
+      "row_input": "metal_coatings_exposure",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "longer_menstrual_cycle_over_33_days",
+      "values": [
+        "longer_menstrual_cycle_over_33_days_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3889,
+      "query_rr": 1.0346,
+      "pct_error": 25.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1622,
+      "row_output": "lc_menstral",
+      "row_input": "longer_menstrual_cycle_over_33_days",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "age_at_menarche",
+      "values": [
+        "age_at_menarche_younger_than_10"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2048,
+      "query_rr": 1.0346,
+      "pct_error": 14.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1623,
+      "row_output": "lc_menstral",
+      "row_input": "age_at_menarche",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "interleukin6_1beta_pg_mL",
+      "values": [
+        "interleukin6_1beta_pg_mL_high_above_10"
+      ],
+      "n_values": 1,
+      "study_rr": 2.9753,
+      "query_rr": 1.0346,
+      "pct_error": 65.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1626,
+      "row_output": "lc_biomarkers",
+      "row_input": "interleukin6_1beta_pg_mL",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "c_reactive_protein_mg_L",
+      "values": [
+        "c_reactive_protein_mg_L_high_above_2"
+      ],
+      "n_values": 1,
+      "study_rr": 2.0299,
+      "query_rr": 1.0347,
+      "pct_error": 49.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1627,
+      "row_output": "lc_biomarkers",
+      "row_input": "c_reactive_protein_mg_L",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "fibrinogen_mg_dL",
+      "values": [
+        "fibrinogen_mg_dL_quartile_4_above_289"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4639,
+      "query_rr": 1.0347,
+      "pct_error": 29.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1628,
+      "row_output": "lc_biomarkers",
+      "row_input": "fibrinogen_mg_dL",
+      "row_type": "lung_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "lung_cancer",
+      "parent": "asbestos_exposure",
+      "values": [
+        "asbestos_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.4,
+      "query_rr": 2.358,
+      "pct_error": 1.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1635,
+      "row_output": "lung_cancer",
+      "row_input": "asbestos_exposure",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "oral_cancer",
+      "parent": "smokeless_tobacco_use",
+      "values": [
+        "smokeless_tobacco_use_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 5.5421,
+      "query_rr": 3.3778,
+      "pct_error": 39.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1641,
+      "row_output": "oral_cancer",
+      "row_input": "smokeless_tobacco_use",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "pharyngeal_cancer",
+      "parent": "smokeless_tobacco_use",
+      "values": [
+        "smokeless_tobacco_use_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.6871,
+      "query_rr": 1.6265,
+      "pct_error": 39.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1644,
+      "row_output": "pharyngeal_cancer",
+      "row_input": "smokeless_tobacco_use",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "kidney_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 3.2242,
+      "query_rr": 2.0642,
+      "pct_error": 36.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1656,
+      "row_output": "kidney_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "gallbladder_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 6.3913,
+      "query_rr": 10.6438,
+      "pct_error": 66.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1662,
+      "row_output": "gallbladder_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "liver_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 2.3642,
+      "query_rr": 2.7027,
+      "pct_error": 14.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1667,
+      "row_output": "liver_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "laryngeal_cancer",
+      "parent": "smokeless_tobacco_use",
+      "values": [
+        "smokeless_tobacco_use_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.8387,
+      "query_rr": 2.0162,
+      "pct_error": 29.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1678,
+      "row_output": "laryngeal_cancer",
+      "row_input": "smokeless_tobacco_use",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "oesophageal_adenocarcinoma",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 5.3379,
+      "query_rr": 4.8553,
+      "pct_error": 9.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1683,
+      "row_output": "oesophageal_adenocarcinoma",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "oesophageal_cancer",
+      "parent": "smokeless_tobacco_use",
+      "values": [
+        "smokeless_tobacco_use_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 3.1678,
+      "query_rr": 1.8196,
+      "pct_error": 42.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1687,
+      "row_output": "oesophageal_cancer",
+      "row_input": "smokeless_tobacco_use",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "stomach_cancer",
+      "parent": "smokeless_tobacco_use",
+      "values": [
+        "smokeless_tobacco_use_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2599,
+      "query_rr": 1.0,
+      "pct_error": 20.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 1689,
+      "row_output": "stomach_cancer",
+      "row_input": "smokeless_tobacco_use",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "colon_cancer",
+      "parent": "c_reactive_protein_mg_L",
+      "values": [
+        "c_reactive_protein_mg_L_high_above_2"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3383,
+      "query_rr": 1.2434,
+      "pct_error": 7.1,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1693,
+      "row_output": "colon_cancer",
+      "row_input": "c_reactive_protein_mg_L",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "colon_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 2.3642,
+      "query_rr": 1.2433,
+      "pct_error": 47.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1695,
+      "row_output": "colon_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "colon_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_25_to_29_overweight"
+      ],
+      "n_values": 1,
+      "study_rr": 1.24,
+      "query_rr": 1.2433,
+      "pct_error": 0.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1696,
+      "row_output": "colon_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "colon_cancer",
+      "parent": "physical_activity",
+      "values": [
+        "physical_activity_low"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3158,
+      "query_rr": 1.1858,
+      "pct_error": 9.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1697,
+      "row_output": "colon_cancer",
+      "row_input": "physical_activity",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "aliphatic_alicyclic_hydrocarbon_exposure",
+      "values": [
+        "aliphatic_alicyclic_hydrocarbon_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3,
+      "query_rr": 0.9326,
+      "pct_error": 28.3,
+      "direction_match": false,
+      "study_dir": "UP",
+      "query_dir": "DOWN",
+      "row_index": 1724,
+      "row_output": "chemical_pc_risk",
+      "row_input": "aliphatic_alicyclic_hydrocarbon_exposure",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "polycyclic_aromatic_hydrocarbons_exposure",
+      "values": [
+        "polycyclic_aromatic_hydrocarbons_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5,
+      "query_rr": 0.9326,
+      "pct_error": 37.8,
+      "direction_match": false,
+      "study_dir": "UP",
+      "query_dir": "DOWN",
+      "row_index": 1725,
+      "row_output": "chemical_pc_risk",
+      "row_input": "polycyclic_aromatic_hydrocarbons_exposure",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "chlorinated_hydrocarbon_exposure",
+      "values": [
+        "chlorinated_hydrocarbon_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4,
+      "query_rr": 0.9326,
+      "pct_error": 33.4,
+      "direction_match": false,
+      "study_dir": "UP",
+      "query_dir": "DOWN",
+      "row_index": 1726,
+      "row_output": "chemical_pc_risk",
+      "row_input": "chlorinated_hydrocarbon_exposure",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "organochlorine_insecticides_exposure",
+      "values": [
+        "organochlorine_insecticides_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5,
+      "query_rr": 0.9326,
+      "pct_error": 37.8,
+      "direction_match": false,
+      "study_dir": "UP",
+      "query_dir": "DOWN",
+      "row_index": 1727,
+      "row_output": "chemical_pc_risk",
+      "row_input": "organochlorine_insecticides_exposure",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "chromium_ug_L",
+      "values": [
+        "chromium_ug_L_quartile_4_above_0.42"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4,
+      "query_rr": 0.9326,
+      "pct_error": 33.4,
+      "direction_match": false,
+      "study_dir": "UP",
+      "query_dir": "DOWN",
+      "row_index": 1730,
+      "row_output": "chemical_pc_risk",
+      "row_input": "chromium_ug_L",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "nickel_exposure",
+      "values": [
+        "nickel_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.7,
+      "query_rr": 0.9326,
+      "pct_error": 45.1,
+      "direction_match": false,
+      "study_dir": "UP",
+      "query_dir": "DOWN",
+      "row_index": 1731,
+      "row_output": "chemical_pc_risk",
+      "row_input": "nickel_exposure",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "silica_dust_exposure",
+      "values": [
+        "silica_dust_exposure_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4,
+      "query_rr": 0.9326,
+      "pct_error": 33.4,
+      "direction_match": false,
+      "study_dir": "UP",
+      "query_dir": "DOWN",
+      "row_index": 1732,
+      "row_output": "chemical_pc_risk",
+      "row_input": "silica_dust_exposure",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "bmi",
+      "values": [
+        "bmi_over_30_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4049,
+      "query_rr": 1.7565,
+      "pct_error": 25.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1735,
+      "row_output": "bmi_pc_risk",
+      "row_input": "bmi",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5735,
+      "query_rr": 1.7565,
+      "pct_error": 11.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1736,
+      "row_output": "bmi_pc_risk",
+      "row_input": "bmi_naive",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "pancreatic_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_25_to_29_overweight"
+      ],
+      "n_values": 1,
+      "study_rr": 1.12,
+      "query_rr": 1.7565,
+      "pct_error": 56.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1737,
+      "row_output": "bmi_pc_risk",
+      "row_input": "bmi_naive",
+      "row_type": "pancreatic_cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "thyroid_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 3.129,
+      "query_rr": 2.3087,
+      "pct_error": 26.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1750,
+      "row_output": "thyroid_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "thyroid_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_25_to_29_overweight"
+      ],
+      "n_values": 1,
+      "study_rr": 1.33,
+      "query_rr": 1.2541,
+      "pct_error": 5.7,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1751,
+      "row_output": "thyroid_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "breast_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 1.5735,
+      "query_rr": 1.4906,
+      "pct_error": 5.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1756,
+      "row_output": "breast_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "breast_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_25_to_29_overweight"
+      ],
+      "n_values": 1,
+      "study_rr": 1.12,
+      "query_rr": 1.062,
+      "pct_error": 5.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1757,
+      "row_output": "breast_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "breast_cancer",
+      "parent": "c_reactive_protein_mg_L",
+      "values": [
+        "c_reactive_protein_mg_L_high_above_2"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2276,
+      "query_rr": 1.1626,
+      "pct_error": 5.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1758,
+      "row_output": "breast_cancer",
+      "row_input": "c_reactive_protein_mg_L",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "endometrium_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_40_and_over_severe_obesity"
+      ],
+      "n_values": 1,
+      "study_rr": 6.3913,
+      "query_rr": 4.5853,
+      "pct_error": 28.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1768,
+      "row_output": "endometrium_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "endometrium_cancer",
+      "parent": "bmi_naive",
+      "values": [
+        "bmi_25_to_29_overweight"
+      ],
+      "n_values": 1,
+      "study_rr": 1.59,
+      "query_rr": 1.1506,
+      "pct_error": 27.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1769,
+      "row_output": "endometrium_cancer",
+      "row_input": "bmi_naive",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "ovarian_cancer",
+      "parent": "c_reactive_protein_mg_L",
+      "values": [
+        "c_reactive_protein_mg_L_high_above_2"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4093,
+      "query_rr": 1.0377,
+      "pct_error": 26.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1772,
+      "row_output": "ovarian_cancer",
+      "row_input": "c_reactive_protein_mg_L",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "prostate_cancer",
+      "parent": "c_reactive_protein_mg_L",
+      "values": [
+        "c_reactive_protein_mg_L_high_above_2"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0896,
+      "query_rr": 1.0846,
+      "pct_error": 0.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1775,
+      "row_output": "prostate_cancer",
+      "row_input": "c_reactive_protein_mg_L",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "prostate_cancer",
+      "parent": "IGF1_ng_ml",
+      "values": [
+        "IGF1_ng_ml_quartile_4_above_210"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2869,
+      "query_rr": 1.1775,
+      "pct_error": 8.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1776,
+      "row_output": "prostate_cancer",
+      "row_input": "IGF1_ng_ml",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "cancer",
+      "parent": "c_reactive_protein_mg_L",
+      "values": [
+        "c_reactive_protein_mg_L_high_above_2"
+      ],
+      "n_values": 1,
+      "study_rr": 1.35,
+      "query_rr": 1.1228,
+      "pct_error": 16.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1796,
+      "row_output": "cancer_biomarkers",
+      "row_input": "c_reactive_protein_mg_L",
+      "row_type": "cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer",
+      "parent": "fibrinogen_mg_dL",
+      "values": [
+        "fibrinogen_mg_dL_quartile_4_above_289"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1035,
+      "query_rr": 1.0951,
+      "pct_error": 0.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1797,
+      "row_output": "cancer_biomarkers",
+      "row_input": "fibrinogen_mg_dL",
+      "row_type": "cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer",
+      "parent": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "values": [
+        "hallmark_2_telomere_attrition_telomere_length_rtl_below_.93"
+      ],
+      "n_values": 1,
+      "study_rr": 1.2704,
+      "query_rr": 1.092,
+      "pct_error": 14.0,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1798,
+      "row_output": "cancer_biomarkers",
+      "row_input": "hallmark_2_telomere_attrition_telomere_length_rtl",
+      "row_type": "cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer",
+      "parent": "diet_fruits_and_vegetables",
+      "values": [
+        "diet_fruits_and_vegetables_no"
+      ],
+      "n_values": 1,
+      "study_rr": 1.0309,
+      "query_rr": 1.0223,
+      "pct_error": 0.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1803,
+      "row_output": "cancer_behaviors",
+      "row_input": "diet_fruits_and_vegetables",
+      "row_type": "cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer",
+      "parent": "sedentariness",
+      "values": [
+        "sedentariness_high"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1239,
+      "query_rr": 1.0284,
+      "pct_error": 8.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1804,
+      "row_output": "cancer_behaviors",
+      "row_input": "sedentariness",
+      "row_type": "cancer",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer_mortality",
+      "parent": "vegetarian",
+      "values": [
+        "vegetarian_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 0.82,
+      "query_rr": 0.8711,
+      "pct_error": 6.2,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1813,
+      "row_output": "prevent_cancer_mortality",
+      "row_input": "vegetarian",
+      "row_type": "cancer_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer_mortality",
+      "parent": "dietary_fiber_gm",
+      "values": [
+        "dietary_fiber_gm_quartile_4_above_18.90"
+      ],
+      "n_values": 1,
+      "study_rr": 0.8373,
+      "query_rr": 0.8711,
+      "pct_error": 4.0,
+      "direction_match": true,
+      "study_dir": "DOWN",
+      "query_dir": "DOWN",
+      "row_index": 1814,
+      "row_output": "prevent_cancer_mortality",
+      "row_input": "dietary_fiber_gm",
+      "row_type": "cancer_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer_mortality",
+      "parent": "tumor_matreotype",
+      "values": [
+        "tumor_matreotype_positive"
+      ],
+      "n_values": 1,
+      "study_rr": 1.3023,
+      "query_rr": 1.0372,
+      "pct_error": 20.4,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1817,
+      "row_output": "cause_cancer_mortality",
+      "row_input": "tumor_matreotype",
+      "row_type": "cancer_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer_mortality",
+      "parent": "interleukin6_1beta_pg_mL",
+      "values": [
+        "interleukin6_1beta_pg_mL_high_above_10_not"
+      ],
+      "n_values": 1,
+      "study_rr": 2.0132,
+      "query_rr": 1.0372,
+      "pct_error": 48.5,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1818,
+      "row_output": "cause_cancer_mortality",
+      "row_input": "interleukin6_1beta_pg_mL",
+      "row_type": "cancer_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer_mortality",
+      "parent": "eat_away_from_home",
+      "values": [
+        "eat_away_from_home_over_7_times_per_week",
+        "eat_away_from_home_4_to_7_times_per_week"
+      ],
+      "n_values": 2,
+      "study_rr": 1.5555,
+      "query_rr": 1.0372,
+      "pct_error": 33.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1819,
+      "row_output": "cause_cancer_mortality",
+      "row_input": "eat_away_from_home",
+      "row_type": "cancer_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer_mortality",
+      "parent": "sedentariness",
+      "values": [
+        "sedentariness_high"
+      ],
+      "n_values": 1,
+      "study_rr": 1.1646,
+      "query_rr": 1.0372,
+      "pct_error": 10.9,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1820,
+      "row_output": "cause_cancer_mortality",
+      "row_input": "sedentariness",
+      "row_type": "cancer_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "cancer_mortality",
+      "parent": "long_sleep",
+      "values": [
+        "long_sleep_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.21,
+      "query_rr": 1.0372,
+      "pct_error": 14.3,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 1821,
+      "row_output": "cause_cancer_mortality",
+      "row_input": "long_sleep",
+      "row_type": "cancer_mortality",
+      "target_source": "Type"
+    },
+    {
+      "target": "diabetes_healthy_diet",
+      "parent": "diabetes_physical_activity",
+      "values": [
+        "physical_activity_high"
+      ],
+      "n_values": 1,
+      "study_rr": 1.4,
+      "query_rr": 1.0,
+      "pct_error": 28.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "NONE",
+      "row_index": 2403,
+      "row_output": "diabetes_healthy_diet",
+      "row_input": "diabetes_physical_activity",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "diabetes_poor_sleep",
+      "parent": "diabetes_physical_activity",
+      "values": [
+        "physical_activity_low"
+      ],
+      "n_values": 1,
+      "study_rr": 1.8,
+      "query_rr": 1.0158,
+      "pct_error": 43.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 2406,
+      "row_output": "diabetes_poor_sleep",
+      "row_input": "diabetes_physical_activity",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "crp_elevated_concept",
+      "parent": "bmi_obesity_concept",
+      "values": [
+        "bmi_obesity_concept_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.3,
+      "query_rr": 1.1827,
+      "pct_error": 48.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 2413,
+      "row_output": "crp_elevated_concept",
+      "row_input": "bmi_obesity_concept",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "strength_concept",
+      "parent": "aerobic_volume_concept",
+      "values": [
+        "aerobic_volume_concept_wrapped_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.01,
+      "query_rr": 1.0213,
+      "pct_error": 49.2,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 2425,
+      "row_output": "strength_concept",
+      "row_input": "aerobic_volume_concept",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fitness_concept",
+      "parent": "aerobic_volume_concept",
+      "values": [
+        "aerobic_volume_concept_wrapped_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 2.5,
+      "query_rr": 1.0309,
+      "pct_error": 58.8,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 2428,
+      "row_output": "fitness_concept",
+      "row_input": "aerobic_volume_concept",
+      "row_type": NaN,
+      "target_source": "output"
+    },
+    {
+      "target": "fitness_concept",
+      "parent": "strength_concept",
+      "values": [
+        "strength_concept_wrapped_yes"
+      ],
+      "n_values": 1,
+      "study_rr": 1.6,
+      "query_rr": 1.1582,
+      "pct_error": 27.6,
+      "direction_match": true,
+      "study_dir": "UP",
+      "query_dir": "UP",
+      "row_index": 2429,
+      "row_output": "fitness_concept",
+      "row_input": "strength_concept",
+      "row_type": NaN,
+      "target_source": "output"
+    }
+  ]
+}

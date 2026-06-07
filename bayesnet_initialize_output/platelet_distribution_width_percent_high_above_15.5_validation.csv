@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+platelet_distribution_width_percent_high_above_15.5,diabetes,diabetes_yes,relative_risk,0.0009765625,4.667262520074525,3.4975863556453324,0.0019565838265631946,"[np.float64(0.130292547972181), np.float64(0.1342057156253074)]",0.0015271719220205627,0.06905066397713089
+platelet_distribution_width_percent_high_above_15.5,non_alcoholic_fatty_liver_disease,non_alcoholic_fatty_liver_disease_yes,relative_risk,0.0009765625,2.553594998575746,1.3426283359502127,0.0019565838265631946,"[np.float64(0.08557591411588447), np.float64(0.08948908176901085)]",0.0015271719220205627,0.057079630894242506

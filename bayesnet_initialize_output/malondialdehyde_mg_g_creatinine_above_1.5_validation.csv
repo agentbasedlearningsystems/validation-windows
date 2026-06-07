@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+malondialdehyde_mg_g_creatinine_above_1.5,probiotic_supplementation,probiotic_supplementation_no,relative_risk,0.0009765625,2.9336160868905736,1.2641892182871273,0.0019565838265631946,"[np.float64(0.003096707736381456), np.float64(0.007009875389507845)]",0.0015271719220205627,1.1358667350694036

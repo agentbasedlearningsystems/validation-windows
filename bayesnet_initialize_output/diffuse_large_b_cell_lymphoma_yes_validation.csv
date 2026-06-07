@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+diffuse_large_b_cell_lymphoma_yes,b_cell_lymphoma,b_cell_lymphoma_yes,specificity,0.25,0.9972349122385189,0.05,0.5008854596001778,"[0.0, np.float64(0.9008854596001792)]",0.37585972979353505,1.2487511683648294
+diffuse_large_b_cell_lymphoma_yes,phenoxy_herbicide,phenoxy_herbicide_yes,relative_risk,0.25,2.0,0.8999999999999999,0.5008854596001778,"[0.0, np.float64(0.5043024967947726)]",0.37585972979353505,293.16945123834546

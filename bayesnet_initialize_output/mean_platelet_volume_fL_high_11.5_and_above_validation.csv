@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+mean_platelet_volume_fL_high_11.5_and_above,inflammatory_bowel_disease,inflammatory_bowel_disease_yes,relative_risk,0.5,0.22387233872620108,0.09371389403297986,1.0017709192003554,"[0.0, 1.0]",0.6729049923088593,453.328220019119
+mean_platelet_volume_fL_high_11.5_and_above,mean_platelet_volume_fL_naive,mean_platelet_volume_fL_high_11.5_and_above,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554

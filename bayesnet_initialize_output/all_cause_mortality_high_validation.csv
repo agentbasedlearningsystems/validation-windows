@@ -1,0 +1,8 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+all_cause_mortality_high,cancer_mortality,cancer_mortality_yes,specificity,0.5,1.0,0.706557945521441,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+all_cause_mortality_high,cardiovascular_mortality,cardiovascular_mortality_yes,specificity,0.5,1.0,0.6059901584718509,1.0017709192003554,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+all_cause_mortality_high,lung_disease_mortality,lung_disease_mortality_yes,specificity,0.5,1.0,0.5639846743295023,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+all_cause_mortality_high,acm_factors,acm_factors_yes,relative_risk,0.5,2.6975554726179136,0.15478961032066074,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,6.214268336681014
+all_cause_mortality_high,acm_inflammation_extended,acm_inflammation_extended_yes,relative_risk,0.5,1.177195637296893,0.05634279371244655,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,2.5592700683811405
+all_cause_mortality_high,frailty,frailty_yes,relative_risk,0.5,2.0,0.30000000000000004,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,2.4513501217502247
+all_cause_mortality_high,vitamin_d_nmol_per_liter,vitamin_d_nmol_per_liter_deficiency_under_30,relative_risk,0.5,1.57,0.19999999999999996,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,2.451797112250353

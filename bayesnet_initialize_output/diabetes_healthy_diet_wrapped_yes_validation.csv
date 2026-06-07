@@ -1,0 +1,4 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+diabetes_healthy_diet_wrapped_yes,diabetes_physical_activity,physical_activity_low,relative_risk,0.125,1.36,0.1199999999999999,0.24945939255048408,"[np.float64(0.702720926550983), 1.0]",0.1935400828205757,0.35630307312884635
+diabetes_healthy_diet_wrapped_yes,diabetes_physical_activity,physical_activity_high,relative_risk,0.125,1.4,0.25,0.06236484813762102,"[np.float64(0.9178207744668302), 1.0]",0.1935400828205757,0.08907576828221164
+diabetes_healthy_diet_wrapped_yes,original_diabetes_healthy_diet,healthy_diet_yes,specificity,0.125,1.0,0.05,0.24945939255048408,"[np.float64(0.7505406074495159), 1.0]",0.1935400828205757,0.249459392550484

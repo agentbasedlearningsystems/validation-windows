@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+metabolic_syndrome_yes,age_at_menarche,age_at_menarche_younger_than_10,relative_risk,0.0009765625,1.62,0.21999999999999997,0.0019565838265631946,"[np.float64(0.6652294379782464), np.float64(0.6691426056313727)]",0.0015271719220205627,0.004750797671776885
+metabolic_syndrome_yes,five_days_smoke_cigarettes,five_days_smoke_cigarettes_yes,relative_risk,0.0009765625,1.26,0.15999999999999992,0.0019565838265631946,"[np.float64(0.496761618287542), np.float64(0.5006747859406684)]",0.0015271719220205627,0.004943263773046436

@@ -1,0 +1,374 @@
+{
+  "condition": "cycle12_no_df",
+  "study_rr_summary": {
+    "total": 447,
+    "risk": 378,
+    "protective": 69
+  },
+  "calibration": {
+    "n_nodes": 287,
+    "nan_count": 0,
+    "mae": 0.0007,
+    "median_pct_diff": 0.0,
+    "over_5pct": 9,
+    "over_10pct": 5
+  },
+  "evidence": {
+    "correct_direction": 79,
+    "wrong_direction": 7,
+    "no_change": 214,
+    "responsive": 86,
+    "total": 300,
+    "accuracy_overall_pct": 26.3,
+    "accuracy_responsive_pct": 91.9,
+    "responsive_pct": 28.7,
+    "_note": "accuracy_overall_pct counts no-change as failure. accuracy_responsive_pct is the correct direction rate among pairs where leaf evidence actually reached the disease. Many no-change pairs are expected \u2014 not every scenario has a causal path to every disease."
+  },
+  "windows": {
+    "mean": 0.217,
+    "median": 0.0156,
+    "max": 1.0,
+    "over_005": 158,
+    "over_010": 158,
+    "over_025": 113,
+    "over_050": 3,
+    "at_max_1": 3,
+    "widest_20": [
+      {
+        "condition": "diabetes_healthy_diet_wrapped_yes",
+        "variable": "diabetes_physical_activity",
+        "value": "physical_activity_low",
+        "statistic": "relative_risk",
+        "window": 1.0,
+        "mean": 0.735,
+        "ci95": 0.065,
+        "solver_ci": [
+          0.6699999999999999,
+          0.8
+        ],
+        "coverage": 0.95
+      },
+      {
+        "condition": "diabetes_healthy_diet_wrapped_yes",
+        "variable": "diabetes_physical_activity",
+        "value": "physical_activity_high",
+        "statistic": "relative_risk",
+        "window": 1.0,
+        "mean": 1.4,
+        "ci95": 0.25,
+        "solver_ci": [
+          1.15,
+          1.65
+        ],
+        "coverage": 0.95
+      },
+      {
+        "condition": "diabetes_healthy_diet_wrapped_yes",
+        "variable": "original_diabetes_healthy_diet",
+        "value": "healthy_diet_yes",
+        "statistic": "specificity",
+        "window": 1.0,
+        "mean": 1.0,
+        "ci95": 0.05,
+        "solver_ci": [
+          0.95,
+          1.05
+        ],
+        "coverage": 0.95
+      },
+      {
+        "condition": "albumin_g_dL_low_below_3.5",
+        "variable": "albumin_g_dL_naive",
+        "value": "albumin_g_dL_low_below_3.5",
+        "statistic": "specificity",
+        "window": 0.5,
+        "mean": 1.0,
+        "ci95": 0.05,
+        "solver_ci": [
+          0.975,
+          1.025
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "albumin_g_dL_low_below_3.5",
+        "variable": "frailty",
+        "value": "frailty_yes",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 1.767212599533463,
+        "ci95": 0.3806215555218697,
+        "solver_ci": [
+          1.5769018217725281,
+          1.957523377294398
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "aliphatic_alicyclic_hydrocarbon_exposure_yes",
+        "variable": "polycyclic_aromatic_hydrocarbons_exposure",
+        "value": "polycyclic_aromatic_hydrocarbons_exposure_yes",
+        "statistic": "specificity",
+        "window": 0.5,
+        "mean": 1.0,
+        "ci95": -3.670454545454552,
+        "solver_ci": [
+          -0.835227272727276,
+          2.835227272727276
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "all_cause_mortality_high",
+        "variable": "tnf_alpha_pg_mL",
+        "value": "tnf_alpha_pg_mL_high_above_7.23",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 1.039269756712849,
+        "ci95": 0.0444505571464615,
+        "solver_ci": [
+          1.0170444781396184,
+          1.0614950352860797
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "all_cause_mortality_high",
+        "variable": "interleukin6_1beta_pg_mL",
+        "value": "interleukin6_1beta_pg_mL_high_above_10",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 1.057723720372254,
+        "ci95": 0.101236799230404,
+        "solver_ci": [
+          1.007105320757052,
+          1.1083421199874561
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "all_cause_mortality_high",
+        "variable": "interleukin6_pg_mL",
+        "value": "interleukin6_pg_mL_quartile_4_above_2.28",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 1.083312419274546,
+        "ci95": 0.0393952923455955,
+        "solver_ci": [
+          1.0636147731017482,
+          1.1030100654473438
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "all_cause_mortality_high",
+        "variable": "diabetes",
+        "value": "diabetes_yes",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 1.128271042920951,
+        "ci95": 0.0136295723844261,
+        "solver_ci": [
+          1.121456256728738,
+          1.135085829113164
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "all_cause_mortality_high",
+        "variable": "cancer_mortality",
+        "value": "cancer_mortality_yes",
+        "statistic": "specificity",
+        "window": 0.5,
+        "mean": 1.0,
+        "ci95": 0.706557945521441,
+        "solver_ci": [
+          0.6467210272392795,
+          1.3532789727607204
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "all_cause_mortality_high",
+        "variable": "cardiovascular_mortality",
+        "value": "cardiovascular_mortality_yes",
+        "statistic": "specificity",
+        "window": 0.5,
+        "mean": 1.0,
+        "ci95": 0.6059901584718509,
+        "solver_ci": [
+          0.6970049207640745,
+          1.3029950792359255
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "all_cause_mortality_high",
+        "variable": "lung_disease_mortality",
+        "value": "lung_disease_mortality_yes",
+        "statistic": "specificity",
+        "window": 0.5,
+        "mean": 1.0,
+        "ci95": 0.5639846743295023,
+        "solver_ci": [
+          0.7180076628352489,
+          1.281992337164751
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "all_cause_mortality_high",
+        "variable": "acm_factors",
+        "value": "acm_factors_yes",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 2.7618807258743696,
+        "ci95": 0.176272900471107,
+        "solver_ci": [
+          2.673744275638816,
+          2.8500171761099233
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "all_cause_mortality_high",
+        "variable": "frailty",
+        "value": "frailty_yes",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 2.0,
+        "ci95": 0.3,
+        "solver_ci": [
+          1.85,
+          2.15
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "aspartate_aminotransferase_U_L_high_above_33",
+        "variable": "probiotic_supplementation",
+        "value": "probiotic_supplementation_no",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 3.125457652695176,
+        "ci95": 2.040549648207407,
+        "solver_ci": [
+          2.105182828591473,
+          4.145732476798879
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "aspartate_aminotransferase_U_L_high_above_33",
+        "variable": "aspartate_aminotransferase_U_L_naive",
+        "value": "aspartate_aminotransferase_U_L_high_above_33",
+        "statistic": "specificity",
+        "window": 0.5,
+        "mean": 1.0,
+        "ci95": 0.05,
+        "solver_ci": [
+          0.975,
+          1.025
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "b_cell_lymphoma_yes",
+        "variable": "non_hodgkin_lymphoma",
+        "value": "non_hodgkin_lymphoma_yes",
+        "statistic": "specificity",
+        "window": 0.5,
+        "mean": 0.9991963029937714,
+        "ci95": 0.05,
+        "solver_ci": [
+          0.9741963029937714,
+          1.0241963029937713
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "b_cell_lymphoma_yes",
+        "variable": "glyphosate_based_herbicides",
+        "value": "glyphosate_based_herbicides_yes",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 2.0,
+        "ci95": 0.8999999999999999,
+        "solver_ci": [
+          1.55,
+          2.45
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "b_cell_lymphoma_yes",
+        "variable": "phenoxy_herbicide",
+        "value": "phenoxy_herbicide_yes",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 1.8,
+        "ci95": 0.5999999999999999,
+        "solver_ci": [
+          1.5,
+          2.1
+        ],
+        "coverage": 0.6729049923088593
+      }
+    ]
+  },
+  "query_rr": {
+    "n_compared": 223,
+    "direction_correct": 220,
+    "direction_wrong": 3,
+    "direction_accuracy": 98.7,
+    "median_pct_error": 16.0,
+    "mean_pct_error": 33.1,
+    "within_25pct": 132,
+    "within_50pct": 191
+  },
+  "validation_scores": {
+    "metric": "ci_slack_used",
+    "n_rows": 319,
+    "mean": 0.2147,
+    "median": 0.0156,
+    "max": 1.0,
+    "over_005": 158,
+    "over_010": 158
+  },
+  "ci_quality": {
+    "total_with_ci": 447,
+    "crosses_null": 57
+  },
+  "ci_decomposition": {
+    "n_edges_with_ci": 435,
+    "median_mean_ci_halfwidth": 0.2182,
+    "mean_mean_ci_halfwidth": 0.4079,
+    "n_edges_multi_study": 12,
+    "median_rr_dispersion": 0.2962,
+    "mean_rr_dispersion": 0.481
+  },
+  "rho": {
+    "n_nodes": 218,
+    "median_rho": 0.0,
+    "mean_rho": 0.0268
+  },
+  "joint_fidelity": {
+    "n_cells_tested": 194,
+    "n_nodes": 16,
+    "median_diff": 0.0006,
+    "mean_diff": 0.0845,
+    "within_005_frac": 0.789
+  },
+  "chain_propagation": {
+    "n_chains": 378,
+    "direction_correct": 364,
+    "direction_wrong": 14,
+    "median_rr_error": 33.4,
+    "mean_rr_error": 36.9
+  },
+  "nhanes_auc": {
+    "n_diseases": 178,
+    "median_auc": 1.0,
+    "mean_auc": 0.9837
+  }
+}

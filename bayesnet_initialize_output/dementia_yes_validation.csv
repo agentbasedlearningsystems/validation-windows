@@ -1,0 +1,6 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+dementia_yes,interleukin6_pg_mL,interleukin6_pg_mL_quartile_4_above_2.28,relative_risk,0.5,1.2928098786856088,0.23695076095744572,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,11.90158092162386
+dementia_yes,mic1_gdf15_pg_ml,mic1_gdf15_pg_ml_high_2764_and_above,relative_risk,0.5,1.5271304742256595,0.22618443944018773,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,11.206694640754508
+dementia_yes,alzheimers_or_non_alzheimers_dementia,alzheimers_or_non_alzheimers_dementia_yes,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+dementia_yes,grip_strength_kg,grip_strength_kg_quartile_1_45.10_and_below,relative_risk,0.5,1.4695433174948251,0.27271315022402276,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,12.391563142668515
+dementia_yes,increased_confusion_or_memory_loss,increased_confusion_or_memory_loss_yes,specificity,0.5,0.9059857707570618,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.766841945070764

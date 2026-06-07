@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+interleukin6_1beta_pg_mL_high_above_10,low_calorie_diet,low_calorie_diet_yes,relative_risk,0.0009765625,0.6015806952765286,0.17698262985909574,0.0019565838265631946,"[np.float64(0.15155951503036277), np.float64(0.15547268268348916)]",0.0015271719220205627,0.007667228828213468

@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+non_alcoholic_steatohepatitis_yes,non_alcoholic_fatty_liver_disease,non_alcoholic_fatty_liver_disease_yes,specificity,0.0009765625,0.9894133279017884,0.05,0.0019565838265631946,"[np.float64(0.2193653975975862), np.float64(0.22327856525071257)]",0.0015271719220205627,0.008746849737662266

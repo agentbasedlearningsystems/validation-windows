@@ -1,0 +1,4 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+fatal_myocardial_infraction_yes,heart_disease_mortality,heart_disease_mortality_yes,specificity,0.5,0.9333333333333332,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.4959779060058649
+fatal_myocardial_infraction_yes,dietary_fiber_gm,dietary_fiber_gm_quartile_1_8.20_and_below,relative_risk,0.5,1.204819277108434,0.09370816599732268,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,10.530663282388819
+fatal_myocardial_infraction_yes,smokeless_tobacco_use,smokeless_tobacco_use_yes,relative_risk,0.5,1.13,0.07000000000000006,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,10.03866422824187

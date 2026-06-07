@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+non_alzheimers_dementia_yes,grip_strength_kg,grip_strength_kg_quartile_1_45.10_and_below,relative_risk,0.0009765625,1.446076346702685,0.401359580882249,0.0019565838265631946,"[np.float64(0.013655308739521668), np.float64(0.017568476392648056)]",0.0015271719220205627,0.18123168475297868

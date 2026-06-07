@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+segmented_neutrophils_1000_cells_uL_high_above_6,low_calorie_diet,low_calorie_diet_yes,relative_risk,0.5,0.6397616749245174,0.29858146131472335,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,15.834501040265106
+segmented_neutrophils_1000_cells_uL_high_above_6,segmented_neutrophils_naive,segmented_neutrophils_1000_cells_uL_high_above_6,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554

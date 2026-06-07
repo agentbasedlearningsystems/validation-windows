@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+crp_elevated_concept_yes,original_crp_elevated_concept,crp_elevated_concept_yes,specificity,0.25,1.0,0.05,0.5008854596001778,"[np.float64(0.49911454039982217), 1.0]",0.37585972979353505,0.5008854596001777
+crp_elevated_concept_yes,bmi_obesity_concept,bmi_obesity_concept_yes,relative_risk,0.25,2.3,0.7,0.5008854596001778,"[np.float64(0.1648676191879993), 1.0]",0.37585972979353505,1.7304261801948844

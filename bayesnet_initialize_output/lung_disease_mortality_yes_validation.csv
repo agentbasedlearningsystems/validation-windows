@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+lung_disease_mortality_yes,household_pollution,household_pollution_yes,relative_risk,0.0009765625,1.18,0.010000000000000009,0.0019565838265631946,"[np.float64(0.21320368173835533), np.float64(0.2171168493914817)]",0.0015271719220205627,0.010730461357642884

@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+testosterone_ng_dL_low_under_300,frailty,frailty_yes,relative_risk,0.0009765625,1.459423793431133,0.2604426705998437,0.0019565838265631946,"[np.float64(1.005062935979345), 1.0]",0.0015271719220205627,0.002835580576312058

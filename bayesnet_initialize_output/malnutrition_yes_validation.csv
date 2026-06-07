@@ -1,0 +1,5 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+malnutrition_yes,how_healthy_diet,how_healthy_diet_poor,specificity,0.5,0.9934881304725814,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.1070337059360909
+malnutrition_yes,bmi_naive,bmi_under_19_underweight,specificity,0.5,0.8290043593279672,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,3.279883253449922
+malnutrition_yes,cant_afford_healthy_diet,cant_afford_healthy_diet_often_true,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+malnutrition_yes,depression,depression_yes,relative_risk,0.5,2.03,0.6699999999999999,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,19.701040231976243

@@ -1,0 +1,5 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+cardiovascular_event_yes,cardiac_event,cardiac_event_yes,specificity,0.5,1.0,16.52794433078129,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+cardiovascular_event_yes,cardiovascular_disease,cardiovascular_disease_yes,specificity,0.5,0.8014941302027749,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,3.1734200694473635
+cardiovascular_event_yes,vo2max_cardiovascular_fitness,vo2max_cardiovascular_fitness_low,relative_risk,0.5,1.56,0.16999999999999993,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,18.46211324001405
+cardiovascular_event_yes,stroke_or_heart_attack,stroke_or_heart_attack_yes,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554

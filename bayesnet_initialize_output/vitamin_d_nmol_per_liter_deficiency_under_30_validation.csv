@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+vitamin_d_nmol_per_liter_deficiency_under_30,vitamin_d_nmol_per_liter_naive,vitamin_d_nmol_per_liter_deficiency_under_30,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+vitamin_d_nmol_per_liter_deficiency_under_30,sarcopenia,sarcopenia_yes,relative_risk,0.5,2.195187022044631,0.5951439133371426,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,16.93238399721411

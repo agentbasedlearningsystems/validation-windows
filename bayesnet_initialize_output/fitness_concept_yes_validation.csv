@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+fitness_concept_yes,original_fitness_concept,fitness_concept_yes,specificity,0.125,1.0,0.05,0.2504427298000889,"[np.float64(0.7495572701999111), 1.0]",0.1935400828205757,0.25044272980008886
+fitness_concept_yes,strength_concept,strength_concept_yes,relative_risk,0.125,1.6,0.5,0.2504427298000889,"[np.float64(0.529122139523919), 1.0]",0.1935400828205757,0.5140154250763156

@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+sirt1_ng_uL_low_below_4.29,IGF1_ng_ml,IGF1_ng_ml_quartile_4_above_210,relative_risk,0.0009765625,1.27,0.20500000000000007,0.0019565838265631946,"[np.float64(0.2478794586968209), np.float64(0.2517926263499473)]",0.0015271719220205627,0.009945968702665064

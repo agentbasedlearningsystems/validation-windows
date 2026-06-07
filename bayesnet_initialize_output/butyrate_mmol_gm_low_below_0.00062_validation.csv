@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+butyrate_mmol_gm_low_below_0.00062,probiotic_supplementation,probiotic_supplementation_yes,relative_risk,0.0009765625,2.2741591049857193,0.3857230990788499,0.0019565838265631946,"[np.float64(0.88953268352268), np.float64(0.8934458511758063)]",0.0015271719220205627,0.004991179464310047

@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+urine_leakage_bother_greatly,frailty,frailty_yes,relative_risk,0.0009765625,1.8264547551909764,0.49287616602515305,0.001956583826563194,"[np.float64(0.10168891224382179), np.float64(0.10560207989694817)]",0.0015271719220205627,0.034479181145790294

@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+mylenoma_yes,bmi_naive,bmi_40_and_over_severe_obesity,relative_risk,0.0009765625,1.51807041,0.2072744000000002,0.001956583826563194,"[0.0, np.float64(0.0019829676585001767)]",0.0015271719220205627,112.57773392752534

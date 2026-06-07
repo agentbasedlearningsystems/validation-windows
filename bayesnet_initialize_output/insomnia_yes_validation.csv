@@ -1,0 +1,4 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+insomnia_yes,naive_insomnia,insomnia_yes,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+insomnia_yes,anemia,anemia_yes,relative_risk,0.5,1.2665148063781322,0.11011670211272939,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,6.165274917300414
+insomnia_yes,depression,depression_yes,relative_risk,0.5,2.6,0.72,1.0017709192003554,"[0.0, 1.0]",0.6729049923088593,6.8527538730410065

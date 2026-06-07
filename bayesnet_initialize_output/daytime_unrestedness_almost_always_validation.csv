@@ -1,0 +1,5 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+daytime_unrestedness_almost_always,inadequate_sleep,inadequate_sleep_almost_always,relative_risk,0.0009765625,5.63999057064888,0.1,0.0019565838265631946,"[np.float64(0.5511052590918328), np.float64(0.5550184267449592)]",0.0015271719220205627,0.019952767441467678
+daytime_unrestedness_almost_always,inadequate_sleep,inadequate_sleep_often,relative_risk,0.0009765625,1.387756275596112,0.1,0.00019565838265631948,"[np.float64(0.13588879388880518), np.float64(0.1362801106541178)]",0.0015271719220205627,0.0019952767849089614
+daytime_unrestedness_almost_always,inadequate_sleep,inadequate_sleep_sometimes,relative_risk,0.0009765625,0.45770487093641765,0.1,0.00019565838265631948,"[np.float64(0.04468723517966058), np.float64(0.04507855194497321)]",0.0015271719220205627,0.001995276767461529
+daytime_unrestedness_almost_always,inadequate_sleep,inadequate_sleep_rarely_or_never,relative_risk,0.0009765625,0.27739138367926,0.1,0.00019565838265631948,"[np.float64(0.02700555455994393), np.float64(0.02739687132525657)]",0.0015271719220205627,0.0019952768138689625

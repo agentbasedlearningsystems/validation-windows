@@ -1,0 +1,6 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+cognitive_impairment_yes,IGF1_ng_ml,IGF1_ng_ml_quartile_4_above_210,relative_risk,0.5,1.5156551025636267,0.4401143390763229,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,6.430959486262896
+cognitive_impairment_yes,ci_movement,ci_movement_no,relative_risk,0.5,0.46872582063122115,0.030678031466041866,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,5.3599867696927825
+cognitive_impairment_yes,dementia,dementia_yes,specificity,0.5,1.0,8.170977180506828,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+cognitive_impairment_yes,vitamin_d_nmol_per_liter_naive,vitamin_d_nmol_per_liter_deficiency_under_30,relative_risk,0.5,1.2484167989093429,0.161906370019399,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,5.796324175167503
+cognitive_impairment_yes,ci_physical_activity,ci_physical_activity_yes,relative_risk,0.5,2.0886112518983837,0.09874326624912388,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,11.8967695984409

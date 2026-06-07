@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+microbiome_shannon_diversity_low_below_3.08,probiotic_supplementation,probiotic_supplementation_yes,relative_risk,0.0009765625,0.13741797660626423,0.04611392656691471,0.0019565838265631946,"[np.float64(0.020156841830589935), np.float64(0.024070009483716324)]",0.0015271719220205627,0.012158667529645423

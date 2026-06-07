@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+multimorbidity_yes,education_level,education_level_less_than_9th_grade,relative_risk,0.0009765625,1.5516197396306386,0.19125929235184214,0.0019565838265631946,"[np.float64(0.12771494510886924), np.float64(0.13162811276199562)]",0.0015271719220205627,0.02341203279132431

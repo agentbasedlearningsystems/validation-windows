@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+aliphatic_alicyclic_hydrocarbon_exposure_yes,polycyclic_aromatic_hydrocarbons_exposure,polycyclic_aromatic_hydrocarbons_exposure_yes,specificity,0.25,1.0,-3.6704545454545516,0.5008854596001778,"[np.float64(0.49911454039982217), 1.0]",0.37585972979353505,0.5008854596001777

@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+fat_oxidation_J_kg_min_low_below_150,L_carnitine_supplementation,L_carnitine_supplementation_yes,relative_risk,0.0009765625,2.6488628568387282,1.4737634338161643,0.0019565838265631946,"[np.float64(0.25044444027660145), np.float64(0.2543576079297279)]",0.0015271719220205627,0.020533681441626594

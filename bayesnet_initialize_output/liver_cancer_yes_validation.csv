@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+liver_cancer_yes,bmi_naive,bmi_40_and_over_severe_obesity,relative_risk,0.0009765625,2.36421376,1.54970751,0.001956583826563194,"[0.0, np.float64(0.0025130311369363813)]",0.0015271719220205627,8.313064541999188

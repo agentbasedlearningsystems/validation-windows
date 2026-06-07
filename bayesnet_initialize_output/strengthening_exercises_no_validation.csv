@@ -1,0 +1,4 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+strengthening_exercises_no,vo2max_cardiovascular_fitness,vo2max_cardiovascular_fitness_low,relative_risk,0.0009765625,0.7715009007623482,0.1,0.0019565838265631946,"[np.float64(0.657734153897741), np.float64(0.6616473215508674)]",0.0015271719220205627,0.002288202786987492
+strengthening_exercises_no,vo2max_cardiovascular_fitness,vo2max_cardiovascular_fitness_moderate,relative_risk,0.0009765625,0.7201485341809742,0.1,0.00019565838265631948,"[np.float64(0.6155850527913549), np.float64(0.6159763695566676)]",0.0015271719220205627,0.0002288202519392657
+strengthening_exercises_no,vo2max_cardiovascular_fitness,vo2max_cardiovascular_fitness_high,relative_risk,0.0009765625,0.7903149854429129,0.1,0.00019565838265631948,"[np.float64(0.6755825517804601), np.float64(0.6759738685457728)]",0.0015271719220205627,0.000228820269010388

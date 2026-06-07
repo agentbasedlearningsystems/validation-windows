@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+albumin_g_dL_low_below_3.5,albumin_g_dL_naive,albumin_g_dL_low_below_3.5,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+albumin_g_dL_low_below_3.5,frailty,frailty_yes,relative_risk,0.5,1.6323396780539543,0.3011707939748285,1.0017709192003554,"[0.0, 1.0]",0.6729049923088593,41.090072678634606

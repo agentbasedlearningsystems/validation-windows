@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+parkinsons_yes,hallmark_5_disabled_macroautophagy_nad_atp_ratio,hallmark_5_disabled_macroautophagy_nad_atp_ratio_low_below_0.26,relative_risk,0.0009765625,4.607046450259792,2.858395251669905,0.0019565838265631946,"[np.float64(0.006806905486860439), np.float64(0.010720073139986828)]",0.0015271719220205627,1.0285940052435745
+parkinsons_yes,pesticide_exposure,pesticide_exposure_yes,relative_risk,0.0009765625,2.15,1.455,0.0019565838265631946,"[np.float64(0.0013429812279130665), np.float64(0.005256148881039455)]",0.0015271719220205627,1.2749120437568062

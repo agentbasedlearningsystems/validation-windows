@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+aerobic_volume_concept_wrapped_yes,original_aerobic_volume_concept,aerobic_volume_concept_yes,specificity,0.015625,1.0,0.05,0.03118242406881051,"[np.float64(0.9688175759311894), 1.0]",0.024430946826455417,0.031182424068810555

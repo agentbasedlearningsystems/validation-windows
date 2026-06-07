@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+painter_occupation_yes,occupational_pollution_exposure,occupational_pollution_exposure_yes,specificity,0.0009765625,0.7530120481927711,0.05,0.0019565838265631946,"[np.float64(0.014043416173436806), np.float64(0.017956583826563195)]",0.0015271719220205627,0.09208319966882506

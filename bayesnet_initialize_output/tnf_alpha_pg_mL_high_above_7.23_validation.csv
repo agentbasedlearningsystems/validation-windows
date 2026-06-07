@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+tnf_alpha_pg_mL_high_above_7.23,low_calorie_diet,low_calorie_diet_yes,relative_risk,0.0009765625,0.5871530166463609,0.2951261998979273,0.001956583826563194,"[np.float64(0.013038117544033691), np.float64(0.01695128519716008)]",0.0015271719220205627,0.07661466992205457

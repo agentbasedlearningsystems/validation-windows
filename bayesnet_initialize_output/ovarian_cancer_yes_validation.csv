@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+ovarian_cancer_yes,c_reactive_protein_mg_L,c_reactive_protein_mg_L_high_above_2,relative_risk,0.0009765625,1.4093229269621979,0.3493974460841751,0.0019565838265631946,"[0.0, np.float64(0.003383566170691386)]",0.0015271719220205627,1.932370401529807

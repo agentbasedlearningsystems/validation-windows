@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+strength_concept_yes,original_strength_concept,strength_concept_yes,specificity,0.25,1.0,0.05,0.5008854596001778,"[np.float64(0.49911454039982217), 1.0]",0.37585972979353505,0.5008854596001777
+strength_concept_yes,original_aerobic_volume_concept,aerobic_volume_concept_yes,relative_risk,0.25,2.01,0.3,0.5008854596001778,"[np.float64(0.16151468349222642), 1.0]",0.37585972979353505,1.5198966731743484

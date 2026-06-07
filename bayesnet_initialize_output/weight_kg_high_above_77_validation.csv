@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+weight_kg_high_above_77,probiotic_supplementation,probiotic_supplementation_yes,relative_risk,0.0009765625,0.44327489362000067,0.3046529707152981,0.0019565838265631946,"[np.float64(0.1451934111428048), np.float64(0.14910657879593117)]",0.0015271719220205627,0.005894016426972792

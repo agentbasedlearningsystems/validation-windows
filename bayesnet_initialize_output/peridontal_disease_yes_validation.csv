@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+peridontal_disease_yes,gum_disease,gum_disease_yes,specificity,0.125,1.0,0.05,0.2504427298000889,"[np.float64(0.7495572701999111), 1.0]",0.1935400828205757,0.25044272980008886
+peridontal_disease_yes,vitamin_d_supplementation_mcg,vitamin_d_supplementation_mcg_quartile_4_above_25.00,relative_risk,0.125,0.8695652173913044,0.07000000000000006,0.2504427298000889,"[np.float64(0.1270853416034145), np.float64(0.6279708012035923)]",0.1935400828205757,0.5768479307328802

@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+adiponectin_ug_ml_quartile_4_over_11.70,dietary_restriction,dietary_restriction_yes,relative_risk,0.0009765625,3.3371853935353104,0.0717469648894844,0.0019565838265631946,"[np.float64(0.5223005396437432), np.float64(0.5262137072968696)]",0.0015271719220205627,0.012454733898534798
+adiponectin_ug_ml_quartile_4_over_11.70,mediterranean_diet,mediterranean_diet_yes,relative_risk,0.0009765625,1.0674604363821514,0.016225549998527544,0.0019565838265631946,"[np.float64(0.26401141110179677), np.float64(0.2679245787549232)]",0.0015271719220205627,0.007852733656483757

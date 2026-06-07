@@ -1,0 +1,5 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+bmi_over_30_obesity,dietary_energy_kcal,dietary_energy_kcal_3000_and_over_high,relative_risk,0.5,3.1413979431860737,1.6282638553686979,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,5.058874399628858
+bmi_over_30_obesity,bmi_naive,bmi_40_and_over_severe_obesity,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+bmi_over_30_obesity,bmi_naive,bmi_30_to_39_obesity,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+bmi_over_30_obesity,dietary_restriction,dietary_restriction_no,relative_risk,0.5,1.3208317921600616,0.5878986749214488,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,4.916916040387662

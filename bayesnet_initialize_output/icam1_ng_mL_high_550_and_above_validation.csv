@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+icam1_ng_mL_high_550_and_above,mediterranean_diet,mediterranean_diet_yes,relative_risk,0.0009765625,0.9133229470454423,0.061178209233666014,0.0019565838265631946,"[np.float64(0.08977325084922569), np.float64(0.09368641850235207)]",0.0015271719220205627,0.019481043576870083

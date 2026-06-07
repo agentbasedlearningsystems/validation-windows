@@ -1,0 +1,6 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+platelet_count_si_high_450K_and_above,non_alcoholic_steatohepatitis,non_alcoholic_steatohepatitis_yes,relative_risk,0.5,1.28548292784372,0.19096004313101567,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,48.588165609275165
+platelet_count_si_high_450K_and_above,non_alcoholic_fatty_liver_disease,non_alcoholic_fatty_liver_disease_yes,relative_risk,0.5,1.4023932582083423,0.35840455531365256,1.0017709192003554,"[0.0, 1.0]",0.6729049923088593,48.811369541162875
+platelet_count_si_high_450K_and_above,platelet_count_si_naive,platelet_count_si_high_450K_and_above,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+platelet_count_si_high_450K_and_above,fasting_glucose_mg_dL,fasting_glucose_mg_dL_high_above_100,relative_risk,0.5,1.374216825430649,0.13781361459148322,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,56.026137511332294
+platelet_count_si_high_450K_and_above,metabolic_syndrome,metabolic_syndrome_yes,relative_risk,0.5,2.1994278768510735,0.6463430450898129,1.0017709192003554,"[0.0, 1.0]",0.6729049923088593,72.76947867411856

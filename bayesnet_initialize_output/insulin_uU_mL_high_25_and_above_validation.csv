@@ -1,0 +1,5 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+insulin_uU_mL_high_25_and_above,probiotic_supplementation,probiotic_supplementation_no,relative_risk,0.5,1.3494269416986535,0.16247653961500141,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,12.511097448739864
+insulin_uU_mL_high_25_and_above,naive_insulin_uU_mL,insulin_uU_mL_high_25_and_above,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554
+insulin_uU_mL_high_25_and_above,age_at_menarche,age_at_menarche_younger_than_10,relative_risk,0.5,1.2277662729804955,0.07435503382035114,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,9.344506406387147
+insulin_uU_mL_high_25_and_above,dietary_restriction,dietary_restriction_no,relative_risk,0.5,1.259966432601269,0.1770734050209395,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,11.11785690138202

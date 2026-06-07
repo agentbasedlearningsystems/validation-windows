@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+oesophageal_adenocarcinoma_yes,oesophageal_cancer,oesophageal_cancer_yes,specificity,0.0009765625,0.9997279741801343,0.05,0.0019565838265631946,"[np.float64(0.15331702728453855), np.float64(0.15723019493766494)]",0.0015271719220205627,0.012597450212219363
+oesophageal_adenocarcinoma_yes,bmi_naive,bmi_40_and_over_severe_obesity,relative_risk,0.0009765625,5.337948160000001,2.20894095,0.0019565838265631946,"[0.0, np.float64(0.0021785502140343788)]",0.0015271719220205627,47.05281351774323

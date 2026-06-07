@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+sarcopenia_yes,inadequate_sleep,inadequate_sleep_rarely_or_never,relative_risk,0.0009765625,0.7903494176372712,0.055055299990212414,0.0019565838265631946,"[np.float64(0.13926027539489524), np.float64(0.14317344304802163)]",0.0015271719220205627,0.010950426857020301

@@ -1,0 +1,4 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+heart_disease_mortality_yes,cardiovascular_mortality,cardiovascular_mortality_yes,specificity,0.25,0.8095238095238095,0.05,0.5008854596001778,"[0.0, 1.0]",0.37585972979353505,0.8109574107812405
+heart_disease_mortality_yes,hallmark_2_telomere_attrition_telomere_length_rtl,hallmark_2_telomere_attrition_telomere_length_rtl_below_.93,relative_risk,0.25,1.54,0.2650000000000001,0.5008854596001778,"[0.0, np.float64(0.7179778693301354)]",0.37585972979353505,3.55315788674407
+heart_disease_mortality_yes,vegetarian,vegetarian_no,relative_risk,0.25,1.408450704225352,0.25902541686903047,0.5008854596001778,"[0.0, np.float64(0.6618965296132241)]",0.37585972979353505,4.381515371911678

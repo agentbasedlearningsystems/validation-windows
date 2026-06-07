@@ -1,0 +1,4 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+unhealthy_waist,intermittent_fasting,intermittent_fasting_no,relative_risk,0.25,1.19456361155429,0.17660094811152116,0.5008854596001778,"[np.float64(0.19165005999973672), 1.0]",0.37585972979353505,0.8639839064726758
+unhealthy_waist,dietary_restriction,dietary_restriction_no,relative_risk,0.25,1.0985632417535818,0.0432455476277922,0.5008854596001778,"[np.float64(0.19388737994602578), 1.0]",0.37585972979353505,0.7919917459712544
+unhealthy_waist,unhealthy_waist_by_gender,unhealthy_waist_by_gender,specificity,0.25,1.0,0.05,0.5008854596001778,"[np.float64(0.49911454039982217), 1.0]",0.37585972979353505,0.5008854596001777

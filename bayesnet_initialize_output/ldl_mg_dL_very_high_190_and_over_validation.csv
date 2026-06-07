@@ -1,0 +1,3 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+ldl_mg_dL_very_high_190_and_over,low_calorie_diet,low_calorie_diet_yes,relative_risk,0.5,0.40259425900829293,0.2529893561292704,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,44.39291561315123
+ldl_mg_dL_very_high_190_and_over,ldl_mg_dL_naive,ldl_mg_dL_very_high_190_and_over,specificity,0.5,1.0,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.0017709192003554

@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+polycyclic_aromatic_hydrocarbons_exposure_yes,volitile_organic_compound_ng_mL,volitile_organic_compound_ng_mL_quartile_4_above_115618.14,specificity,0.0009765625,0.8823529411764706,0.05,0.0019565838265631946,"[np.float64(0.5980434161734369), np.float64(0.6019565838265633)]",0.0015271719220205627,0.002877329156710462

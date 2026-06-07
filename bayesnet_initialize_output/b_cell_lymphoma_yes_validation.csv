@@ -1,0 +1,4 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+b_cell_lymphoma_yes,non_hodgkin_lymphoma,non_hodgkin_lymphoma_yes,specificity,0.5,0.9991963029937714,0.05,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,1.1750468074180493
+b_cell_lymphoma_yes,glyphosate_based_herbicides,glyphosate_based_herbicides_yes,relative_risk,0.5,2.0,0.8999999999999999,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,388.8047587309363
+b_cell_lymphoma_yes,phenoxy_herbicide,phenoxy_herbicide_yes,relative_risk,0.5,1.8,0.5999999999999999,1.0017709192003557,"[0.0, 1.0]",0.6729049923088593,231.18370741865095

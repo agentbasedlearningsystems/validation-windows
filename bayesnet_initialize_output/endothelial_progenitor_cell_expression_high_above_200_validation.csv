@@ -1,0 +1,2 @@
+condition,variable,value,statistic,window,mean,ci95,ci_slack_used,solver_ci,coverage,score
+endothelial_progenitor_cell_expression_high_above_200,cardiovascular_minutes,cardiovascular_minutes_quartile_4_above_65.00,relative_risk,0.0009765625,1.75990433521595,0.3448804247130812,0.001956583826563194,"[np.float64(0.44172572913882985), np.float64(0.4456388967919563)]",0.0015271719220205627,0.0077609592673815175
