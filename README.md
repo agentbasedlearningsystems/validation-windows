@@ -42,13 +42,23 @@ python3 scripts/observed_evidence_auc.py bayesianNetworkProto_improved.pickle \
     bayesnet_config_linear.json improved 300 \
     --targets heart_attack asthma malnutrition insomnia fall_history cancer \
     cognitive_impairment copd coronary_artery_disease diabetes hypertension \
-    sleep_apnea sleep_disorder stroke depression
+    sleep_apnea sleep_disorder stroke depression osteoporosis
 ```
 
-Mean per-target AUC is about 0.576 across 15 clinical-event targets (range 0.49 to 0.70). Four targets reach the level of cohort-fitted clinical risk calculators (diabetes about 0.70, coronary artery disease about 0.68, cognitive impairment about 0.67, sleep apnea about 0.67; for comparison, Framingham 10-year CVD is about 0.71 and pooled ASCVD about 0.71). Per-target AUC tracks whether the network's literature included diagnostic biomarkers as parents.
+Mean per-target AUC is about 0.716 across 16 clinical-event targets (range 0.48 to 0.94). Several targets reach or exceed the level of cohort-fitted clinical risk calculators (Framingham 10-year CVD and pooled ASCVD are about 0.71): coronary artery disease about 0.94, sleep apnea / depression / heart attack about 0.82, insomnia 0.80, diabetes 0.78, stroke 0.76. Per-target AUC tracks whether the network's literature supplied informative risk-factor parents for the target. The full per-target table and the complete metric panel (calibration, Brier, sharpness, sex-stratified AUC) are in the paper appendix (`validation_windows_eiml2026.pdf`).
+
+## Continual improvement and community contributions
+
+This network is maintained as a continually improving artifact, not a frozen snapshot:
+
+- **[Continual Improvement Feed](IMPROVEMENT_LOG.md)** — a dated log of every net-improvement cycle, with the metric deltas (per-target AUC, validation window, direction accuracy, ρ-gap, calibration) and the literature added each cycle.
+- **[Crowdsourcing](CROWDSOURCING.md)** — how anyone can submit a literature paper, manual change request, network-structure proposal, or question, plus the lists of adopted contributions.
 
 ## Repository contents
 
+- `IMPROVEMENT_LOG.md`: the continual improvement feed (dated net-improvement cycles with metric deltas).
+- `CROWDSOURCING.md`: the community-contribution process and the adopted-contribution lists.
+- `validation_windows_eiml2026.pdf`: the workshop paper.
 - `data/relations.csv`: the literature network, one row per study or structural definition.
 - `bayesianNetworkProto_cycle12_no_df.pickle`, `bayesianNetworkProto_cycle9b_no_df.pickle`: the paper-state network and its "before" point.
 - `bayesianNetworkProto_improved.pickle`: the post-submission improved network (appendix AUC).

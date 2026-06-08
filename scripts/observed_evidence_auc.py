@@ -3,7 +3,7 @@
 
 For each disease target T:
   1. Find NHANES respondents who actually answered T (target outcome non-NaN).
-  2. Build evidence from each respondent's *answered* variables only - never set
+  2. Build evidence from each respondent's *answered* variables only — never set
      NaN as evidence.
   3. Exclude trivial diagnostic biomarkers of T (e.g. a1c is the diagnostic
      definition of diabetes; blood pressure is the diagnostic definition of
@@ -13,8 +13,8 @@ For each disease target T:
      pass minimum-positives threshold.
 
 Outputs:
-  paper/observed_evidence_auc_<label>.json  - per-target + whole-net summary
-  paper/observed_evidence_auc_<label>.md    - human-readable report
+  paper/observed_evidence_auc_<label>.json  — per-target + whole-net summary
+  paper/observed_evidence_auc_<label>.md    — human-readable report
 """
 import json
 import sys
@@ -191,11 +191,11 @@ NHANES_PATH = './data/preprocessed_nhanes.csv'
 #       (c) diagnostic biomarker that defines the disease threshold
 #       (d) NHANES screening item that IS the disease question
 #       (e) for umbrella diagnoses: a subtype reachable via T's _subtypes
-#           any_of channel (e.g. specific cancers under the cancer umbrella -
+#           any_of channel (e.g. specific cancers under the cancer umbrella —
 #           NHANES coding is self-consistent: MCQ220 = yes if any specific
 #           cancer is yes)
 # Sibling diseases, downstream mortality, correlated clinical observations,
-# and risk factors are NOT excluded - they are legitimate evidence.
+# and risk factors are NOT excluded — they are legitimate evidence.
 # Generated and verified by scripts/proposed_exclusions_full.py against
 # bayesnet_config_linear.json.
 
@@ -222,14 +222,27 @@ TRIVIAL_BIOMARKERS = {
     # PHQ-9 functional-impairment add-on (DPQ100) is part of the MDD diagnostic
     # criteria (functional impairment from depression symptoms). Individual
     # PHQ-9 symptom items (low_energy, poor_appetite, etc.) intentionally NOT
-    # excluded - each can occur in non-depressed patients (anemia, hypothyroid,
+    # excluded — each can occur in non-depressed patients (anemia, hypothyroid,
     # grief, schizophrenia anhedonia).
     'depression': {'depression_difficulty_functioning'},
+    # May 17 2026: added homa_ir + glucose_serum_mg_dL — both are diagnostic
+    # surrogates of diabetes. HOMA-IR = fasting insulin × fasting glucose / 405,
+    # i.e., a direct function of the already-excluded fasting_glucose +
+    # insulin_uU_mL. glucose_serum_mg_dL is casual/random glucose (diagnostic
+    # ≥200 mg/dL). Inclusion of either was leaking diagnostic evidence into
+    # diabetes prediction → inflated AUC. The subnet AUC=0.7961 from cycle-17-v2
+    # was almost certainly elevated by this leakage. After the fix, expect AUC
+    # closer to the clinical-score range (FINDRISC, ADA ~0.70-0.75 without glucose).
     'diabetes': {'a1c', 'fasting_glucose_mg_dL', 'insulin_uU_mL',
-                 'naive_insulin_uU_mL'},
+                 'naive_insulin_uU_mL', 'homa_ir', 'glucose_serum_mg_dL'},
     'fall_history': set(),
     'gallbladder_cancer': set(),
-    'heart_attack': {'heart_attack_naive'},
+    # 2026-05-30 leak fix (symmetry with coronary_artery_disease above): CAD
+    # causes ~95% of MIs and `angina` = MCQ160D "ever told had coronary heart
+    # disease" (CAD by name). CAD's list already excludes heart_attack; this
+    # makes it symmetric so CAD/angina don't leak diagnostic evidence into MI
+    # prediction (heart_attack was AUC-leak-flagged with a bimodal pred dist).
+    'heart_attack': {'heart_attack_naive', 'coronary_artery_disease', 'angina'},
     'hip_fracture': {'hip_fracture_naive'},
     # Direct BP measurements (systolic BPXSY3, diastolic BPXDI2) and meds-related
     # nodes (BPQ040A prescription, BPQ050A compliance) are all diagnostic
@@ -247,7 +260,7 @@ TRIVIAL_BIOMARKERS = {
     'lung_disease': {'copd', 'emphysema', 'chronic_bronchitis', 'asthma'},
     'malnutrition': set(),
     'melanoma': set(),
-    'metabolic_syndrome': set(),  # composite - components don't individually equate
+    'metabolic_syndrome': set(),  # composite — components don't individually equate
     'oesophageal_cancer': set(),
     'oral_cancer': set(),
     'osteoporosis': set(),
@@ -367,6 +380,7 @@ def main():
 
         preds = []
         actuals = []
+        sexes = []   # parallel RIAGENDR per kept respondent (subgroup calibration)
         skip_evidence_too_small = 0
         skip_pred_nan = 0
         ok = 0
@@ -412,6 +426,7 @@ def main():
                 continue
             preds.append(float(p_pos))
             actuals.append(int(y))
+            sexes.append(int(row['RIAGENDR']) if 'RIAGENDR' in row.index and pd.notna(row['RIAGENDR']) else -1)
             ok += 1
 
         n = len(preds)
@@ -423,7 +438,7 @@ def main():
         log(f'  AUC eligible: n={n}, pos={n_pos}, neg={n_neg}')
         # Always record the predictions and try to compute AUC. The
         # insufficient flag (n < 30 or pos/neg < 5) becomes a marker for
-        # downstream filtering, not a discard - predictions are kept so
+        # downstream filtering, not a discard — predictions are kept so
         # post-hoc decisions can be made (e.g. accept a 1-positive AUC).
         insufficient = (n < 30 or n_pos < 5 or n_neg < 5)
         entry = {
@@ -431,6 +446,7 @@ def main():
             'prevalence': round(n_pos/n, 4) if n > 0 else None,
             'predictions': [round(float(p), 6) for p in preds],
             'actuals': [int(a) for a in actuals],
+            'sexes': [int(s) for s in sexes],
             'insufficient_flag': insufficient,
         }
         if n_pos == 0 or n_neg == 0:
@@ -451,7 +467,7 @@ def main():
         # at hour 19 doesn't lose 19 hours of work.
         try:
             _partial = {
-                'methodology': 'observed-evidence-only (PARTIAL - incremental save)',
+                'methodology': 'observed-evidence-only (PARTIAL — incremental save)',
                 'pickle': PICKLE, 'config': CONFIG,
                 'n_per_target_cap': N_PER_TARGET,
                 'progress': f'{ti+1}/{len(targets)}',
@@ -494,6 +510,29 @@ def main():
     with open(out_path, 'w') as f:
         json.dump(out, f, indent=2)
     log(f'\nSaved {out_path}')
+
+    # Per-disease human-readable report (the .md this script's docstring has always
+    # promised but never wrote — so per-disease AUC is surfaced, not just the mean).
+    md_path = f'paper/observed_evidence_auc_{LABEL}.md'
+    rows = sorted(((tn, v) for tn, v in valid.items()), key=lambda kv: -kv[1]['auc'])
+    with open(md_path, 'w') as f:
+        f.write(f'# Observed-evidence AUC — {LABEL}\n\n')
+        if valid:
+            f.write(f"**Mean AUC {summary['mean_auc']}** · median {summary['median_auc']} "
+                    f"· range {summary['min_auc']}–{summary['max_auc']} "
+                    f"· {summary['n_targets_with_auc']}/{summary['n_targets_total']} targets\n\n")
+        f.write('Observed-evidence-only; diagnostic biomarkers excluded per target. '
+                'The mean hides per-disease spread — read the table.\n\n')
+        f.write('| Disease | AUC | prevalence | n | flag |\n|---|---|---|---|---|\n')
+        for tn, v in rows:
+            flag = 'INSUFFICIENT' if v.get('insufficient_flag') else ''
+            f.write(f"| {tn} | {v['auc']} | {v.get('prevalence')} | {v.get('n')} | {flag} |\n")
+        skipped = {tn: v.get('note') for tn, v in results.items() if 'auc' not in v}
+        if skipped:
+            f.write('\n**No AUC (note):**\n\n')
+            for tn, note in skipped.items():
+                f.write(f"- {tn}: {note}\n")
+    log(f'Saved {md_path} (per-disease report)')
     log(f'Total time: {(time.time()-overall_t0)/60:.1f} min')
     log(f'\nSUMMARY: {json.dumps(summary, indent=2)}')
 
