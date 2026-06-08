@@ -58,12 +58,6 @@ You have a high general AUC, and I was wondering, what about Bayes Expert can yo
 
 **Answer:**
 
-### Question
-
-> *"You have a high general AUC, and I was wondering, what about BayesExpert can you attribute this to?"*
----
-### Answer
-
 Great question! BayesExpert's strong general AUC performance is likely attributable to a combination of several core design choices:
 
 1. **Principled probabilistic structure.** BayesExpert is built on a Bayesian network (directed acyclic graph) that explicitly encodes conditional independence relationships among variables. This avoids overfitting to spurious correlations that can inflate or deflate discrimination metrics in purely frequentist models.
