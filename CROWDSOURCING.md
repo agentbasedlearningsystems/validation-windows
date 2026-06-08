@@ -80,38 +80,6 @@ If you're interested in a deeper dive, the `docs/bayesexpert_manual.md` file con
 
 Feel free to follow up with a more specific question (e.g., about a particular subnet, variable, or evaluation dataset) and we'll do our best to answer!
 
-### 2026-06-08 — You have a high general AUC, and I was wondering, what about Bayes Expert can you attribute this to
-
-**Question:**
-
-You have a high general AUC, and I was wondering, what about Bayes Expert can you attribute this to
-
----
-
-**Answer:**
-
-### Question
-
-> *"You have a high general AUC, and I was wondering, what about BayesExpert can you attribute this to?"*
----
-### Answer
-
-Great question! BayesExpert's strong general AUC performance is likely attributable to a combination of several core design choices:
-
-1. **Principled probabilistic structure.** BayesExpert is built on a Bayesian network (directed acyclic graph) that explicitly encodes conditional independence relationships among variables. This avoids overfitting to spurious correlations that can inflate or deflate discrimination metrics in purely frequentist models.
-
-2. **Expert-curated priors and relations.** The edges and conditional probability tables (CPTs) encoded in `data/relations.csv` are drawn from domain literature and expert knowledge. This inductive bias means the model generalises well even when training data are sparse — a known driver of high AUC in knowledge-rich domains.
-
-3. **Calibrated posterior updates.** Because BayesExpert reasons via exact or approximate Bayesian inference, its output probabilities are well-calibrated. A well-calibrated classifier tends to rank positive cases above negative cases consistently, which is precisely what AUC measures.
-
-4. **Crowdsourced iterative improvement.** The public improvement pipeline (the one you're using right now!) continuously integrates new literature-supported edges and corrects manual errors. This keeps the network aligned with current evidence, preventing model drift that would erode discriminative performance over time.
-
-5. **Modular subnet architecture.** By decomposing the joint distribution into interpretable subnets, BayesExpert avoids the "monolithic model" pitfall where a single misspecified region degrades global performance. Each subnet can be validated and refined independently.
-
-If you're interested in a deeper dive, the `docs/bayesexpert_manual.md` file contains technical details on inference methods and the `IMPROVEMENT_LOG.md` tracks network changes over time — both can shed light on specific structural decisions that have historically improved AUC.
-
-Feel free to follow up with a more specific question (e.g., about a particular subnet, variable, or evaluation dataset) and we'll do our best to answer!
-
 ### 2026-05-19 — Question submission
 
 **Question:**
