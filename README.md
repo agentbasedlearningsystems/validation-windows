@@ -18,7 +18,7 @@ pip install -r requirements.txt
 python3 scripts/reproduce_paper.py
 ```
 
-This loads the paper-state network (`paper_results/bayesianNetworkProto_cycle12_no_df.pickle`) and reports the three headline results:
+This loads the network the paper's results are computed on (`paper_results/bayesianNetworkProto_cycle12_no_df.pickle`) and reports the three headline results:
 
 | Result | Value |
 |---|---|
@@ -28,7 +28,7 @@ This loads the paper-state network (`paper_results/bayesianNetworkProto_cycle12_
 
 It also shows the abstention case on the low-base-rate pancreatic-cancer chain, where the polytope is direction-symmetric because the literature alone does not constrain the joint distribution.
 
-The "before" network for the paper's 87% window-reduction result is shipped as `bayesianNetworkProto_cycle9b_no_df.pickle` (median W about 0.125).
+The paper's headline result is an 87% drop in the median window as consistent literature edges are added. The starting network that drop is measured from — before those edges — is shipped as `bayesianNetworkProto_cycle9b_no_df.pickle` (median window about 0.125, versus 0.016 in the network above).
 
 ## Per-target predictive performance
 
@@ -101,10 +101,10 @@ This network is maintained as a continually improving artifact, not a frozen sna
 - `CROWDSOURCING.md`: the community-contribution process and the adopted-contribution lists.
 - `validation_windows_eiml2026.pdf`: the paper.
 - `data/relations.csv`: the literature network, one row per study or structural definition.
-- `bayesianNetworkProto_cycle12_no_df.pickle`, `bayesianNetworkProto_cycle9b_no_df.pickle`: the paper-state network and its "before" point.
+- `bayesianNetworkProto_cycle12_no_df.pickle`, `bayesianNetworkProto_cycle9b_no_df.pickle`: the network the paper's results are computed on, and the starting network the window reduction is measured from.
 - `bayesianNetworkProto_improved.pickle`: the improved network (the full metric panel / per-target AUC).
 - `bayesnet_config_linear.json`: the compiled linear configuration.
-- `paper_results/`: the committed cycle-12 result JSONs that `reproduce_paper.py` reads, plus the paper figures.
+- `paper_results/`: the committed result JSONs that `reproduce_paper.py` reads, plus the paper figures.
 - `scripts/`: the build pipeline, the paper-grade tests, and `reproduce_paper.py`.
 - `sn_bayes/`: the BayesExpert package (CSV parser, QP solver, NHANES preprocessor, query engine).
 - `docs/bayesexpert_manual.md`: the construction manual, covering how to build a literature-grounded BayesExpert network in any domain.
