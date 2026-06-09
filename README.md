@@ -30,13 +30,6 @@ It also shows the abstention case on the low-base-rate pancreatic-cancer chain, 
 
 The "before" network for the paper's 87% window-reduction result is shipped as `bayesianNetworkProto_cycle9b_no_df.pickle` (median W about 0.125).
 
-## Re-derive from the CSV (optional, about 30 to 40 minutes)
-
-```bash
-python3 scripts/build_demo.py          # rebuilds the network from data/relations.csv
-python3 scripts/data_checks.py spreadsheet   # pre-build CSV integrity checks
-```
-
 ## Per-target predictive performance
 
 Beyond the windows, the network is also a calibrated predictor. The improved network (`bayesianNetworkProto_improved.pickle`, 574 nodes — the build the paper's metric panel is computed on) discriminates held-out NHANES respondents, with each target's own NHANES code and its definitional-surrogate biomarkers excluded from the evidence. Reproduce with:
