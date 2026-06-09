@@ -35,10 +35,10 @@ def _require(path):
 def main():
     sys.path.insert(0, str(ROOT))
 
-    pickle_path = _require('paper_results/bayesianNetworkProto_cycle12_no_df.pickle')
-    config_path = _require('paper_results/bayesnet_config_linear_cycle12_no_df.json')
-    obj_path    = _require('paper_results/objective_rr_comparison_cycle12_no_df.json')
-    res_path    = _require('paper_results/results_cycle12_no_df.json')
+    pickle_path = _require('paper_results/bayesianNetworkProto_paper.pickle')
+    config_path = _require('paper_results/bayesnet_config_linear_paper.json')
+    obj_path    = _require('paper_results/objective_rr_comparison_paper.json')
+    res_path    = _require('paper_results/results_paper.json')
 
     print("=" * 72)
     print("Reproducing paper results from saved cycle-12 artifacts")

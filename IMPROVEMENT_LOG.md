@@ -413,8 +413,8 @@ The frozen pickle bytes are unchanged; this is a post-hoc measurement of an *obs
 
 | pickle (md5) | mean AUC | median | range |
 |---|---|---|---|
-| `bayesianNetworkProto_cycle9b_no_df.pickle` (`552832b3…`, "before") | 0.566 | 0.543 | 0.408-0.747 |
-| `bayesianNetworkProto_cycle12_no_df.pickle` (`a02feb76…`, EIML paper-state) | 0.584 | 0.580 | 0.382-0.832 |
+| `bayesianNetworkProto_baseline.pickle` (`552832b3…`, "before") | 0.566 | 0.543 | 0.408-0.747 |
+| `bayesianNetworkProto_paper.pickle` (`a02feb76…`, EIML paper-state) | 0.584 | 0.580 | 0.382-0.832 |
 | `bayesianNetworkProto_v2cleaned_final.pickle.gz` (`5b0acb35…`, current improved) | 0.666 | 0.660 | 0.545-0.810 |
 
 **Δ from 9b to cycle-12 = +0.018**: the audit edges the EIML paper adds versus the pre-audit baseline.
@@ -546,7 +546,7 @@ Held but verified (need wrapper/structural work next session): Huang 2024 (PMID 
 |---|---|---|
 | `bayesianNetworkProto_v2cleaned_final.pickle` md5 | `3591874c3268e216411e5b6a598b841a` | **`1dc1a70eeb9fcd626f25c3be4ab9c874`** |
 
-The new pickle has been pushed to the public repository as the `UPDATABLE` improved-net checkpoint (commits `1818b9e` v1 / `947d758` v2 / `6d08195` v3). `scripts/demo_v2cleaned_final.py` PICKLE_MD5 updated to match. Drift detector: ALL IN SYNC. Frozen paper-state pickles (v2.pickle md5 `b390e654…` cycle12_no_df + cycle9b_no_df for EIML) untouched.
+The new pickle has been pushed to the public repository as the `UPDATABLE` improved-net checkpoint (commits `1818b9e` v1 / `947d758` v2 / `6d08195` v3). `scripts/demo_v2cleaned_final.py` PICKLE_MD5 updated to match. Drift detector: ALL IN SYNC. Frozen paper-state pickles (v2.pickle md5 `b390e654…` paper + baseline for EIML) untouched.
 
 ## Cycle 6 window summary — W principle measurement (EIML)
 

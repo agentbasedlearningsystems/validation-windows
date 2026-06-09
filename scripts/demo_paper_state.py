@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Demo: reproduce the EIML paper's full core-metrics panel at cycle 12.
+"""Demo: reproduce the EIML paper's full core-metrics panel for the paper network.
 
 One command:
     python3 scripts/demo_paper_state.py
@@ -9,7 +9,7 @@ from the committed results JSONs. Reports pass/fail against the paper's
 claimed values.
 
 What this network is:
-    bayesianNetworkProto_cycle12_no_df.pickle (md5 a02feb76...) - the
+    bayesianNetworkProto_paper.pickle (md5 a02feb76...) - the
     final build referenced in the paper §6 and Table 1 row 8. Built
     2026-04-22, two days before the 2026-04-24 EIML submission deadline.
 
@@ -19,14 +19,14 @@ quorum-verified additions), see scripts/demo_v2cleaned_final.py.
 """
 import os, sys, json, hashlib, time
 
-PICKLE = 'bayesianNetworkProto_cycle12_no_df.pickle'
+PICKLE = 'bayesianNetworkProto_paper.pickle'
 PICKLE_MD5 = 'a02feb7635965ae5c2e3246ebdb4a90c'
 PICKLE_SIZE = 7595101
-PICKLE_9B = 'bayesianNetworkProto_cycle9b_no_df.pickle'
+PICKLE_9B = 'bayesianNetworkProto_baseline.pickle'
 PICKLE_9B_MD5 = '552832b354424690d42fb86a9338f7d3'
 PICKLE_9B_SIZE = 6748241
-RESULTS_CYCLE12 = 'paper/eiml/results_cycle12_no_df.json'
-RESULTS_CYCLE9B = 'paper/eiml/results_cycle9b_no_df.json'
+RESULTS_CYCLE12 = 'paper/eiml/results_paper.json'
+RESULTS_CYCLE9B = 'paper/eiml/results_baseline.json'
 
 
 def log(m): print(f"[{time.strftime('%H:%M:%S')}] {m}", flush=True)
@@ -45,7 +45,7 @@ def check(label, actual, expected, tolerance=0.01):
 
 def main():
     log("=" * 78)
-    log("DEMO: EIML paper-state (cycle 12) - full core-metrics panel")
+    log("DEMO: EIML paper network - full core-metrics panel")
     log("=" * 78)
     log(f"Pickle: {PICKLE}")
     log("")
@@ -68,8 +68,8 @@ def main():
         failures += 1
     log("")
 
-    # ---- (2) load cycle 12 results JSON ----
-    log("[2/4] Read cycle 12 results JSON")
+    # ---- (2) load paper results JSON ----
+    log("[2/4] Read paper results JSON")
     if not os.path.exists(RESULTS_CYCLE12):
         log(f"  ERROR: {RESULTS_CYCLE12} not found")
         return 1
@@ -79,7 +79,7 @@ def main():
     log("")
 
     # ---- (3) full core-metrics panel ----
-    log("[3/4] Full core-metrics panel at cycle 12")
+    log("[3/4] Full core-metrics panel for the paper network")
 
     # Network composition
     log("  ── network composition ──")
@@ -167,7 +167,7 @@ def main():
     log(f"    mean AUC                                      {auc.get('mean_auc')}")
     log("")
 
-    # ---- (4) cycle 9b baseline ----
+    # ---- (4) the baseline baseline ----
     log("[4/4] Cycle 9b baseline ('before' state) - pickle + JSON")
     if os.path.exists(PICKLE_9B):
         actual_9b_size = os.path.getsize(PICKLE_9B)
@@ -176,15 +176,15 @@ def main():
         log(f"  pickle:  {PICKLE_9B}")
         log(f"  size:    {actual_9b_size}")
         log(f"  md5:     {actual_9b_md5}")
-        if not check('cycle 9b pickle size (bytes)               ',
+        if not check('the baseline pickle size (bytes)               ',
                      actual_9b_size, PICKLE_9B_SIZE):
             failures += 1
-        if not check('cycle 9b pickle md5                        ',
+        if not check('the baseline pickle md5                        ',
                      actual_9b_md5, PICKLE_9B_MD5):
             failures += 1
     else:
-        log(f"  cycle 9b pickle not found at {PICKLE_9B} (rebuild it from")
-        log(f"  scripts/apply_cycle9b_build.py at the pre-df11dfa state)")
+        log(f"  the baseline pickle not found at {PICKLE_9B} (rebuild it from")
+        log(f"  it ships with the repo)")
 
     if not os.path.exists(RESULTS_CYCLE9B):
         log(f"  ERROR: {RESULTS_CYCLE9B} not found")
@@ -192,18 +192,18 @@ def main():
     with open(RESULTS_CYCLE9B) as f:
         r9b = json.load(f)
     w9b = r9b.get('windows', {}).get('median')
-    if not check('cycle 9b median window (from results JSON) ',
+    if not check('the baseline median window (from results JSON) ',
                  w9b, 0.125):
         failures += 1
     w12 = w.get('median')
     if w9b and w12:
-        log(f"  window reduction cycle9b → cycle12              "
+        log(f"  window reduction baseline → paper              "
             f"{w9b} → {w12}  ({(1 - w12/w9b)*100:.0f}% reduction)")
     log("")
 
     log("=" * 78)
     if failures == 0:
-        log("All paper-state checks passed. The cycle 12 pickle + results JSONs")
+        log("All paper-state checks passed. The the paper network pickle + results JSONs")
         log("reproduce the EIML paper's claimed metrics panel.")
     else:
         log(f"{failures} check(s) FAILED. Inspect the values above.")

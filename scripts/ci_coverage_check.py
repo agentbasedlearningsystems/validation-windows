@@ -13,7 +13,7 @@ For every entry that carries (mean, ci95, solver_ci, coverage), checks:
 
 Usage:
 
-    python scripts/ci_coverage_check.py paper/results_cycle12_no_df.json
+    python scripts/ci_coverage_check.py paper/results_paper.json
 
 Exits non-zero if any edge fails the consistency check, or if the
 fraction of edges whose solver point falls inside the literature 95% CI

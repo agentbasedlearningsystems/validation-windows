@@ -6,12 +6,12 @@ These files let you verify the paper's numbers without running a 30-minute build
 
 | File | What it is |
 |---|---|
-| `bayesianNetworkProto_cycle12_no_df.pickle` | The cycle-12 built network (7.6 MB). Loadable via `sn_bayes.utils.bayesInitialize`. |
-| `bayesnet_config_linear_cycle12_no_df.json` | The linearised config the net was built from. |
-| `results_cycle12_no_df.json` | Full five-core-metrics output (calibration, windows, joint fidelity, NHANES AUC, direction). |
-| `objective_rr_comparison_cycle12_no_df.json` | Study-by-study direction accuracy test (369 studies). |
-| `results_cycle9b_no_df.json` | Same metrics for the earlier cycle-9b build, for comparison. |
-| `objective_rr_comparison_cycle9b_no_df.json` | Study-by-study test for cycle 9b. |
+| `bayesianNetworkProto_paper.pickle` | The cycle-12 built network (7.6 MB). Loadable via `sn_bayes.utils.bayesInitialize`. |
+| `bayesnet_config_linear_paper.json` | The linearised config the net was built from. |
+| `results_paper.json` | Full five-core-metrics output (calibration, windows, joint fidelity, NHANES AUC, direction). |
+| `objective_rr_comparison_paper.json` | Study-by-study direction accuracy test (369 studies). |
+| `results_baseline.json` | Same metrics for the earlier cycle-9b build, for comparison. |
+| `objective_rr_comparison_baseline.json` | Study-by-study test for cycle 9b. |
 | `figures/polytope_schematic.pdf` | Figure 1: the feasible polytope diagram. |
 | `figures/window_reduction.pdf` | Figure 2: window reduction across cycles. |
 
@@ -44,7 +44,7 @@ This reads `data/Individual Relations.working.xlsx` and `data/preprocessed_nhane
 
 ## Comparison across builds
 
-`results_cycle9b_no_df.json` + `results_cycle12_no_df.json` show the progression reported in the paper:
+`results_baseline.json` + `results_paper.json` show the progression reported in the paper:
 
 | Metric | cycle 9b | cycle 12 |
 |---|---|---|

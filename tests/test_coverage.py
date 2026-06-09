@@ -64,8 +64,8 @@ def test_coverage_field_in_cycle_12_widest_20():
     """Loaded cycle-12 paper artifact should have coverage on every widest-20 entry,
     consistent with its window value."""
     candidates = [
-        ROOT / "paper" / "results_cycle12_no_df.json",
-        ROOT / "paper_results" / "results_cycle12_no_df.json",
+        ROOT / "paper" / "results_paper.json",
+        ROOT / "paper_results" / "results_paper.json",
     ]
     path = next((p for p in candidates if p.exists()), None)
     if path is None:

@@ -1,36 +1,36 @@
 {
-  "condition": "cycle12_no_df",
+  "condition": "baseline",
   "study_rr_summary": {
-    "total": 447,
-    "risk": 378,
+    "total": 439,
+    "risk": 370,
     "protective": 69
   },
   "calibration": {
     "n_nodes": 287,
     "nan_count": 0,
-    "mae": 0.0007,
+    "mae": 0.0005,
     "median_pct_diff": 0.0,
-    "over_5pct": 9,
-    "over_10pct": 5
+    "over_5pct": 7,
+    "over_10pct": 4
   },
   "evidence": {
-    "correct_direction": 79,
-    "wrong_direction": 7,
-    "no_change": 214,
-    "responsive": 86,
+    "correct_direction": 69,
+    "wrong_direction": 4,
+    "no_change": 227,
+    "responsive": 73,
     "total": 300,
-    "accuracy_overall_pct": 26.3,
-    "accuracy_responsive_pct": 91.9,
-    "responsive_pct": 28.7,
+    "accuracy_overall_pct": 23.0,
+    "accuracy_responsive_pct": 94.5,
+    "responsive_pct": 24.3,
     "_note": "accuracy_overall_pct counts no-change as failure. accuracy_responsive_pct is the correct direction rate among pairs where leaf evidence actually reached the disease. Many no-change pairs are expected \u2014 not every scenario has a causal path to every disease."
   },
   "windows": {
-    "mean": 0.217,
-    "median": 0.0156,
+    "mean": 0.2195,
+    "median": 0.125,
     "max": 1.0,
-    "over_005": 158,
-    "over_010": 158,
-    "over_025": 113,
+    "over_005": 156,
+    "over_010": 156,
+    "over_025": 111,
     "over_050": 3,
     "at_max_1": 3,
     "widest_20": [
@@ -101,20 +101,6 @@
         "solver_ci": [
           1.5769018217725281,
           1.957523377294398
-        ],
-        "coverage": 0.6729049923088593
-      },
-      {
-        "condition": "aliphatic_alicyclic_hydrocarbon_exposure_yes",
-        "variable": "polycyclic_aromatic_hydrocarbons_exposure",
-        "value": "polycyclic_aromatic_hydrocarbons_exposure_yes",
-        "statistic": "specificity",
-        "window": 0.5,
-        "mean": 1.0,
-        "ci95": -3.670454545454552,
-        "solver_ci": [
-          -0.835227272727276,
-          2.835227272727276
         ],
         "coverage": 0.6729049923088593
       },
@@ -222,25 +208,11 @@
         "value": "acm_factors_yes",
         "statistic": "relative_risk",
         "window": 0.5,
-        "mean": 2.7618807258743696,
-        "ci95": 0.176272900471107,
+        "mean": 2.7618807258743714,
+        "ci95": 0.1421441285798947,
         "solver_ci": [
-          2.673744275638816,
-          2.8500171761099233
-        ],
-        "coverage": 0.6729049923088593
-      },
-      {
-        "condition": "all_cause_mortality_high",
-        "variable": "frailty",
-        "value": "frailty_yes",
-        "statistic": "relative_risk",
-        "window": 0.5,
-        "mean": 2.0,
-        "ci95": 0.3,
-        "solver_ci": [
-          1.85,
-          2.15
+          2.690808661584424,
+          2.8329527901643186
         ],
         "coverage": 0.6729049923088593
       },
@@ -313,62 +285,90 @@
           2.1
         ],
         "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "bmi_over_30_obesity",
+        "variable": "dietary_energy_kcal",
+        "value": "dietary_energy_kcal_3000_and_over_high",
+        "statistic": "relative_risk",
+        "window": 0.5,
+        "mean": 3.310712159561369,
+        "ci95": 1.716023580086783,
+        "solver_ci": [
+          2.4527003695179777,
+          4.168723949604761
+        ],
+        "coverage": 0.6729049923088593
+      },
+      {
+        "condition": "bmi_over_30_obesity",
+        "variable": "bmi_naive",
+        "value": "bmi_40_and_over_severe_obesity",
+        "statistic": "specificity",
+        "window": 0.5,
+        "mean": 1.0,
+        "ci95": 0.05,
+        "solver_ci": [
+          0.975,
+          1.025
+        ],
+        "coverage": 0.6729049923088593
       }
     ]
   },
   "query_rr": {
-    "n_compared": 223,
-    "direction_correct": 220,
-    "direction_wrong": 3,
-    "direction_accuracy": 98.7,
-    "median_pct_error": 16.0,
-    "mean_pct_error": 33.1,
-    "within_25pct": 132,
-    "within_50pct": 191
+    "n_compared": 215,
+    "direction_correct": 214,
+    "direction_wrong": 1,
+    "direction_accuracy": 99.5,
+    "median_pct_error": 17.3,
+    "mean_pct_error": 32.3,
+    "within_25pct": 128,
+    "within_50pct": 184
   },
   "validation_scores": {
     "metric": "ci_slack_used",
-    "n_rows": 319,
-    "mean": 0.2147,
-    "median": 0.0156,
+    "n_rows": 311,
+    "mean": 0.2171,
+    "median": 0.125,
     "max": 1.0,
-    "over_005": 158,
-    "over_010": 158
+    "over_005": 156,
+    "over_010": 156
   },
   "ci_quality": {
-    "total_with_ci": 447,
+    "total_with_ci": 439,
     "crosses_null": 57
   },
   "ci_decomposition": {
-    "n_edges_with_ci": 435,
-    "median_mean_ci_halfwidth": 0.2182,
-    "mean_mean_ci_halfwidth": 0.4079,
+    "n_edges_with_ci": 427,
+    "median_mean_ci_halfwidth": 0.2117,
+    "mean_mean_ci_halfwidth": 0.4076,
     "n_edges_multi_study": 12,
     "median_rr_dispersion": 0.2962,
     "mean_rr_dispersion": 0.481
   },
   "rho": {
-    "n_nodes": 218,
+    "n_nodes": 217,
     "median_rho": 0.0,
-    "mean_rho": 0.0268
+    "mean_rho": 0.0263
   },
   "joint_fidelity": {
-    "n_cells_tested": 194,
-    "n_nodes": 16,
-    "median_diff": 0.0006,
-    "mean_diff": 0.0845,
-    "within_005_frac": 0.789
+    "n_cells_tested": 178,
+    "n_nodes": 15,
+    "median_diff": 0.0007,
+    "mean_diff": 0.0923,
+    "within_005_frac": 0.77
   },
   "chain_propagation": {
     "n_chains": 378,
-    "direction_correct": 364,
-    "direction_wrong": 14,
-    "median_rr_error": 33.4,
-    "mean_rr_error": 36.9
+    "direction_correct": 365,
+    "direction_wrong": 13,
+    "median_rr_error": 33.0,
+    "mean_rr_error": 35.9
   },
   "nhanes_auc": {
     "n_diseases": 178,
     "median_auc": 1.0,
-    "mean_auc": 0.9837
+    "mean_auc": 0.9836
   }
 }
