@@ -4,6 +4,10 @@ Reproduction artifact for the paper "Validation Windows: Epistemic Uncertainty P
 
 Authors: Deborah Vakas Duong, Igor Yi. Agent Based Learning Systems, San Luis Obispo, California, USA.
 
+### 📄 Read the paper: [**validation_windows_eiml2026.pdf**](validation_windows_eiml2026.pdf)
+
+The camera-ready paper (EIML @ ICML 2026). Everything below — the window-reduction result and the full metric panel — is reported in it.
+
 BayesExpert builds a Bayesian network from published epidemiological studies by solving a quadratic program over the polytope of conditional probability tables (CPTs) that satisfy every study's confidence interval, the law of total probability, and the CPT simplex bounds. For each solved edge the validation window `W` (between 0 and 1) is the width of that polytope along the study's axis. It is small when the literature and the population data agree on the edge, larger when they disagree, and largest when the solver has to move a study away from its own confidence interval to keep the whole network consistent.
 
 ## Quick reproduction (paper results, no build required)
@@ -33,9 +37,9 @@ python3 scripts/build_demo.py          # rebuilds the network from data/relation
 python3 scripts/data_checks.py spreadsheet   # pre-build CSV integrity checks
 ```
 
-## Post-submission appendix: per-target predictive AUC
+## Per-target predictive performance
 
-Construction continued after the workshop submission. The improved network is shipped as `bayesianNetworkProto_improved.pickle`. Its per-respondent NHANES discrimination, with each target's own NHANES code and its definitional-surrogate biomarkers excluded from the evidence, reproduces with:
+Beyond the windows, the network is also a calibrated predictor. The improved network (`bayesianNetworkProto_improved.pickle`, 574 nodes — the build the paper's metric panel is computed on) discriminates held-out NHANES respondents, with each target's own NHANES code and its definitional-surrogate biomarkers excluded from the evidence. Reproduce with:
 
 ```bash
 python3 scripts/observed_evidence_auc.py bayesianNetworkProto_improved.pickle \
@@ -63,7 +67,7 @@ Mean per-target AUC is **0.716** across 16 clinical-event targets (range 0.48 to
 | Under-determined nodes (prediction reverts to prior) | 77 / 356 |
 | Direction accuracy by chain length (1→5 hops) | 188/216 · 110/122 · 40/47 · 18/31 · 4/10 |
 
-Direction accuracy and window use a corrected post-submission reference-category metric, so they are not directly comparable to the paper-state Table 1 above; the residual direction inversions concentrate in the rare-cancer, low-base-rate chains where the solver abstains.
+Direction accuracy and window here use a corrected reference-category metric, so they are not directly comparable to Table 1 above; the residual direction inversions concentrate in the rare-cancer, low-base-rate chains where the solver abstains.
 
 ### Per-target AUC
 
@@ -102,10 +106,10 @@ This network is maintained as a continually improving artifact, not a frozen sna
 
 - `IMPROVEMENT_LOG.md`: the continual improvement feed (dated net-improvement cycles with metric deltas).
 - `CROWDSOURCING.md`: the community-contribution process and the adopted-contribution lists.
-- `validation_windows_eiml2026.pdf`: the workshop paper.
+- `validation_windows_eiml2026.pdf`: the camera-ready paper.
 - `data/relations.csv`: the literature network, one row per study or structural definition.
 - `bayesianNetworkProto_cycle12_no_df.pickle`, `bayesianNetworkProto_cycle9b_no_df.pickle`: the paper-state network and its "before" point.
-- `bayesianNetworkProto_improved.pickle`: the post-submission improved network (appendix AUC).
+- `bayesianNetworkProto_improved.pickle`: the improved network (the full metric panel / per-target AUC).
 - `bayesnet_config_linear.json`: the compiled linear configuration.
 - `paper_results/`: the committed cycle-12 result JSONs that `reproduce_paper.py` reads, plus the paper figures.
 - `scripts/`: the build pipeline, the paper-grade tests, and `reproduce_paper.py`.
