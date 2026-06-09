@@ -6,7 +6,7 @@ Authors: Deborah Vakas Duong, Igor Yi. Agent Based Learning Systems, San Luis Ob
 
 ### 📄 Read the paper: [**validation_windows_eiml2026.pdf**](validation_windows_eiml2026.pdf)
 
-The camera-ready paper (EIML @ ICML 2026). Everything below — the window-reduction result and the full metric panel — is reported in it.
+The paper (EIML @ ICML 2026). Everything below — the window-reduction result and the full metric panel — is reported in it.
 
 BayesExpert builds a Bayesian network from published epidemiological studies by solving a quadratic program over the polytope of conditional probability tables (CPTs) that satisfy every study's confidence interval, the law of total probability, and the CPT simplex bounds. For each solved edge the validation window `W` (between 0 and 1) is the width of that polytope along the study's axis. It is small when the literature and the population data agree on the edge, larger when they disagree, and largest when the solver has to move a study away from its own confidence interval to keep the whole network consistent.
 
@@ -106,7 +106,7 @@ This network is maintained as a continually improving artifact, not a frozen sna
 
 - `IMPROVEMENT_LOG.md`: the continual improvement feed (dated net-improvement cycles with metric deltas).
 - `CROWDSOURCING.md`: the community-contribution process and the adopted-contribution lists.
-- `validation_windows_eiml2026.pdf`: the camera-ready paper.
+- `validation_windows_eiml2026.pdf`: the paper.
 - `data/relations.csv`: the literature network, one row per study or structural definition.
 - `bayesianNetworkProto_cycle12_no_df.pickle`, `bayesianNetworkProto_cycle9b_no_df.pickle`: the paper-state network and its "before" point.
 - `bayesianNetworkProto_improved.pickle`: the improved network (the full metric panel / per-target AUC).
