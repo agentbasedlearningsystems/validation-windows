@@ -45,7 +45,51 @@ python3 scripts/observed_evidence_auc.py bayesianNetworkProto_improved.pickle \
     sleep_apnea sleep_disorder stroke depression osteoporosis
 ```
 
-Mean per-target AUC is about 0.716 across 16 clinical-event targets (range 0.48 to 0.94). Several targets reach or exceed the level of cohort-fitted clinical risk calculators (Framingham 10-year CVD and pooled ASCVD are about 0.71): coronary artery disease about 0.94, sleep apnea / depression / heart attack about 0.82, insomnia 0.80, diabetes 0.78, stroke 0.76. Per-target AUC tracks whether the network's literature supplied informative risk-factor parents for the target. The full per-target table and the complete metric panel (calibration, Brier, sharpness, sex-stratified AUC) are in the paper appendix (`validation_windows_eiml2026.pdf`).
+Mean per-target AUC is **0.716** across 16 clinical-event targets (range 0.48 to 0.94) — several at or above the level of cohort-fitted clinical risk calculators (Framingham 10-year CVD and pooled ASCVD are about 0.71).
+
+### Full metric panel (improved network, 574 nodes)
+
+| measure | value |
+|---|---|
+| Mean per-target ROC AUC (16 clinical events) | **0.716** (range 0.48–0.94) |
+| Direction accuracy (query-RR sign vs literature RR) | 91.1% |
+| Within a factor of two of the literature RR | 84.6% |
+| Median validation window W̃ (mean) | 0.001 (0.086) |
+| Calibration — ECE / MCE | 0.022 / 0.29 |
+| Brier score | 0.092 |
+| Prediction sharpness (variance) | 0.027 |
+| Mean \|ρ-gap\| (network ρ vs NHANES ρ) | 0.097 |
+| Sex-stratified AUC — male / female | 0.733 / 0.695 |
+| Under-determined nodes (prediction reverts to prior) | 77 / 356 |
+| Direction accuracy by chain length (1→5 hops) | 188/216 · 110/122 · 40/47 · 18/31 · 4/10 |
+
+Direction accuracy and window use a corrected post-submission reference-category metric, so they are not directly comparable to the paper-state Table 1 above; the residual direction inversions concentrate in the rare-cancer, low-base-rate chains where the solver abstains.
+
+### Per-target AUC
+
+Each target's own NHANES code and its definitional-surrogate biomarkers are excluded from the evidence (see `validation_windows_eiml2026.pdf` App. F for the per-target exclusion list).
+
+| target | AUC | prevalence |
+|---|---|---|
+| Coronary artery disease | 0.94 | 0.057 |
+| Sleep apnea | 0.82 | 0.037 |
+| Depression | 0.82 | 0.063 |
+| Heart attack | 0.82 | 0.043 |
+| Insomnia | 0.80 | 0.16 |
+| Diabetes | 0.78 | 0.07 |
+| Stroke | 0.76 | 0.03 |
+| COPD | 0.73 | 0.053 |
+| Cognitive impairment | 0.72 | 0.16 |
+| Hypertension | 0.72 | 0.28 |
+| Sleep disorder | 0.68 | 0.09 |
+| Cancer | 0.63 | 0.097 |
+| Malnutrition | 0.63 | 0.05 |
+| Osteoporosis | 0.57 | 0.07 |
+| Asthma | 0.56 | 0.50 |
+| Fall history | 0.48 | 0.30 |
+| **Mean** | **0.716** | |
+
+Per-target AUC tracks whether the network's literature supplied informative risk-factor parents for that target.
 
 ## Continual improvement and community contributions
 
