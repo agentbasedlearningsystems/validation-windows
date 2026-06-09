@@ -18,13 +18,13 @@ pip install -r requirements.txt
 python3 scripts/reproduce_paper.py
 ```
 
-This loads the frozen paper-state network (`paper_results/bayesianNetworkProto_cycle12_no_df.pickle`) and reports the three headline results:
+This loads the paper-state network (`paper_results/bayesianNetworkProto_cycle12_no_df.pickle`) and reports the three headline results:
 
-| Result | Reproduced | Paper |
-|---|---|---|
-| Direction accuracy (literature vs query-RR) | 360/369 = 97.6% | 97.6% |
-| Median validation window W | 0.0156 | 0.016 |
-| Joint fidelity within 5% of NHANES | 153/194 = 78.9% | 78.9% |
+| Result | Value |
+|---|---|
+| Direction accuracy (literature vs query-RR) | 360/369 = 97.6% |
+| Median validation window W̃ | 0.0156 |
+| Joint fidelity within 5% of NHANES | 153/194 = 78.9% |
 
 It also shows the abstention case on the low-base-rate pancreatic-cancer chain, where the polytope is direction-symmetric because the literature alone does not constrain the joint distribution.
 
