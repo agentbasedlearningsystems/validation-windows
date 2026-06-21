@@ -35,9 +35,9 @@ Improvement cycle (manual §9.9):
 
 ---
 
-# 2026-06-21 — camera-ready resubmission: AUC headline now reported over the 15 constructed disease targets
+# 2026-06-21 — paper resubmission: AUC headline now reported over the 15 constructed disease targets
 
-The workshop camera-ready was reopened for formatting and re-edited. The reporting change that affects this feed's headline: the directly-observed `fall_history` outcome is **excluded** from the per-target AUC mean. It carries no constructed predictive structure and sits at its base rate (0.48 on this build), so it does not belong in a predictive-AUC headline. The per-target AUCs are each computed independently and are unchanged — the headline is now the mean over the **15 constructed disease targets = 0.73** (range 0.56–0.94), matching the camera-ready (`validation_windows_eiml2026.pdf`, refreshed in this commit). The 2026-06-07 entry below stands as recorded; `fall_history` simply drops out of the mean.
+The paper was reopened for formatting and re-edited. The reporting change that affects this feed's headline: the directly-observed `fall_history` outcome is **excluded** from the per-target AUC mean. It carries no constructed predictive structure and sits at its base rate (0.48 on this build), so it does not belong in a predictive-AUC headline. The per-target AUCs are each computed independently and are unchanged — the headline is now the mean over the **15 constructed disease targets = 0.73** (range 0.56–0.94), matching the paper PDF refreshed in this commit. The 2026-06-07 entry below stands as recorded; `fall_history` simply drops out of the mean.
 
 ---
 
@@ -63,7 +63,7 @@ Per-respondent NHANES discrimination on this build, each target's definitional s
 | Mean abs ρ-gap (network vs NHANES) | 0.097 |
 | Degenerate CPTs | 0 |
 
-The full per-target table and complete metric panel are in the paper appendix (`validation_windows_eiml2026.pdf`).
+The full per-target table and complete metric panel are in the paper appendix.
 
 ---
 
@@ -411,19 +411,19 @@ The De Santis 2024 PA → stroke is a strong cycle-17 finding (752K participants
 
 **Smoking → bladder cancer (van Osch 2016 / Cumberbatch 2016, SOR~3)** and **family history → MI (Dugani 2021 / Weijmans 2015, OR~1.5-2)** would require new nodes — out of scope for incremental CSV row additions; documented for a future architecture-change cycle.
 
-## AUC fill-in for the EIML 3-column comparison (was n/a; now measured)
+## AUC fill-in for the 3-column comparison (was n/a; now measured)
 
-The EIML README's `NHANES per-target AUC (16 clinical events)` row previously showed `n/a` for both frozen-pickle columns. Reason: the observed-evidence AUC infrastructure (`scripts/observed_evidence_auc.py`) was first added April 30, 2026 — after the EIML cycle-12 paper-state was already submitted. The improved column had a fresh post-April-30 measurement; the two frozen submission-state pickles never got the same treatment because no one ran it.
+The README's `NHANES per-target AUC (16 clinical events)` row previously showed `n/a` for both frozen-pickle columns. Reason: the observed-evidence AUC infrastructure (`scripts/observed_evidence_auc.py`) was first added April 30, 2026 — after the cycle-12 paper-state was already submitted. The improved column had a fresh post-April-30 measurement; the two frozen submission-state pickles never got the same treatment because no one ran it.
 
 The frozen pickle bytes are unchanged; this is a post-hoc measurement of an *observable property* of the frozen artifact, not a modification of the paper. Using the same methodology as the improved column (16 binary clinical-event targets, N=300 NHANES respondents/target, observed-evidence-only with diagnostic-biomarker exclusion):
 
 | pickle (md5) | mean AUC | median | range |
 |---|---|---|---|
 | `bayesianNetworkProto_baseline.pickle` (`552832b3…`, "before") | 0.566 | 0.543 | 0.408-0.747 |
-| `bayesianNetworkProto_paper.pickle` (`a02feb76…`, EIML paper-state) | 0.584 | 0.580 | 0.382-0.832 |
+| `bayesianNetworkProto_paper.pickle` (`a02feb76…`, paper-state) | 0.584 | 0.580 | 0.382-0.832 |
 | `bayesianNetworkProto_v2cleaned_final.pickle.gz` (`5b0acb35…`, current improved) | 0.666 | 0.660 | 0.545-0.810 |
 
-**Δ from 9b to cycle-12 = +0.018**: the audit edges the EIML paper adds versus the pre-audit baseline.
+**Δ from 9b to cycle-12 = +0.018**: the audit edges the paper adds versus the pre-audit baseline.
 
 **Δ from cycle-12 to current improved = +0.082**: the May-2026 continuation. Adds connecting studies on bmi×CRP (Choi 2013), Yuan 2025 (diabetes×HTN, RR=7), and corrected 14 RR errors.
 
@@ -461,11 +461,11 @@ The wrapper rows (rows 2461–2465) define the `crp_elevated_concept` dep-distal
 When the wire-up lands (next rebuild cycle):
 - **Predicted network_ρ on (bmi_naive, c_reactive_protein) under breast_cancer**: rises from 0.001 toward 0.30–0.49 (toward the NHANES-observed value, attenuated by chain depth).
 - **Predicted |ρ| > 1/(1+σ) crossing**: at σ ≈ 0.18 (the row's CI half-width), threshold is ~0.85, so direct binding doesn't happen on this row alone. The mechanism is *partial tightening* — the cells touching the BMI×CRP joint under breast_cancer narrow.
-- **Predicted W̃ change on breast_cancer CPT**: cells indexed by (bmi=obese, CRP=high) should narrow from the current wider-than-marginal state toward a value consistent with the joint Choi-2013 constraint. The EIML window-shrinkage figure picks up another row.
+- **Predicted W̃ change on breast_cancer CPT**: cells indexed by (bmi=obese, CRP=high) should narrow from the current wider-than-marginal state toward a value consistent with the joint Choi-2013 constraint. The window-shrinkage figure picks up another row.
 
 ## Why we report this *before* the rebuild
 
-The user's instruction was "continuous improvement using ρ and window principles, and point it out." The cycle has two halves: **(a) audit + quorum verification** (what tonight closes), and **(b) wire-up + rebuild + measure** (next session). Treating (a) as a publishable increment — visible in `relations.csv` (row 2465 upgraded), in the agent quorum trace, and in this LOG entry — is consistent with the paper's "construction process whose intermediate artifact is the epistemic representation" framing. The EIML paper's window-shrinkage plot lists which iteration added which row; this row would appear as the iteration's literature-addition entry.
+The user's instruction was "continuous improvement using ρ and window principles, and point it out." The cycle has two halves: **(a) audit + quorum verification** (what tonight closes), and **(b) wire-up + rebuild + measure** (next session). Treating (a) as a publishable increment — visible in `relations.csv` (row 2465 upgraded), in the agent quorum trace, and in this LOG entry — is consistent with the paper's "construction process whose intermediate artifact is the epistemic representation" framing. The paper's window-shrinkage plot lists which iteration added which row; this row would appear as the iteration's literature-addition entry.
 
 Pending follow-up next cycle:
 - Wire `crp_elevated_concept` into `breast_cancer`'s parent list (currently breast_cancer has direct parents `bmi_naive` and `c_reactive_protein_mg_L`; the dep-distal wrapper would replace or augment those parents).
@@ -552,9 +552,9 @@ Held but verified (need wrapper/structural work next session): Huang 2024 (PMID 
 |---|---|---|
 | `bayesianNetworkProto_v2cleaned_final.pickle` md5 | `3591874c3268e216411e5b6a598b841a` | **`1dc1a70eeb9fcd626f25c3be4ab9c874`** |
 
-The new pickle has been pushed to the public repository as the `UPDATABLE` improved-net checkpoint (commits `1818b9e` v1 / `947d758` v2 / `6d08195` v3). `scripts/demo_v2cleaned_final.py` PICKLE_MD5 updated to match. Drift detector: ALL IN SYNC. Frozen paper-state pickles (v2.pickle md5 `b390e654…` paper + baseline for EIML) untouched.
+The new pickle has been pushed to the public repository as the `UPDATABLE` improved-net checkpoint (checkpoint commit). `scripts/demo_v2cleaned_final.py` PICKLE_MD5 updated to match. Drift detector: ALL IN SYNC. Frozen paper-state pickles (v2.pickle md5 `b390e654…` paper + baseline) untouched.
 
-## Cycle 6 window summary — W principle measurement (EIML)
+## Cycle 6 window summary — W principle measurement
 
 `validation_window_summary.py` on the new pickle:
 
@@ -567,7 +567,7 @@ The new pickle has been pushed to the public repository as the `UPDATABLE` impro
 | nodes with W > 0.25 | 94 | **100** | +6 |
 | nodes pinned at W = 0.5 | 0 | 0 | unchanged |
 
-**EIML-paper-relevant interpretation**: the 8 connecting-study rows are **evidence-level** additions (citation honesty), not **structural** additions (new edges between previously-unconnected nodes). EIML's window-shrinkage figure (cycle 9b → cycle 12, median W̃ 0.125 → 0.016, 87% reduction) was driven by *structural* additions. Tonight's cycle 6 added correlations among already-connected parents, which the QP solver accommodates by slightly widening some cells without changing the polytope's central tightness. The +4 / +6 node-count shifts reflect the solver fitting the new ρ constraints — the network became *more correctly aware* of its widest cells without the centre-of-mass moving.
+**Interpretation**: the 8 connecting-study rows are **evidence-level** additions (citation honesty), not **structural** additions (new edges between previously-unconnected nodes). the window-shrinkage figure (cycle 9b → cycle 12, median W̃ 0.125 → 0.016, 87% reduction) was driven by *structural* additions. Tonight's cycle 6 added correlations among already-connected parents, which the QP solver accommodates by slightly widening some cells without changing the polytope's central tightness. The +4 / +6 node-count shifts reflect the solver fitting the new ρ constraints — the network became *more correctly aware* of its widest cells without the centre-of-mass moving.
 
 This is a useful paper-narrative distinction the this paper can lean on: *"the operating loop produces two kinds of cycle — structural-edge cycles that collapse W̃ (visible in the headline plot) and evidence cycles that preserve W̃ while tightening citation integrity. Both are honest improvements; the window distinguishes them automatically."*
 
@@ -652,12 +652,7 @@ Strict UKBB regressed -8pp; within-50% regressed -14pp. **Honest tradeoff**: the
 
 ### Atomic-swap commits
 
-| repo | commit (this cycle 6 swap) |
-|---|---|
-| private bayesnet | (forthcoming) |
-| bayesexpert-public (EIML, master) | (forthcoming) |
-| bayesexpert-public-v2 | (forthcoming) |
-| bayesexpert-public-v3 | (forthcoming) |
+A single atomic-swap commit per repository this cycle (commits forthcoming).
 
 Single commit: new pickle file + updated `scripts/demo_v2cleaned_final.py` PICKLE_MD5 + updated README Numbers-at-a-glance + this IMPROVEMENT_LOG entry — per the §9.5.1 repository-update protocol just added to the manual.
 
@@ -737,7 +732,7 @@ Ran `validation_window_summary` against the `v2cleaned_final` pickle (md5 `35918
 
 **Read this as: the May 2026 cleanup tightened *evidence honesty* without changing *geometric tightness*.** The audit replaced 61 fabricated PMIDs with verified citations, corrected 14 wrong RRs, and added 21 quorum-verified literature edges — but the QP-feasibility window distribution is essentially the same before and after. Slightly more nodes over 0.05 (143 vs 122) reflects the new edges loading more constraints onto previously-uncovered nodes, not loosening on existing nodes.
 
-Contrast: the EIML paper's cycle-9b → cycle-12 audit (April) DID tighten the polytope — median W̃ dropped from 0.125 to 0.016 (87% reduction). That April work added *structural* edges (medical-knowledge audit identifying missing edges); the May audit added *evidence* edges (replacing bad citations) without changing structure.
+Contrast: the paper's cycle-9b → cycle-12 audit (April) DID tighten the polytope — median W̃ dropped from 0.125 to 0.016 (87% reduction). That April work added *structural* edges (medical-knowledge audit identifying missing edges); the May audit added *evidence* edges (replacing bad citations) without changing structure.
 
 **Paper implication.** The two kinds of improvement are distinguishable in the window panel and worth flagging separately when reporting: structural improvement collapses W̃, evidence improvement preserves W̃ but tightens citation integrity. Useful for the "continual improvement" framing — the polytope-narrowing claim should only be cited for structural cycles, not for the citation-cleanup cycles.
 
