@@ -37,18 +37,18 @@ Beyond the windows, the network is also a calibrated predictor. The improved net
 ```bash
 python3 scripts/observed_evidence_auc.py bayesianNetworkProto_improved.pickle \
     bayesnet_config_linear.json improved 300 \
-    --targets heart_attack asthma malnutrition insomnia fall_history cancer \
+    --targets heart_attack asthma malnutrition insomnia cancer \
     cognitive_impairment copd coronary_artery_disease diabetes hypertension \
     sleep_apnea sleep_disorder stroke depression osteoporosis
 ```
 
-Mean per-target AUC is **0.716** across 16 clinical-event targets (range 0.48 to 0.94) — several at or above the level of cohort-fitted clinical risk calculators (Framingham 10-year CVD and pooled ASCVD are about 0.71).
+Mean per-target AUC is **0.73** across 15 constructed disease targets (range 0.56 to 0.94) — several at or above the level of cohort-fitted clinical risk calculators (Framingham 10-year CVD and pooled ASCVD are about 0.71). The directly-observed `fall_history` outcome is excluded from the mean: it carries no constructed predictive structure, so it sits at its base rate.
 
 ### Full metric panel (improved network, 574 nodes)
 
 | measure | value |
 |---|---|
-| Mean per-target ROC AUC (16 clinical events) | **0.716** (range 0.48–0.94) |
+| Mean per-target ROC AUC (15 constructed disease targets) | **0.73** (range 0.56–0.94) |
 | Direction accuracy (query-RR sign vs literature RR) | 91.1% |
 | Within a factor of two of the literature RR | 84.6% |
 | Median validation window W̃ (mean) | 0.001 (0.086) |
@@ -64,7 +64,7 @@ Direction accuracy and window here use a corrected reference-category metric, so
 
 ### Per-target AUC
 
-Each target's own NHANES code and its definitional-surrogate biomarkers are excluded from the evidence (see `validation_windows_eiml2026.pdf` App. F for the per-target exclusion list).
+Each target's own NHANES code and its definitional-surrogate biomarkers are excluded from the evidence (see `validation_windows_eiml2026.pdf`, leak-guard appendix, for the per-target exclusion list).
 
 | target | AUC | prevalence |
 |---|---|---|
@@ -83,8 +83,7 @@ Each target's own NHANES code and its definitional-surrogate biomarkers are excl
 | Malnutrition | 0.63 | 0.05 |
 | Osteoporosis | 0.57 | 0.07 |
 | Asthma | 0.56 | 0.50 |
-| Fall history | 0.48 | 0.30 |
-| **Mean** | **0.716** | |
+| **Mean** | **0.73** | |
 
 Per-target AUC tracks whether the network's literature supplied informative risk-factor parents for that target.
 

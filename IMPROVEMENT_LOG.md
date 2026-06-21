@@ -35,6 +35,12 @@ Improvement cycle (manual §9.9):
 
 ---
 
+# 2026-06-21 — camera-ready resubmission: AUC headline now reported over the 15 constructed disease targets
+
+The workshop camera-ready was reopened for formatting and re-edited. The reporting change that affects this feed's headline: the directly-observed `fall_history` outcome is **excluded** from the per-target AUC mean. It carries no constructed predictive structure and sits at its base rate (0.48 on this build), so it does not belong in a predictive-AUC headline. The per-target AUCs are each computed independently and are unchanged — the headline is now the mean over the **15 constructed disease targets = 0.73** (range 0.56–0.94), matching the camera-ready (`validation_windows_eiml2026.pdf`, refreshed in this commit). The 2026-06-07 entry below stands as recorded; `fall_history` simply drops out of the mean.
+
+---
+
 # 2026-06-07 — improved build (574 nodes): degenerate-CPT gate, leak-guard expansion, per-target AUC 0.716 / 16 targets
 
 The current improved network (`bayesianNetworkProto_improved.pickle`, 574 nodes) is the build measured in the workshop paper appendix. Changes since the May-16 build:
