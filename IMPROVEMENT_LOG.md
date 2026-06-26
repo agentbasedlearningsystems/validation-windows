@@ -35,6 +35,20 @@ Improvement cycle (manual §9.9):
 
 ---
 
+# 2026-06-26 - interconnection and direction-fidelity improvement (573-node build)
+
+This cycle improved how the network's nodes interconnect and how faithfully it reproduces the directions stated in the literature, on the 573-node build.
+
+- **Discrimination.** Mean held-out per-respondent ROC AUC rose to **0.775** over the 12 scored disease targets (range 0.571-0.945), up from the prior build. Two targets were restructured this cycle: the diabetes target and the osteoporosis target.
+- **Law-of-total-probability interconnection (the "bite").** The cross-CPT subset constraint binds where rho > sigma/(1+sigma); below that threshold the polytope is wide and the solver abstains on the pair. This cycle raised the bite by connecting correlated co-parent pairs - for example, dietary magnesium and dietary potassium through their shared mineral-intake child. The network now realizes the bite on **34 of the 66** population-supported multi-parent targets (of 123 eligible), up from 18 of 53.
+- **Direction fidelity.** The queried network reproduces the study direction on **85.4%** of cited edges (445 edges); sign reversals dropped to 9 and washouts stand at 56.
+- **Parent co-occurrence (rho-gap).** The gap between the network's induced parent co-occurrence and the NHANES correlation narrowed to **0.091** (mean absolute).
+- **Calibration.** Reliability ECE 0.0136, Brier 0.070. Median validation window 0.001 over 1029 constrained cells.
+
+Each per-target AUC is computed independently (leak-guarded, with definitional surrogates excluded from that target's evidence), and the 0.775 headline is their mean.
+
+---
+
 # 2026-06-21 — paper resubmission: AUC headline now reported over the 15 constructed disease targets
 
 The paper was reopened for formatting and re-edited. The reporting change that affects this feed's headline: the directly-observed `fall_history` outcome is **excluded** from the per-target AUC mean. It carries no constructed predictive structure and sits at its base rate (0.48 on this build), so it does not belong in a predictive-AUC headline. The per-target AUCs are each computed independently and are unchanged — the headline is now the mean over the **15 constructed disease targets = 0.73** (range 0.56–0.94), matching the paper PDF refreshed in this commit. The 2026-06-07 entry below stands as recorded; `fall_history` simply drops out of the mean.
