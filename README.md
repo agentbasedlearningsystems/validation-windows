@@ -2,7 +2,7 @@
 
 Reproduction artifact for the paper "Validation Windows: Epistemic Uncertainty Produced by the Solver in a Literature-Derived Bayesian Network" (2nd Workshop on Epistemic Intelligence in Machine Learning @ ICML 2026).
 
-Authors: Deborah Vakas Duong, Igor Yi. Agent Based Learning Systems, San Luis Obispo, California, USA.
+Agent Based Learning Systems, San Luis Obispo, California, USA.
 
 ### 📄 Read the paper: [**validation_windows_eiml2026.pdf**](validation_windows_eiml2026.pdf)
 
