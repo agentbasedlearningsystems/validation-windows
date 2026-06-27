@@ -32,33 +32,32 @@ The paper's headline result is an 87% drop in the median window as consistent li
 
 ## Per-target predictive performance
 
-Beyond the windows, the network is also a calibrated predictor. The improved network (`bayesianNetworkProto_improved.pickle`, 574 nodes — the build the paper's metric panel is computed on) discriminates held-out NHANES respondents, with each target's own NHANES code and its definitional-surrogate biomarkers excluded from the evidence. Reproduce with:
+Beyond the windows, the network is also a calibrated predictor. The current build (`bayesianNetworkProto_osteo.pickle`, 573 nodes — the build the paper's metric panel is computed on) discriminates held-out NHANES respondents, with each target's own NHANES code and its definitional-surrogate biomarkers excluded from the evidence. Reproduce with:
 
 ```bash
-python3 scripts/observed_evidence_auc.py bayesianNetworkProto_improved.pickle \
-    bayesnet_config_linear.json improved 300 \
-    --targets heart_attack asthma malnutrition insomnia cancer \
-    cognitive_impairment copd coronary_artery_disease diabetes hypertension \
-    sleep_apnea sleep_disorder stroke depression osteoporosis
+python3 scripts/observed_evidence_auc.py bayesianNetworkProto_osteo.pickle \
+    bayesnet_config_osteo.json osteo 300 \
+    --targets coronary_artery_disease depression diabetes insomnia sleep_apnea \
+    stroke heart_attack copd cognitive_impairment hypertension osteoporosis cancer
 ```
 
-Mean per-target AUC is **0.73** across 15 constructed disease targets (range 0.56 to 0.94) — several at or above the level of cohort-fitted clinical risk calculators (Framingham 10-year CVD and pooled ASCVD are about 0.71). The directly-observed `fall_history` outcome is excluded from the mean: it carries no constructed predictive structure, so it sits at its base rate.
+Mean per-target AUC is **0.775** across 12 constructed disease targets (range 0.57 to 0.95) — several at or above the level of cohort-fitted clinical risk calculators (Framingham 10-year CVD and pooled ASCVD are about 0.71). The directly-observed `fall_history` outcome is excluded from the mean: it carries no constructed predictive structure, so it sits at its base rate.
 
-### Full metric panel (improved network, 574 nodes)
+### Full metric panel (current build, 573 nodes)
 
 | measure | value |
 |---|---|
-| Mean per-target ROC AUC (15 constructed disease targets) | **0.73** (range 0.56–0.94) |
-| Direction accuracy (query-RR sign vs literature RR) | 91.1% |
-| Within a factor of two of the literature RR | 84.6% |
+| Mean per-target ROC AUC (12 constructed disease targets) | **0.775** (range 0.57–0.95) |
+| Direction reproduced / washed out / reversed (445 cited edges) | 85.4% / 12.6% / 2.0% |
+| Within a factor of two of the literature RR | 90% |
 | Median validation window W̃ (mean) | 0.001 (0.086) |
-| Calibration — ECE / MCE | 0.022 / 0.29 |
-| Brier score | 0.092 |
-| Prediction sharpness (variance) | 0.027 |
-| Mean \|ρ-gap\| (network ρ vs NHANES ρ) | 0.097 |
-| Sex-stratified AUC — male / female | 0.733 / 0.695 |
-| Under-determined nodes (prediction reverts to prior) | 77 / 356 |
-| Direction accuracy by chain length (1→5 hops) | 188/216 · 110/122 · 40/47 · 18/31 · 4/10 |
+| Calibration — ECE / MCE | 0.014 / 0.32 |
+| Brier score | 0.070 |
+| Prediction sharpness (variance) | 0.021 |
+| Mean \|ρ-gap\| (network ρ vs NHANES ρ) | 0.091 |
+| Sex-stratified AUC — male / female | 0.780 / 0.776 |
+| Under-determined nodes (prediction reverts to prior) | 83 / 370 |
+| Direction retained by chain length (1→5 hops) | 204/230 · 116/122 · 37/43 · 18/30 · 4/10 |
 
 Direction accuracy and window here use a corrected reference-category metric, so they are not directly comparable to Table 1 above; the residual direction inversions concentrate in the rare-cancer, low-base-rate chains where the solver abstains.
 
@@ -68,22 +67,19 @@ Each target's own NHANES code and its definitional-surrogate biomarkers are excl
 
 | target | AUC | prevalence |
 |---|---|---|
-| Coronary artery disease | 0.94 | 0.057 |
-| Sleep apnea | 0.82 | 0.037 |
-| Depression | 0.82 | 0.063 |
-| Heart attack | 0.82 | 0.043 |
-| Insomnia | 0.80 | 0.16 |
-| Diabetes | 0.78 | 0.07 |
-| Stroke | 0.76 | 0.03 |
-| COPD | 0.73 | 0.053 |
-| Cognitive impairment | 0.72 | 0.16 |
-| Hypertension | 0.72 | 0.28 |
-| Sleep disorder | 0.68 | 0.09 |
-| Cancer | 0.63 | 0.097 |
-| Malnutrition | 0.63 | 0.05 |
-| Osteoporosis | 0.57 | 0.07 |
-| Asthma | 0.56 | 0.50 |
-| **Mean** | **0.73** | |
+| Coronary artery disease | 0.95 | 0.057 |
+| Depression | 0.89 | 0.063 |
+| Diabetes | 0.85 | 0.070 |
+| Insomnia | 0.85 | 0.160 |
+| Sleep apnea | 0.81 | 0.037 |
+| Stroke | 0.76 | 0.030 |
+| Heart attack | 0.76 | 0.043 |
+| COPD | 0.74 | 0.053 |
+| Cognitive impairment | 0.73 | 0.160 |
+| Hypertension | 0.70 | 0.280 |
+| Osteoporosis | 0.69 | 0.070 |
+| Cancer | 0.57 | 0.097 |
+| **Mean** | **0.775** | |
 
 Per-target AUC tracks whether the network's literature supplied informative risk-factor parents for that target.
 
@@ -100,8 +96,8 @@ This network is maintained as a continually improving artifact, not a frozen sna
 - `CROWDSOURCING.md`: the community-contribution process and the adopted-contribution lists.
 - `validation_windows_eiml2026.pdf`: the paper.
 - `data/relations.csv`: the literature network, one row per study or structural definition.
-- `bayesianNetworkProto_paper.pickle`, `bayesianNetworkProto_baseline.pickle`: the network the paper's results are computed on, and the starting network the window reduction is measured from.
-- `bayesianNetworkProto_improved.pickle`: the improved network (the full metric panel / per-target AUC).
+- `bayesianNetworkProto_osteo.pickle` + `bayesnet_config_osteo.json`: the current 573-node build the paper's metric panel (per-target AUC, calibration, direction, window) is computed on.
+- `bayesianNetworkProto_paper.pickle`, `bayesianNetworkProto_baseline.pickle`: the network the paper's window result is computed on, and the starting network the 87% window reduction is measured from.
 - `bayesnet_config_linear.json`: the compiled linear configuration.
 - `paper_results/`: the committed result JSONs that `reproduce_paper.py` reads, plus the paper figures.
 - `scripts/`: the build pipeline, the paper-grade tests, and `reproduce_paper.py`.

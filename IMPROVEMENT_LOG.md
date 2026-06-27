@@ -49,9 +49,9 @@ Each per-target AUC is computed independently (leak-guarded, with definitional s
 
 ---
 
-# 2026-06-21 — paper resubmission: AUC headline now reported over the 15 constructed disease targets
+# 2026-06-21 — AUC headline now reported over the 15 constructed disease targets
 
-The paper was reopened for formatting and re-edited. The reporting change that affects this feed's headline: the directly-observed `fall_history` outcome is **excluded** from the per-target AUC mean. It carries no constructed predictive structure and sits at its base rate (0.48 on this build), so it does not belong in a predictive-AUC headline. The per-target AUCs are each computed independently and are unchanged — the headline is now the mean over the **15 constructed disease targets = 0.73** (range 0.56–0.94), matching the paper PDF refreshed in this commit. The 2026-06-07 entry below stands as recorded; `fall_history` simply drops out of the mean.
+The directly-observed `fall_history` outcome is **excluded** from the per-target AUC mean. It carries no constructed predictive structure and sits at its base rate (0.48 on this build), so it does not belong in a predictive-AUC headline. The per-target AUCs are each computed independently and are unchanged — the headline is now the mean over the **15 constructed disease targets = 0.73** (range 0.56–0.94). The 2026-06-07 entry below stands as recorded; `fall_history` simply drops out of the mean.
 
 ---
 
